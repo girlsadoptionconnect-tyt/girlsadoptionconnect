@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="category-wrap">
+  <div class="category-card">
+    <h1 class="category-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="category-subtitle">{{ page.subtitle }}</p>{% endif %}
+
+    <div class="post-list">
+      {% assign posts = site.posts | where: "category", page.category %}
+      {% for post in posts %}
+        <article class="post-row">
+          <a class="post-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <div class="post-row-meta">
+            <span>{{ post.date | date: "%B %d, %Y" }}</span>
+            {% if post.author %}<span class="dot">•</span><span>{{ post.author }}</span>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+
+      {% if posts.size == 0 %}
+        <p class="empty">No posts yet in this category.</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
