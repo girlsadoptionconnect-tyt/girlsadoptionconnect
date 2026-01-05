@@ -593,3 +593,62 @@ body{
     margin: 18px 0 18px 0;
   }
 }
+
+/* =========================
+   Footer
+   ========================= */
+
+.site-footer{
+  margin-top: 120px;
+  background: rgba(236, 200, 208, 0.35);
+}
+
+.footer-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 20px 26px 20px;
+  text-align: center;
+
+  border-top: 1px solid rgba(160, 120, 130, 0.45);
+}
+
+.footer-links{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  font-size: 26px;
+  letter-spacing: 0.2px;
+  color: #7c7c7c;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #7c7c7c;
+}
+
+.footer-links a:hover{
+  color: #222;
+  text-decoration: underline;
+}
+
+.footer-sep{
+  opacity: 0.65;
+}
+
+.footer-copy{
+  margin-top: 22px;
+  font-size: 22px;
+  color: #ffffff;
+  background: rgba(150, 120, 130, 0.55);
+
+  padding: 18px 18px;
+  border-radius: 18px;
+  display: inline-block;
+}
+
+/* mobile sizing */
+@media (max-width: 650px){
+  .footer-links{ font-size: 20px; }
+  .footer-copy{ font-size: 18px; }
+}
