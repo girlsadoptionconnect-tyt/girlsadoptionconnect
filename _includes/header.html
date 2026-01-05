@@ -10,13 +10,16 @@
       <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
 
       <nav class="hero-nav">
-        <a class="active" href="{{ '/' | relative_url }}">Home</a>
-        <a href="#">Our Voices</a>
-        <a href="#">Informative</a>
-        <a href="#">Resources</a>
-        <a href="#">G.A.C. News</a>
-        <a href="#">About</a>
-      </nav>
+  <a href="{{ '/' | relative_url }}">Home</a>
+
+  <!-- Our Voices is a label only; you can point it to Adoptee Stories -->
+  <a href="{{ '/our-voices/adoptee-stories.html' | relative_url }}">Our Voices</a>
+
+  <a href="{{ '/informative/' | relative_url }}">Informative</a>
+  <a href="{{ '/resources/' | relative_url }}">Resources</a>
+  <a href="{{ '/gac-news/' | relative_url }}">G.A.C. News</a>
+  <a href="{{ '/about/' | relative_url }}">About</a>
+</nav>
     </div>
 
   </section>
