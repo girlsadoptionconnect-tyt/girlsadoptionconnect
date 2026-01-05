@@ -3,3 +3,21 @@ layout: category
 title: Unpacking Our Adoption
 category: Unpacking Our Adoption
 ---
+<section class="category-page">
+  <h1>{{ page.title }}</h1>
+
+  <div class="post-grid">
+    {% assign posts = site.posts | where: "category", page.category %}
+    {% for post in posts %}
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        {% if post.cover %}
+          <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="">
+        {% endif %}
+        <div class="post-meta">
+          <div class="post-card-title">{{ post.title }}</div>
+          <div class="post-card-date">{{ post.date | date: "%b %d, %Y" }}</div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
