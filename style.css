@@ -595,91 +595,84 @@ body{
 }
 
 /* =========================
-   Footer (Wix-like)
+   Footer (full-width like Wix)
    ========================= */
 
 .site-footer{
-  margin-top: 90px;
+  width: 100%;
+  margin-top: 80px;
 }
 
-/* full width cloud strip */
-.footer-inner{
+/* clouds should span FULL viewport width */
+.site-footer .footer-inner{
   width: 100%;
   background: url("assets/pink-clouds.jpg") center/cover no-repeat;
-  border-top: 1px solid rgba(160, 120, 130, 0.35);
+  border-top: 1px solid rgba(160, 120, 130, 0.25);
+  border-radius: 0;            /* remove rounded card */
+  overflow: visible;
 }
 
-/* top row: icon + links centered */
-.footer-top{
-  max-width: 1100px;
+/* top area with links */
+.site-footer .footer-top{
+  max-width: 1200px;           /* keeps links centered nicely */
   margin: 0 auto;
   padding: 36px 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-
-  /* subtle wash like Wix so text reads on clouds */
-  background: rgba(255,255,255,0.18);
-}
-
-/* small mark (logo) */
-.footer-mark{
-  width: 44px;
-  height: 44px;
-  object-fit: contain;
-  opacity: 0.55;
-}
-
-/* link line */
-.footer-links{
-  display: flex;
-  align-items: center;
   gap: 14px;
 
-  font-size: 34px;          /* Wix-like big footer text */
-  color: #7f7f7f;
-  letter-spacing: 0.3px;
+  background: rgba(255,255,255,0.28); /* light strip like Wix */
 }
 
-.footer-links a{
+/* make “Contribute | About | Contact” smaller */
+.site-footer .footer-links{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;             /* smaller than before */
+  color: #7a7a7a;
+  letter-spacing: 0.2px;
+}
+
+.site-footer .footer-links a{
   color: inherit;
   text-decoration: none;
 }
 
-.footer-links a:hover{
+.site-footer .footer-links a:hover{
   color: #2a2a2a;
   text-decoration: underline;
 }
 
-.footer-sep{
-  opacity: 0.65;
+.site-footer .footer-sep{
+  opacity: 0.6;
 }
 
-/* bottom bar across entire width */
-.footer-copy{
+/* bottom bar should span FULL width */
+.site-footer .footer-copy{
+  width: 100%;
   background: #C6ACB1;
   color: rgba(255,255,255,0.95);
   text-align: center;
-  padding: 18px 16px;
-  font-size: 24px;
+  padding: 12px 16px;
+
+  font-size: 14px;             /* even smaller */
+  letter-spacing: 0.2px;
+
+  border-radius: 0;            /* remove pill */
+  box-shadow: none;            /* remove pill shadow if any */
 }
 
 /* mobile */
 @media (max-width: 650px){
-  .footer-top{
-    padding: 26px 14px;
-    gap: 12px;
-  }
-
-  .footer-links{
-    font-size: 22px;
-    gap: 10px;
+  .site-footer .footer-links{
+    font-size: 18px;
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .footer-copy{
-    font-size: 18px;
+  .site-footer .footer-copy{
+    font-size: 12px;
   }
 }
