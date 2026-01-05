@@ -652,3 +652,65 @@ body{
   .footer-links{ font-size: 20px; }
   .footer-copy{ font-size: 18px; }
 }
+
+/* =========================
+   Footer (cloud background + mauve copyright bar)
+   ========================= */
+
+.site-footer{
+  margin-top: 90px;
+}
+
+.footer-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 28px;
+  overflow: hidden;
+
+  /* SAME background as header clouds */
+  background: url("assets/pink-clouds.jpg") center/cover no-repeat;
+
+  border: 1px solid rgba(160, 120, 130, 0.45);
+}
+
+/* top row with links */
+.footer-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  padding: 38px 18px;
+  background: rgba(255,255,255,0.35); /* light wash so links are readable */
+  font-size: 28px;
+  color: #7c7c7c;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-links a:hover{
+  color: #222;
+  text-decoration: underline;
+}
+
+.footer-sep{
+  opacity: 0.65;
+}
+
+/* bottom copyright bar */
+.footer-copy{
+  background: #C6ACB1;
+  color: rgba(255,255,255,0.95);
+  text-align: center;
+  padding: 22px 16px;
+  font-size: 22px;
+}
+
+/* mobile sizing */
+@media (max-width: 650px){
+  .footer-links{ font-size: 20px; padding: 28px 14px; flex-wrap: wrap; }
+  .footer-copy{ font-size: 18px; }
+}
