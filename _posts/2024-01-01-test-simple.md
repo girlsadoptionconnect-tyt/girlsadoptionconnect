@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title: "Test Post – Simple Image"
 date: 2024-01-01
