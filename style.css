@@ -455,118 +455,74 @@ body{
 
 
 /* =========================
-   Dropdown nav (no-JS)
+   Dropdown nav (hover)
    ========================= */
 
-/* remove default details marker */
-.nav-dd > summary{
-  list-style: none;
-}
-.nav-dd > summary::-webkit-details-marker{
-  display: none;
-}
-
-/* make nav items look consistent */
-.hero-nav .nav-link,
-.hero-nav .nav-parent{
-  text-decoration: none;
-  font-size: 20px;
-  color: #8a8a8a;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* details wrapper behaves like an inline nav item */
-.nav-dd{
+.hero-nav{
   position: relative;
-  display: inline-block;
+  gap: 42px;
 }
 
-/* little caret */
-.nav-parent::after{
-  content: "▾";
-  font-size: 14px;
-  margin-left: 8px;
-  opacity: 0.7;
-}
-
-/* dropdown menu */
-.nav-menu{
-  display: none;
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  min-width: 260px;
-  background: rgba(255,255,255,0.95);
-  border: 1px solid rgba(210, 180, 188, 0.65);
-  box-shadow: 0 12px 26px rgba(0,0,0,0.10);
-  border-radius: 14px;
-  padding: 10px 10px;
-  z-index: 999;
-}
-
-/* show on open OR hover OR keyboard focus */
-.nav-dd[open] .nav-menu,
-.nav-dd:hover .nav-menu,
-.nav-dd:focus-within .nav-menu{
-  display: block;
-}
-
-/* links inside dropdown */
-.nav-menu a{
-  display: block;
-  padding: 10px 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #6f6f6f;
-  font-size: 18px;
-}
-
-.nav-menu a:hover{
-  background: rgba(236, 200, 208, 0.35);
-  color: #222;
-}
-
-/* keep summary text from shifting */
-.nav-parent{
-  padding: 2px 0;
-}
-
-/* Dropdown nav (hover open) */
-.hero-nav {
-  position: relative;
-}
-
-.nav-item {
+/* wrapper for dropdown items */
+.nav-item{
   position: relative;
   display: inline-flex;
   align-items: center;
 }
 
-.nav-link {
+/* top-level links + dropdown labels */
+.hero-nav > a,
+.nav-link{
+  font-size: 20px;
+  color: #8a8a8a;
+  text-decoration: none;
   background: transparent;
   border: 0;
   padding: 0;
   margin: 0;
   font: inherit;
-  color: inherit;
-  cursor: default; /* label-only */
 }
 
-/* dropdown panel */
-.dropdown {
+/* label-only (no navigation) */
+.nav-link{
+  cursor: default;
+}
+
+/* dropdown panel hidden by default */
+.dropdown{
+  display: none;
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 0;
-  min-width: 240px;
+  margin-top: 10px;
 
+  min-width: 260px;
   background: rgba(236, 200, 208, 0.92);
+  border: 1px solid rgba(210, 180, 188, 0.65);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.10);
   border-radius: 14px;
-  padding: 10px 10px;
-
+  padding: 10px;
+  z-index: 999;
 }
 
-.dropdown a {
+/* “hover bridge” so it doesn’t collapse while moving mouse */
+.dropdown::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+}
+
+/* show dropdown on hover/focus */
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown{
+  display: block;
+}
+
+/* dropdown links */
+.dropdown a{
   display: block;
   padding: 10px 12px;
   border-radius: 10px;
@@ -575,76 +531,8 @@ body{
   font-size: 18px;
 }
 
-.dropdown a:hover {
+.dropdown a:hover{
   color: #222;
   background: rgba(255, 255, 255, 0.45);
-}
-
-/* open on hover */
-.has-dropdown{
-  position: relative;
-}
-
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown{
-  display: block;
-}
-}
-
-/* keep the button looking like the other links */
-.hero-nav > a,
-.hero-nav .nav-link {
-  font-size: 20px;
-  color: #8a8a8a;
-  text-decoration: none;
-}
-
-/* slightly nicer spacing in the pill when mixing links + dropdowns */
-.hero-nav {
-  gap: 42px;
-}
-
-/* mobile: click to open (hover isn't reliable on phones) */
-@media (max-width: 650px) {
-  .dropdown{
-  position:absolute;
-  top: 100%;          /* was calc(100% + 10px) */
-  left: 0;
-  margin-top: 8px;    /* small visual spacing */
-
-  min-width: 240px;
-  background: rgba(236, 200, 208, 0.92);
-  border-radius: 14px;
-  padding: 10px;
-
-  display: none;
-  z-index: 999;
-}
-
-/* Invisible “bridge” so your mouse can travel down without the menu closing */
-.dropdown::before{
-  content:"";
-  position:absolute;
-  left: 0;
-  right: 0;
-  top: -12px;         /* bridge height */
-  height: 12px;
-}
-
-  .dropdown{
-  opacity: 0;
-  transform: translateY(-4px);
-  pointer-events: none;
-  transition: opacity 120ms ease, transform 120ms ease;
-  display: block; /* keep it in flow for transition */
-  visibility: hidden;
-}
-
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown{
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  visibility: visible;
 }
 
