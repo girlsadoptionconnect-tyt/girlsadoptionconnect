@@ -1,39 +1,112 @@
----
-layout: default
----
+/* -------------------------
+   BLOG POST (Wix-style)
+-------------------------- */
 
-<article class="post-wrap">
-  <div class="post-card">
+.post-wrap{
+  background:#fff;
+  padding: 70px 18px 90px;
+}
 
-    <div class="post-kicker">
-      <span class="post-site">Girls Adoption Connect</span>
-      <span class="post-sep">•</span>
-      <span class="post-age">{{ page.date | date: "%b %d, %Y" }}</span>
-    </div>
+.post-card{
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid rgba(236, 200, 208, 0.55);
+  padding: 56px 64px;
+}
 
-    <h1 class="post-title">{{ page.title }}</h1>
+.post-kicker{
+  font-size: 14px;
+  color: #8a8a8a;
+  letter-spacing: 0.2px;
+  margin-bottom: 22px;
+}
 
-    {% if page.author %}
-      <div class="post-byline">By: {{ page.author }}</div>
-    {% endif %}
+.post-site{
+  font-weight: 500;
+}
 
-    <div class="post-intro">
-      <div class="post-intro-text">
-        {% if page.excerpt_text %}
-          <p>{{ page.excerpt_text }}</p>
-        {% endif %}
-      </div>
+.post-sep{
+  margin: 0 10px;
+}
 
-      {% if page.cover %}
-        <div class="post-intro-media">
-          <img class="post-intro-image" src="{{ page.cover | relative_url }}" alt="">
-        </div>
-      {% endif %}
-    </div>
+.post-title{
+  margin: 0 0 10px 0;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #222;
+}
 
-    <div class="post-content">
-      {{ content }}
-    </div>
+.post-byline{
+  margin: 10px 0 26px 0;
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
 
-  </div>
-</article>
+.post-intro{
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
+  align-items: start;
+  margin: 22px 0 36px 0;
+}
+
+.post-intro-text p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.post-intro-media{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-intro-image{
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.post-content{
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.post-content p{
+  margin: 0 0 18px 0;
+}
+
+.post-content img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .post-card{
+    padding: 34px 22px;
+  }
+
+  .post-title{
+    font-size: 34px;
+  }
+
+  .post-intro{
+    grid-template-columns: 1fr;
+  }
+
+  .post-intro-media{
+    justify-content: flex-start;
+  }
+
+  .post-intro-image{
+    max-width: 100%;
+  }
+}
