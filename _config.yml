@@ -1,2 +1,3 @@
 title: Girls Adoption Connect
 baseurl: "/girlsadoptionconnect"
+permalink: /post/:slug/
