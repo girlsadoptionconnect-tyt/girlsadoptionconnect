@@ -23,7 +23,13 @@
   </div>
 
   <!-- INFORMATIVE (single link only, not also in dropdown) -->
-  <a href="{{ '/informative/' | relative_url }}">Informative</a>
+  <div class="nav-item has-dropdown">
+  <a class="nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
+
+  <div class="dropdown">
+    <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
+  </div>
+</div>
 
   <!-- RESOURCES (single page) -->
   <a href="{{ '/resources/' | relative_url }}">Resources</a>
@@ -33,12 +39,12 @@
 
   <!-- ABOUT (dropdown with Policies only) -->
   <div class="nav-item has-dropdown">
-    <button class="nav-link" type="button">About</button>
-    <div class="dropdown">
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
-    </div>
+  <a class="nav-link" href="{{ '/about/' | relative_url }}">About</a>
+    
+  <div class="dropdown">
+    <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
   </div>
+</div>
 </nav>
 
 </nav>
