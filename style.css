@@ -603,20 +603,27 @@ body{
 
 /* mobile: click to open (hover isn't reliable on phones) */
 @media (max-width: 650px) {
-  .dropdown {
-    position: static;
-    display: block;          /* always show under the label on mobile */
-    background: transparent; /* no floating panel on mobile */
-    padding: 0;
-    min-width: 0;
-  }
+  .dropdown{
+  position:absolute;
+  top: 100%;          /* was calc(100% + 10px) */
+  left: 0;
+  margin-top: 8px;    /* small visual spacing */
 
-  .dropdown a {
-    padding: 8px 0;
-    background: transparent;
-  }
+  min-width: 240px;
+  background: rgba(236, 200, 208, 0.92);
+  border-radius: 14px;
+  padding: 10px;
 
-  .nav-link {
-    cursor: default;
-  }
+  display: none;
+  z-index: 999;
+}
+
+/* Invisible “bridge” so your mouse can travel down without the menu closing */
+.dropdown::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: -12px;         /* bridge height */
+  height: 12px;
 }
