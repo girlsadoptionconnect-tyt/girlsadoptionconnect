@@ -9,8 +9,8 @@
       <h1 class="hero-title">Girls Adoption Connect</h1>
       <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
 
-      <nav class="hero-nav">
-  <a href="{{ '/' | relative_url }}">Home</a>
+     <nav class="hero-nav">
+  <a class="nav-a" href="{{ '/' | relative_url }}">Home</a>
 
   <!-- OUR VOICES (label only) -->
   <div class="nav-item has-dropdown">
@@ -22,36 +22,24 @@
     </div>
   </div>
 
-  <!-- INFORMATIVE (single link only, not also in dropdown) -->
+  <!-- INFORMATIVE (page + dropdown to Q&A) -->
   <div class="nav-item has-dropdown">
-  <a class="nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
-
-  <div class="dropdown">
-    <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
+    <a class="nav-a nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
+    <div class="dropdown">
+      <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
+    </div>
   </div>
-</div>
 
-  <!-- RESOURCES (single page) -->
-  <a href="{{ '/resources/' | relative_url }}">Resources</a>
+  <a class="nav-a" href="{{ '/resources/' | relative_url }}">Resources</a>
+  <a class="nav-a" href="{{ '/gac-news/' | relative_url }}">G.A.C. News</a>
 
-  <!-- G.A.C. NEWS (single page) -->
-  <a href="{{ '/gac-news/' | relative_url }}">G.A.C. News</a>
-
-  <!-- ABOUT (dropdown with Policies only) -->
+  <!-- ABOUT (page + dropdown to Policies) -->
   <div class="nav-item has-dropdown">
-  <a class="nav-link" href="{{ '/about/' | relative_url }}">About</a>
-    
-  <div class="dropdown">
-    <div class="nav-item has-dropdown">
-  <button class="nav-link" type="button">Our Voices</button>
-  <div class="dropdown">
-    <a href="...">Adoptee Stories</a>
-    <a href="...">Unpacking Our Adoption</a>
-    <a href="...">The Adoptee Experience Series</a>
+    <a class="nav-a nav-link" href="{{ '/about/' | relative_url }}">About</a>
+    <div class="dropdown">
+      <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
+    </div>
   </div>
-</div>
-  </div>
-</div>
 </nav>
 
 </nav>
