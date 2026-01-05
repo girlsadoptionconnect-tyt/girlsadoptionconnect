@@ -1,93 +1,148 @@
-body {
-  margin: 0;
+:root{
+  --pink-pill: rgba(236, 200, 208, 0.55);
+  --text-gray: #7c7c7c;
+}
+
+body{
+  margin:0;
   font-family: Georgia, serif;
+  color: var(--text-gray);
+  background: #fff;
 }
 
-/* NAV */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+/* small top left text (optional, like your current header) */
+.topbar{
+  padding: 18px 28px;
+}
+.site-name{
+  font-weight: 700;
+  font-size: 22px;
+  color: #222;
+}
+
+/* HERO */
+.hero-home{
   position: relative;
-  z-index: 10;
-  background: white;
-}
-
-.logo {
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-}
-
-/* HERO (Wix-style layering) */
-.hero {
-  position: relative;
-  height: 80vh;
+  height: 420px;
   overflow: hidden;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+/* pink clouds background */
+.hero-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
-.hero-content {
-  position: absolute;
-  left: 10%;
-  top: 30%;
+/* big circular logo on the left */
+.hero-logo{
+  position:absolute;
+  left: 55px;
+  top: 38px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
   z-index: 2;
-  color: white;
-  max-width: 520px;
+  opacity: 0.95;
 }
 
-.hero-content h1 {
-  margin: 0 0 10px 0;
-  font-size: 3rem;
-  line-height: 1.05;
+/* title + nav block */
+.hero-titleblock{
+  position:absolute;
+  left: 400px;   /* pushes to right of logo */
+  top: 95px;
+  z-index: 3;
+  max-width: 980px;
 }
 
-.hero-content p {
+/* headline */
+.hero-title{
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #7a7a7a;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .nav {
-    padding: 16px 18px;
+/* italic tagline */
+.hero-tagline{
+  margin: 6px 0 18px 4px;
+  font-size: 22px;
+  font-style: italic;
+  color: #8a8a8a;
+}
+
+/* pink pill nav bar */
+.hero-nav{
+  display:flex;
+  gap: 42px;
+  align-items:center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--pink-pill);
+  width: fit-content;
+}
+
+.hero-nav a{
+  text-decoration:none;
+  font-size: 20px;
+  color: #8a8a8a;
+}
+
+.hero-nav a.active{
+  color:#222;
+}
+
+/* Responsive: stack / shrink for smaller screens */
+@media (max-width: 950px){
+  .hero-home{ height: 520px; }
+
+  .hero-logo{
+    left: 24px;
+    top: 28px;
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-titleblock{
+    left: 285px;
+    top: 70px;
+  }
+
+  .hero-title{ font-size: 44px; }
+  .hero-tagline{ font-size: 18px; }
+
+  .hero-nav{
+    gap: 22px;
     flex-wrap: wrap;
-    gap: 10px;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 650px){
+  .hero-home{ height: 620px; }
+
+  .hero-logo{
+    position: relative;
+    display:block;
+    margin: 24px auto 0 auto;
+    left: auto;
+    top: auto;
   }
 
-  .nav a {
-    margin-left: 0;
-    margin-right: 14px;
-    display: inline-block;
-    padding: 6px 0;
+  .hero-titleblock{
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 18px 18px 0 18px;
+    text-align: center;
   }
 
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-content {
-    left: 7%;
-    top: 22%;
-    max-width: 85%;
-  }
-
-  .hero-content h1 {
-    font-size: 2.1rem;
+  .hero-nav{
+    justify-content: center;
+    margin: 18px auto 0 auto;
   }
 }
