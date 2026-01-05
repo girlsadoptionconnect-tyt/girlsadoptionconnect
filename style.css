@@ -583,9 +583,14 @@ body{
 }
 
 /* open on hover */
+.has-dropdown{
+  position: relative;
+}
+
 .has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown {
+.has-dropdown:focus-within .dropdown{
   display: block;
+}
 }
 
 /* keep the button looking like the other links */
@@ -627,3 +632,5 @@ body{
   top: -12px;         /* bridge height */
   height: 12px;
 }
+
+
