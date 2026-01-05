@@ -564,8 +564,6 @@ body{
   border-radius: 14px;
   padding: 10px 10px;
 
-  display: none;
-  z-index: 999;
 }
 
 .dropdown a {
