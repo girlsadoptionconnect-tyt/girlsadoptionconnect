@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | Girls Adoption Connect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <main class="post-wrap">
+    <a class="post-back" href="/blog.html">← Back to G.A.C. News</a>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+      {% if page.category %} • {{ page.category }}{% endif %}
+    </p>
+
+    {% if page.cover %}
+      <img class="post-cover" src="{{ page.cover }}" alt="">
+    {% endif %}
+
+    <article class="post-body">
+      {{ content }}
+    </article>
+
+    {% if page.carousel %}
+      <h2 class="post-subhead">Photos</h2>
+
+      <div class="carousel">
+        <button class="car-btn prev" type="button" aria-label="Previous">‹</button>
+
+        <div class="car-track" tabindex="0">
+          {% for img in page.carousel %}
+            <div class="car-slide">
+              <img src="{{ img }}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+
+        <button class="car-btn next" type="button" aria-label="Next">›</button>
+      </div>
+
+      <script>
+        (function () {
+          const root = document.currentScript.previousElementSibling;
+          if (!root || !root.classList || !root.classList.contains('carousel')) return;
+
+          const track = root.querySelector('.car-track');
+          const prev = root.querySelector('.car-btn.prev');
+          const next = root.querySelector('.car-btn.next');
+          if (!track || !prev || !next) return;
+
+          function slideWidth() {
+            const slide = track.querySelector('.car-slide');
+            if (!slide) return 0;
+            const styles = getComputedStyle(track);
+            const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
+            return slide.getBoundingClientRect().width + gap;
+          }
+
+          prev.addEventListener('click', () => track.scrollBy({ left: -slideWidth(), behavior: 'smooth' }));
+          next.addEventListener('click', () => track.scrollBy({ left: slideWidth(), behavior: 'smooth' }));
+        })();
+      </script>
+    {% endif %}
+
+  </main>
+
+</body>
+</html>
