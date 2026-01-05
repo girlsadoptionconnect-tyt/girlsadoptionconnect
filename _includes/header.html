@@ -10,15 +10,44 @@
       <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
 
       <nav class="hero-nav">
-  <a href="{{ '/' | relative_url }}">Home</a>
 
-  <!-- Our Voices is a label only; you can point it to Adoptee Stories -->
-  <a href="{{ '/our-voices/adoptee-stories.html' | relative_url }}">Our Voices</a>
+  <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
 
-  <a href="{{ '/informative/' | relative_url }}">Informative</a>
-  <a href="{{ '/resources/' | relative_url }}">Resources</a>
-  <a href="{{ '/gac-news/' | relative_url }}">G.A.C. News</a>
-  <a href="{{ '/about/' | relative_url }}">About</a>
+  <!-- OUR VOICES (label only, dropdown) -->
+  <details class="nav-dd">
+    <summary class="nav-parent">Our Voices</summary>
+    <div class="nav-menu">
+      <a href="{{ '/our-voices/adoptee-stories.html' | relative_url }}">Adoptee Stories</a>
+      <a href="{{ '/our-voices/qa.html' | relative_url }}">Q&amp;A</a>
+      <a href="{{ '/our-voices/adoptee-experience-series.html' | relative_url }}">
+        The Adoptee Experience Series
+      </a>
+    </div>
+  </details>
+
+  <!-- INFORMATIVE -->
+  <details class="nav-dd">
+    <summary class="nav-parent">Informative</summary>
+    <div class="nav-menu">
+      <a href="{{ '/informative/' | relative_url }}">Informative</a>
+      <a href="{{ '/informative/qa.html' | relative_url }}">Q&amp;A</a>
+    </div>
+  </details>
+
+  <a class="nav-link" href="{{ '/resources/' | relative_url }}">Resources</a>
+
+  <!-- G.A.C. News (page + category) -->
+  <a class="nav-link" href="{{ '/gac-news/' | relative_url }}">G.A.C. News</a>
+
+  <!-- ABOUT -->
+  <details class="nav-dd">
+    <summary class="nav-parent">About</summary>
+    <div class="nav-menu">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/about/policies.html' | relative_url }}">Policies</a>
+    </div>
+  </details>
+
 </nav>
     </div>
 
