@@ -554,3 +554,42 @@ body{
 .nav-item > button:hover{
   color: #222;
 }
+
+
+/* About page: wrapped image + caption */
+.about-content::after{
+  content:"";
+  display:block;
+  clear: both;
+}
+
+.about-media{
+  float: right;
+  width: 42%;
+  max-width: 420px;
+  margin: 8px 0 22px 34px;
+  text-align: center;
+}
+
+.about-photo{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-caption{
+  font-size: 14px;
+  color: #8a8a8a;
+  line-height: 1.35;
+  margin-top: 10px;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 768px){
+  .about-media{
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 18px 0 18px 0;
+  }
+}
