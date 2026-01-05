@@ -543,3 +543,14 @@ body{
   line-height: 1;
 }
 
+/* Make top-level nav items feel interactive on hover */
+.nav-item > a,
+.nav-item > button{
+  cursor: pointer;
+}
+
+/* Optional: subtle hover effect like Wix */
+.nav-item > a:hover,
+.nav-item > button:hover{
+  color: #222;
+}
