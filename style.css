@@ -595,104 +595,60 @@ body{
 }
 
 /* =========================
-   Footer
-   ========================= */
-
-.site-footer{
-  margin-top: 120px;
-  background: rgba(236, 200, 208, 0.35);
-}
-
-.footer-inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 44px 20px 26px 20px;
-  text-align: center;
-
-  border-top: 1px solid rgba(160, 120, 130, 0.45);
-}
-
-.footer-links{
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-
-  font-size: 26px;
-  letter-spacing: 0.2px;
-  color: #7c7c7c;
-}
-
-.footer-links a{
-  text-decoration: none;
-  color: #7c7c7c;
-}
-
-.footer-links a:hover{
-  color: #222;
-  text-decoration: underline;
-}
-
-.footer-sep{
-  opacity: 0.65;
-}
-
-.footer-copy{
-  margin-top: 22px;
-  font-size: 22px;
-  color: #ffffff;
-  background: rgba(150, 120, 130, 0.55);
-
-  padding: 18px 18px;
-  border-radius: 18px;
-  display: inline-block;
-}
-
-/* mobile sizing */
-@media (max-width: 650px){
-  .footer-links{ font-size: 20px; }
-  .footer-copy{ font-size: 18px; }
-}
-
-/* =========================
-   Footer (cloud background + mauve copyright bar)
+   Footer (Wix-like)
    ========================= */
 
 .site-footer{
   margin-top: 90px;
 }
 
+/* full width cloud strip */
 .footer-inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  border-radius: 28px;
-  overflow: hidden;
-
-  /* SAME background as header clouds */
+  width: 100%;
   background: url("assets/pink-clouds.jpg") center/cover no-repeat;
-
-  border: 1px solid rgba(160, 120, 130, 0.45);
+  border-top: 1px solid rgba(160, 120, 130, 0.35);
 }
 
-/* top row with links */
+/* top row: icon + links centered */
+.footer-top{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  /* subtle wash like Wix so text reads on clouds */
+  background: rgba(255,255,255,0.18);
+}
+
+/* small mark (logo) */
+.footer-mark{
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  opacity: 0.55;
+}
+
+/* link line */
 .footer-links{
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 14px;
 
-  padding: 38px 18px;
-  background: rgba(255,255,255,0.35); /* light wash so links are readable */
-  font-size: 28px;
-  color: #7c7c7c;
+  font-size: 34px;          /* Wix-like big footer text */
+  color: #7f7f7f;
+  letter-spacing: 0.3px;
 }
 
 .footer-links a{
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .footer-links a:hover{
-  color: #222;
+  color: #2a2a2a;
   text-decoration: underline;
 }
 
@@ -700,17 +656,30 @@ body{
   opacity: 0.65;
 }
 
-/* bottom copyright bar */
+/* bottom bar across entire width */
 .footer-copy{
   background: #C6ACB1;
   color: rgba(255,255,255,0.95);
   text-align: center;
-  padding: 22px 16px;
-  font-size: 22px;
+  padding: 18px 16px;
+  font-size: 24px;
 }
 
-/* mobile sizing */
+/* mobile */
 @media (max-width: 650px){
-  .footer-links{ font-size: 20px; padding: 28px 14px; flex-wrap: wrap; }
-  .footer-copy{ font-size: 18px; }
+  .footer-top{
+    padding: 26px 14px;
+    gap: 12px;
+  }
+
+  .footer-links{
+    font-size: 22px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-copy{
+    font-size: 18px;
+  }
 }
