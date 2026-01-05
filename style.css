@@ -393,3 +393,29 @@ body{
     margin: 0 auto;
   }
 }
+
+/* Wix-style floated image inside blog posts */
+.post-float-image{
+  float: right;
+  width: 360px;              /* adjust size here */
+  margin: 0 0 20px 28px;     /* space from text */
+  border: 1px solid rgba(210,180,188,0.6);
+  padding: 10px;
+  background: #fff;
+}
+
+/* Clear float after post content */
+.post-content::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 700px){
+  .post-float-image{
+    float: none;
+    width: 100%;
+    margin: 0 0 18px 0;
+  }
+}
