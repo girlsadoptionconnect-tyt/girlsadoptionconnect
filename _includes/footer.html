@@ -1,27 +1,23 @@
 <footer class="site-footer">
   <div class="footer-inner">
-
-    <nav class="footer-links" aria-label="Footer">
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeLQdodhQ516ALAxmTzlnEXC8hxI6ucNRZpijSP8zD1z3LCow/viewform"
-        target="_blank"
-        rel="noopener"
+    <div class="footer-top">
+      <img
+        class="footer-mark"
+        src="{{ '/assets/logo-circle.png' | relative_url }}"
+        alt="Girls Adoption Connect"
       >
-        Contribute
-      </a>
 
-      <span class="footer-sep">|</span>
-
-      <a href="{{ '/about/' | relative_url }}">About</a>
-
-      <span class="footer-sep">|</span>
-
-      <a href="mailto:girlsadoptionconnect@gmail.com">Contact</a>
-    </nav>
-
-    <div class="footer-copy">
-      © {{ site.time | date: "%Y" }} Girls Adoption Connect
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLQdodhQ516ALAxmTzlnEXC8hxI6ucNRZpijSP8zD1z3LCow/viewform" target="_blank" rel="noopener">Contribute</a>
+        <span class="footer-sep">|</span>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <span class="footer-sep">|</span>
+        <a href="mailto:girlsadoptionconnect@gmail.com">Contact</a>
+      </nav>
     </div>
 
+    <div class="footer-copy">
+      © {{ "now" | date: "%Y" }} Girls Adoption Connect
+    </div>
   </div>
 </footer>
