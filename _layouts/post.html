@@ -2,30 +2,38 @@
 layout: default
 ---
 
-<article class="post">
-  <div class="post-top">
-    <a class="post-back" href="{{ '/gac-news/' | relative_url }}">&larr; Back to G.A.C. News</a>
-  </div>
+<article class="post-wrap">
+  <div class="post-card">
 
-  <h1 class="post-title">{{ page.title }}</h1>
-
-  <div class="post-meta">
-    <div class="post-meta-line">
-      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
-      {% if page.category %}<span class="post-dot">•</span><span class="post-category">{{ page.category }}</span>{% endif %}
-      {% if page.read_time %}<span class="post-dot">•</span><span class="post-read">{{ page.read_time }} min read</span>{% endif %}
+    <div class="post-kicker">
+      <span class="post-site">Girls Adoption Connect</span>
+      <span class="post-sep">•</span>
+      <span class="post-age">{{ page.date | date: "%b %d, %Y" }}</span>
     </div>
 
+    <h1 class="post-title">{{ page.title }}</h1>
+
     {% if page.author %}
-      <div class="post-author">By: {{ page.author }}</div>
+      <div class="post-byline">By: {{ page.author }}</div>
     {% endif %}
-  </div>
 
-  {% if page.cover %}
-    <img class="post-cover" src="{{ page.cover | relative_url }}" alt="">
-  {% endif %}
+    <div class="post-intro">
+      <div class="post-intro-text">
+        {% if page.excerpt_text %}
+          <p>{{ page.excerpt_text }}</p>
+        {% endif %}
+      </div>
 
-  <div class="post-content">
-    {{ content }}
+      {% if page.cover %}
+        <div class="post-intro-media">
+          <img class="post-intro-image" src="{{ page.cover | relative_url }}" alt="">
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
   </div>
 </article>
