@@ -452,3 +452,82 @@ body{
 .post-row-meta{ margin-top: 6px; font-size: 14px; color: #8a8a8a; display:flex; gap:10px; align-items:center; }
 .post-row-meta .dot{ opacity: 0.6; }
 .empty{ color:#8a8a8a; }
+
+
+/* =========================
+   Dropdown nav (no-JS)
+   ========================= */
+
+/* remove default details marker */
+.nav-dd > summary{
+  list-style: none;
+}
+.nav-dd > summary::-webkit-details-marker{
+  display: none;
+}
+
+/* make nav items look consistent */
+.hero-nav .nav-link,
+.hero-nav .nav-parent{
+  text-decoration: none;
+  font-size: 20px;
+  color: #8a8a8a;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* details wrapper behaves like an inline nav item */
+.nav-dd{
+  position: relative;
+  display: inline-block;
+}
+
+/* little caret */
+.nav-parent::after{
+  content: "▾";
+  font-size: 14px;
+  margin-left: 8px;
+  opacity: 0.7;
+}
+
+/* dropdown menu */
+.nav-menu{
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 260px;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(210, 180, 188, 0.65);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 10px 10px;
+  z-index: 999;
+}
+
+/* show on open OR hover OR keyboard focus */
+.nav-dd[open] .nav-menu,
+.nav-dd:hover .nav-menu,
+.nav-dd:focus-within .nav-menu{
+  display: block;
+}
+
+/* links inside dropdown */
+.nav-menu a{
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #6f6f6f;
+  font-size: 18px;
+}
+
+.nav-menu a:hover{
+  background: rgba(236, 200, 208, 0.35);
+  color: #222;
+}
+
+/* keep summary text from shifting */
+.nav-parent{
+  padding: 2px 0;
+}
