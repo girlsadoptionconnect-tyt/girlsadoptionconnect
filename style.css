@@ -3,6 +3,7 @@ body {
   font-family: Georgia, serif;
 }
 
+/* NAV */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -10,6 +11,12 @@ body {
   padding: 20px 40px;
   position: relative;
   z-index: 10;
+  background: white;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .nav a {
@@ -18,6 +25,7 @@ body {
   color: black;
 }
 
+/* HERO (Wix-style layering) */
 .hero {
   position: relative;
   height: 80vh;
@@ -33,20 +41,53 @@ body {
   z-index: 1;
 }
 
-.hero h1 {
+.hero-content {
   position: absolute;
-  top: 30%;
   left: 10%;
+  top: 30%;
   z-index: 2;
-  font-size: 3rem;
   color: white;
+  max-width: 520px;
 }
 
-.hero p {
-  position: absolute;
-  top: 45%;
-  left: 10%;
-  z-index: 2;
-  max-width: 400px;
-  color: white;
+.hero-content h1 {
+  margin: 0 0 10px 0;
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav {
+    padding: 16px 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 14px;
+    display: inline-block;
+    padding: 6px 0;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content {
+    left: 7%;
+    top: 22%;
+    max-width: 85%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
 }
