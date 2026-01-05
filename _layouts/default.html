@@ -1,15 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }} | {{ site.title }}</title>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- load your main CSS -->
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-  </head>
+  <!-- IMPORTANT: use relative_url so it works with baseurl -->
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
 
-  <body>
+<body>
+
+  {% include header.html %}
+
+  <main>
     {{ content }}
-  </body>
+  </main>
+
+</body>
 </html>
