@@ -1,6 +1,6 @@
----
+----
 layout: post
-title: "The irony of being an only daughter (twice)"
+title: "Test Post – Simple Image"
 date: 2024-01-01
 category: Informative
 author: Téa Tamburo
