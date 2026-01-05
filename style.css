@@ -536,3 +536,10 @@ body{
   background: rgba(255, 255, 255, 0.45);
 }
 
+/* force same type sizing for links + buttons in the pill */
+.hero-nav a,
+.hero-nav button{
+  font-size: 20px;
+  line-height: 1;
+}
+
