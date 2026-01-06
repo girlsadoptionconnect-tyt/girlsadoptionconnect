@@ -666,7 +666,8 @@ body{
 
 /* MAUVE COPYRIGHT BAR */
 .footer-copy{
-  width: 100%;
+  max-width: 980px;          /* match your main container width */
+  margin: 0 auto;            /* center it */
   background: #C6ACB1;
   color: rgba(255,255,255,0.95);
 
@@ -674,6 +675,8 @@ body{
   font-size: 11px;
   letter-spacing: 0.3px;
   text-align: left;
+
+  border-radius: 0 0 22px 22px;  /* optional: match your rounded page bottom */
 }
 
 /* MOBILE */
