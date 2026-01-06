@@ -896,4 +896,7 @@ body{
   margin-top: 18px;
 }
 
-
+/* Global buffer between header/hero and page content */
+.site-main{
+  padding-top: 80px;
+}
