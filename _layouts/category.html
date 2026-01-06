@@ -9,32 +9,3 @@ layout: default
         {{ page.subtitle }}
       </p>
     {% endif %}
-<!-- GRID WRAPPER -->
-    <div class="post-grid">
-      {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
-      {% for post in posts %}
-        <a class="post-card" href="{{ post.url | relative_url }}">
-          {% if post.cover %}
-            <img
-              class="post-thumb"
-              src="{{ post.cover | relative_url }}"
-              alt=""
-            >
-          {% endif %}
-
-          <div class="post-meta">
-            <div class="post-card-title">{{ post.title }}</div>
-            <div class="post-card-sub">
-              {{ post.date | date: "%B %d, %Y" }}
-              {% if post.author %}
-                <span class="post-card-dot">•</span>
-                <span>{{ post.author }}</span>
-              {% endif %}
-            </div>
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-
-  </div>
-</section>
