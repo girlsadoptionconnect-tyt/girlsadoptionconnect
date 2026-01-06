@@ -595,7 +595,7 @@ body{
 }
 
 /* =========================
-   Footer (full-width like Wix)
+   Footer (Wix-style, full width)
    ========================= */
 
 .site-footer{
@@ -603,37 +603,35 @@ body{
   margin-top: 80px;
 }
 
-/* clouds should span FULL viewport width */
+/* FULL-WIDTH CLOUD BACKGROUND */
 .site-footer .footer-inner{
   width: 100%;
-  background: url("assets/pink-clouds.jpg") center/cover no-repeat;
+  background: url("../assets/pink-clouds.jpg") center / cover no-repeat;
   border-top: 1px solid rgba(160, 120, 130, 0.25);
-  border-radius: 0;            /* remove rounded card */
-  overflow: visible;
 }
 
-/* top area with links */
+/* TOP LINK ROW (very subtle) */
 .site-footer .footer-top{
-  max-width: 1200px;           /* keeps links centered nicely */
-  margin: 0 auto;
-  padding: 36px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  width: 100%;
+  padding: 22px 18px;
 
-  background: rgba(255,255,255,0.28); /* light strip like Wix */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.22);
 }
 
-/* make “Contribute | About | Contact” smaller */
+/* Contribute | About | Contact */
 .site-footer .footer-links{
   display: flex;
   align-items: center;
   gap: 12px;
 
-  font-size: 22px;             /* smaller than before */
-  color: #7a7a7a;
-  letter-spacing: 0.2px;
+  font-size: 13px;
+  color: #8a8a8a;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
 .site-footer .footer-links a{
@@ -642,7 +640,7 @@ body{
 }
 
 .site-footer .footer-links a:hover{
-  color: #2a2a2a;
+  color: #555;
   text-decoration: underline;
 }
 
@@ -650,29 +648,30 @@ body{
   opacity: 0.6;
 }
 
-/* bottom bar should span FULL width */
+/* BOTTOM MAUVE BAR */
 .site-footer .footer-copy{
   width: 100%;
   background: #C6ACB1;
-  color: rgba(255,255,255,0.95);
-  text-align: center;
-  padding: 12px 16px;
+  color: rgba(255,255,255,0.9);
 
-  font-size: 14px;             /* even smaller */
-  letter-spacing: 0.2px;
+  padding: 10px 24px;
+  text-align: left;
 
-  border-radius: 0;            /* remove pill */
-  box-shadow: none;            /* remove pill shadow if any */
+  font-size: 12px;
+  letter-spacing: 0.3px;
 }
 
-/* mobile */
+/* MOBILE TWEAKS */
 @media (max-width: 650px){
   .site-footer .footer-links{
-    font-size: 18px;
+    font-size: 12px;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
+
   .site-footer .footer-copy{
-    font-size: 12px;
+    font-size: 11px;
+    text-align: center;
   }
 }
