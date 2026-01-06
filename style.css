@@ -423,8 +423,10 @@ body{
 
 /* Category listing pages */
 .category-wrap{
-  padding: 56px 18px 90px;
+  padding: 120px 18px 90px;  /* increased top padding = buffer */
   background: rgba(248, 240, 242, 0.45);
+}
+
 }
 .category-card{
   max-width: 980px;
@@ -849,14 +851,6 @@ body{
   opacity: 0.6;
 }
 
-.category-page{
-  padding-top: 90px;   /* buffer below hero */
-}
-
-.category-wrap{
-  padding-top: 90px;   /* ← THIS is the buffer */
-}
-
 /* responsive */
 @media (max-width: 980px){
   .post-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -890,4 +884,16 @@ body{
   position: relative;
   top: 0 !important;
 }
+
+/* Buffer for GRID category pages (Informative-style) */
+.category-page{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 120px 18px 0;   /* buffer below hero + side padding */
+}
+
+.category-page .post-grid{
+  margin-top: 18px;
+}
+
 
