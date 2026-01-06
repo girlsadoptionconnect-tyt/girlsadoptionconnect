@@ -440,17 +440,13 @@ body{
 /* Intro text ABOVE grid */
 .category-intro{
   max-width: 980px;          /* matches grid */
-  margin: 0 auto 40px;       /* centers block */
+  margin: 0 auto 40px;       /* centers the block */
   padding: 0 18px;           /* aligns with cards */
 
-  text-align: center;          
+  text-align: left;          /* LEFT aligned text */
   color: #7a7a7a;
   font-size: 14px;
   line-height: 1.25;
-}
-
-.category-intro p{
-  margin: 0 0 14px 0;
 }
 
 .category-intro p{
