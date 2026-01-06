@@ -812,7 +812,7 @@ body{
 
   /* prevents giant cards */
   max-width: 360px;
-  justify-self: start; /* keeps them aligned nicely instead of stretching */
+  justify-self: center; 
 }
 
 /* Square post thumbnails on category pages */
@@ -847,6 +847,10 @@ body{
 
 .post-card-dot{
   opacity: 0.6;
+}
+
+.category-page{
+  padding-top: 90px;   /* buffer below hero */
 }
 
 .category-wrap{
