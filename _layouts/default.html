@@ -11,12 +11,25 @@
 
 <body>
 
-  {% include header.html %}
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  </head>
 
-  <main>
-    {{ content }}
+  <body>
+    {% include header.html %}
+
+    <main class="site-main">
+      {{ content }}
+    </main>
+
     {% include footer.html %}
-  </main>
+  </body>
+</html>
 
 </body>
 </html>
