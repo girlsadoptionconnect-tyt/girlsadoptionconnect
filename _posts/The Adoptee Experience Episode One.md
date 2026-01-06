@@ -3,7 +3,7 @@ layout: post
 title: "The Adoptee Experience: Episode One"
 date: 2021-27-11
 author: Ann, Iris, Joy, and Téa
-category: Informative
+category: The Adoptee Experience Series
 cover: assets/posts/The Adoptee Experience Episode One.png
 ---
 
