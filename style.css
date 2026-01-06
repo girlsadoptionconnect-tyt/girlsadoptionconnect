@@ -803,13 +803,14 @@ body{
   padding: 0;
 }
 
+/* Square post thumbnails on category pages */
 .post-thumb{
   width: 100%;
-  height: 190px;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;      /* forces square */
+  object-fit: cover;        /* crops nicely */
   display: block;
+  border-radius: 14px 14px 0 0;  /* rounded top corners only */
 }
-
 .post-grid .post-meta{
   margin: 0;
   padding: 14px 16px 16px;
