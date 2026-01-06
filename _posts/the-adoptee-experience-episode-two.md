@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: "XXXXXX"
+title: "The adoptee experience: Episode two"
 date: 2023-08-31
 author: Mei, Jasmine, Anica, and Téa
 category: The Adoptee Experience Series
