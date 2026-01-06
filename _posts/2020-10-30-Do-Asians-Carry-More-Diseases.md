@@ -11,12 +11,12 @@ Most summers, my family has flown to Minnesota. This summer, because of COVID-19
 I wasn’t worried about getting infected with the disease. I was worried that we were traveling through four states that are more diverse than Seattle and what people might say about me, a person of Asian descent, wearing a mask.
 
 <img
-  src="{{ '/assets/posts/Do Asians Carry More Diseases/B.jpg' | relative_url }}"
+  src="{{ '/assets/posts/Do Asians Carry More Diseases/B' | relative_url }}"
   alt="Do Asians Carry More Diseases"
   class="post-float-image"
 />
 
-![Do Asians Carry More Diseases]({{ '/assets/posts/Do Asians Carry More Diseases/B.jpg' | relative_url }})
+![Do Asians Carry More Diseases]({{ '/assets/posts/Do Asians Carry More Diseases/B' | relative_url }})
 
 Assumptions that people of Asian descent have carried diseases have been around for hundreds of years. This racist idea has seen a strong normalization by President Trump, as he calls COVID-19 “China Virus” and “China Plague.”
 
