@@ -788,8 +788,16 @@ body{
 
 .post-grid{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  /* responsive columns instead of fixed 3 */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
   gap: 22px;
+
+  /* keeps the grid from stretching too wide */
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
 }
 
 .post-grid .post-card{
@@ -797,20 +805,24 @@ body{
   text-decoration: none;
   background: rgba(255,255,255,0.95);
   border: 1px solid rgba(210, 180, 188, 0.65);
-  border-radius: 10px;
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 10px 22px rgba(0,0,0,0.05);
   padding: 0;
+
+  /* prevents giant cards */
+  max-width: 360px;
+  justify-self: start; /* keeps them aligned nicely instead of stretching */
 }
 
 /* Square post thumbnails on category pages */
 .post-thumb{
   width: 100%;
-  aspect-ratio: 1 / 1;      /* forces square */
-  object-fit: cover;        /* crops nicely */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   display: block;
-  border-radius: 14px 14px 0 0;  /* rounded top corners only */
 }
+
 .post-grid .post-meta{
   margin: 0;
   padding: 14px 16px 16px;
