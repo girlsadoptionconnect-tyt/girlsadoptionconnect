@@ -849,6 +849,10 @@ body{
   opacity: 0.6;
 }
 
+.category-wrap{
+  padding-top: 90px;   /* ← THIS is the buffer */
+}
+
 /* responsive */
 @media (max-width: 980px){
   .post-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
