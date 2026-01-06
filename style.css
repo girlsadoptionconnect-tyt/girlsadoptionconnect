@@ -666,7 +666,7 @@ body{
 
 /* MAUVE COPYRIGHT BAR */
 .footer-copy{
-  max-width: 1200px;          
+  max-width: 100%;          
   margin: 0 auto;           
   background: #C6ACB1;
   color: rgba(255,255,255,0.95);
