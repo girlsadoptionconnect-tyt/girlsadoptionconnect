@@ -427,23 +427,34 @@ body{
   background: rgba(248, 240, 242, 0.45);
 }
 
-}
+/* Category card (title only) */
 .category-card{
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 28px;
   background: rgba(255,255,255,0.9);
   border: 1px solid rgba(210, 180, 188, 0.65);
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   padding: 34px 40px;
 }
 
-/* Subtitle above grid */
-.category-subtitle{
-  max-width: 760px;      /* slightly narrower than grid = elegant */
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.65;
+/* Intro text ABOVE grid */
+.category-intro{
+  max-width: 980px;          /* matches grid */
+  margin: 0 auto 40px;       /* centers block */
+  padding: 0 18px;           /* aligns with cards */
+
+  text-align: left;          /* left-aligned text */
   color: #7a7a7a;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.category-intro p{
+  margin: 0 0 14px 0;
+}
+
+.category-intro p{
+  margin: 0 0 14px 0;
 }
 
 .category-title{
