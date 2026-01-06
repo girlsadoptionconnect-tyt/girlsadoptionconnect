@@ -666,8 +666,8 @@ body{
 
 /* MAUVE COPYRIGHT BAR */
 .footer-copy{
-  max-width: 980px;          /* match your main container width */
-  margin: 0 auto;            /* center it */
+  max-width: 1200px;          
+  margin: 0 auto;           
   background: #C6ACB1;
   color: rgba(255,255,255,0.95);
 
