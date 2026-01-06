@@ -604,10 +604,17 @@ body{
   font-family: inherit;
 }
 
-/* CLOUD BACKGROUND */
-.footer-inner{
+/* Clouds background spans FULL width */
+.site-footer .footer-inner{
   width: 100%;
-  background: url("../assets/pink-clouds.jpg") center / cover no-repeat;
+
+  /* IMPORTANT: use site-root path so it works on GitHub Pages */
+  background-image: url("/assets/pink-clouds.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-top: 1px solid rgba(160, 120, 130, 0.25);
 }
 
 /* TOP CONTENT */
