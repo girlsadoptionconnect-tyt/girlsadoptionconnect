@@ -595,83 +595,91 @@ body{
 }
 
 /* =========================
-   Footer (Wix-style, full width)
+   Footer (matches site style)
    ========================= */
 
 .site-footer{
   width: 100%;
-  margin-top: 80px;
+  margin-top: 90px;
+  font-family: inherit;
 }
 
-/* FULL-WIDTH CLOUD BACKGROUND */
-.site-footer .footer-inner{
+/* CLOUD BACKGROUND */
+.footer-inner{
   width: 100%;
   background: url("../assets/pink-clouds.jpg") center / cover no-repeat;
-  border-top: 1px solid rgba(160, 120, 130, 0.25);
 }
 
-/* TOP LINK ROW (very subtle) */
-.site-footer .footer-top{
-  width: 100%;
-  padding: 22px 18px;
+/* TOP CONTENT */
+.footer-top{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
 
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-
-  background: rgba(255, 255, 255, 0.22);
+  gap: 18px;
 }
 
-/* Contribute | About | Contact */
-.site-footer .footer-links{
+/* LOGO — SMALL & SUBTLE */
+.footer-logo{
+  width: 20px;
+  height: auto;
+  opacity: 0.45;
+}
+
+/* LINKS */
+.footer-links{
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 
   font-size: 13px;
-  color: #8a8a8a;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  color: #7f7f7f;
 }
 
-.site-footer .footer-links a{
+.footer-links a{
   color: inherit;
   text-decoration: none;
 }
 
-.site-footer .footer-links a:hover{
+.footer-links a:hover{
   color: #555;
   text-decoration: underline;
 }
 
-.site-footer .footer-sep{
-  opacity: 0.6;
+.footer-sep{
+  opacity: 0.5;
 }
 
-/* BOTTOM MAUVE BAR */
-.site-footer .footer-copy{
+/* MAUVE COPYRIGHT BAR */
+.footer-copy{
   width: 100%;
   background: #C6ACB1;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.95);
 
   padding: 10px 24px;
-  text-align: left;
-
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.3px;
+  text-align: left;
 }
 
-/* MOBILE TWEAKS */
+/* MOBILE */
 @media (max-width: 650px){
-  .site-footer .footer-links{
-    font-size: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+  .footer-top{
+    flex-direction: column;
+    gap: 14px;
   }
 
-  .site-footer .footer-copy{
-    font-size: 11px;
+  .footer-links{
+    font-size: 12px;
+  }
+
+  .footer-copy{
     text-align: center;
+    font-size: 11px;
   }
 }
