@@ -16,6 +16,8 @@ I wasn’t worried about getting infected with the disease. I was worried that w
   class="post-float-image"
 />
 
+![Do Asians Carry More Diseases]({{ '/assets/posts/Do Asians Carry More Diseases/B.jpg' | relative_url }})
+
 Assumptions that people of Asian descent have carried diseases have been around for hundreds of years. This racist idea has seen a strong normalization by President Trump, as he calls COVID-19 “China Virus” and “China Plague.”
 
 This has not been the only time the U.S. has blamed other countries and certain ethnicities of people for a disease. The U.S. blamed the Swine Flu on Latinex immigrants, Ebola on anyone of African descent, and the 1918 Flu pandemic on Spain, nicknaming it the “Spanish Flu,” even though the first case was in a military base in Kansas, U.S..
