@@ -5,32 +5,52 @@ layout: default
 <article class="post-wrap">
   <div class="post-card">
 
+    <!-- Meta -->
     <div class="post-kicker">
       <span class="post-site">Girls Adoption Connect</span>
       <span class="post-sep">•</span>
-      <span class="post-age">{{ page.date | date: "%b %d, %Y" }}</span>
-    </div>
+      <span class="post-date">{{ page.date | date: "%B %d, %Y" }}</span>
 
-    <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.category %}
+        <span class="post-sep">•</span>
+        <span class="post-category">{{ page.category }}</span>
+      {% endif %}
 
-    {% if page.author %}
-      <div class="post-byline">By: {{ page.author }}</div>
-    {% endif %}
-
-    <div class="post-intro">
-      <div class="post-intro-text">
-        {% if page.excerpt_text %}
-          <p>{{ page.excerpt_text }}</p>
-        {% endif %}
-      </div>
-
-      {% if page.cover %}
-        <div class="post-intro-media">
-          <img class="post-intro-image" src="{{ page.cover | relative_url }}" alt="">
-        </div>
+      {% if page.read_time %}
+        <span class="post-sep">•</span>
+        <span class="post-read">{{ page.read_time }} min read</span>
       {% endif %}
     </div>
 
+    <!-- Title -->
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    <!-- Author -->
+    {% if page.author %}
+      <div class="post-byline">By {{ page.author }}</div>
+    {% endif %}
+
+    <!-- Intro + image -->
+    {% if page.cover or page.excerpt_text %}
+      <div class="post-intro">
+
+        {% if page.excerpt_text %}
+          <p class="post-excerpt">{{ page.excerpt_text }}</p>
+        {% endif %}
+
+        {% if page.cover %}
+          <figure class="post-figure">
+            <img src="{{ page.cover | relative_url }}" alt="">
+            {% if page.cover_caption %}
+              <figcaption>{{ page.cover_caption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+
+      </div>
+    {% endif %}
+
+    <!-- Content -->
     <div class="post-content">
       {{ content }}
     </div>
