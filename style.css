@@ -443,10 +443,10 @@ body{
   margin: 0 auto 40px;       /* centers block */
   padding: 0 18px;           /* aligns with cards */
 
-  text-align: left;          /* left-aligned text */
+  text-align: center;          
   color: #7a7a7a;
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.25;
 }
 
 .category-intro p{
