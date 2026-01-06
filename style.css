@@ -884,5 +884,10 @@ body{
   margin-top: 18px !important;
 }
 
-
+.category-wrap,
+.category-page{
+  margin-top: 0 !important;
+  position: relative;
+  top: 0 !important;
+}
 
