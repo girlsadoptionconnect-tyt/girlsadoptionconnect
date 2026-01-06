@@ -1,10 +1,18 @@
 ---
 layout: default
 ---
-{% if page.subtitle %}
-      <p class="category-subtitle">
+<section class="category-wrap">
+  <div class="category-card">
+
+    {% if page.subtitle %}
+      <div class="category-intro">
         {{ page.subtitle }}
-      </p>
+      </div>
     {% endif %}
+
+    {{ content }}
+
+  </div>
+</section>
 
 {{ content }}
