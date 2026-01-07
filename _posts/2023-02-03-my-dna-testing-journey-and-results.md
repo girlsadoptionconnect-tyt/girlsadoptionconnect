@@ -5,6 +5,7 @@ date: 2023-02-03
 author: Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/my-dna-testing-journey-and-results/1.PNG
+show_cover: false
 ---
 {% capture imgs %}
 /assets/posts/my-dna-testing-journey-and-results/1.PNG,
