@@ -12,7 +12,7 @@ Responses from the adoptee community
 /assets/posts/why-adoptees-are-hesitant-to-share-our-stories/2.png,
 /assets/posts/why-adoptees-are-hesitant-to-share-our-stories/3.png,
 /assets/posts/why-adoptees-are-hesitant-to-share-our-stories/4.png,
-/assets/posts/why-adoptees-are-hesitant-to-share-our-stories/5.png,
+/assets/posts/why-adoptees-are-hesitant-to-share-our-stories/5.png
 " | strip_newlines | split: "," %}
 
 {% include carousel.html images=images %}
