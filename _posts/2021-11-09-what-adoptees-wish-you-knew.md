@@ -18,39 +18,38 @@ show_cover: false
 
 {% include carousel.html images=images %}
 
+<div class="slide-notes">
 
-Slide descriptions: 
+<h4>Slide descriptions</h4>
 
-Slide one: 
+<ul>
+  <li>
+    Slide one: White background with a dusty pink square box. Large gray text reads “What adoptees wish you knew.” Two white decorative lines appear above and below the text.
+  </li>
 
-White background with dusty pink square box. Large gray text reads: "What adoptees wish you knew." There are two white lines for decoration above and below the text.
+  <li>
+    Slide two: White background with a light gray square box. Gray text reads “Everyone's story is different, and everyone has a different relationship with their trauma.” Two white decorative lines appear above and below the text.
+  </li>
 
+  <li>
+    Slide three: White background with a light pink square box. Gray text reads “That while I love my adoptive parents, I sometimes wonder what my life would have been like with my birth family.” Two white decorative lines appear above and below the text.
+  </li>
 
-Slide two:
+  <li>
+    Slide four: White background with a light gray square box. Gray text reads “Family tree and ancestry-related assignments in school can be awkward for us.” Two white decorative lines appear above and below the text.
+  </li>
 
-White background with light gray square box. Gray text reads: "Everyone's story is different, and everyone has a different relationship with their trauma." There are two white lines for decoration above and below the text.
+  <li>
+    Slide five: White background with a light pink square box. Gray text reads “It's rude to refer to my birth parents as my ‘real parents.’” Two white decorative lines appear above and below the text.
+  </li>
 
+  <li>
+    Slide six: White background with a light gray square box. Gray text reads “It's also hard and not only something to be thankful for.” Two white decorative lines appear above and below the text.
+  </li>
 
-Slide three:
+  <li>
+    Slide seven: White background with a light pink square box. Gray text reads “It's not easy going to an all-white school with kids constantly making comments about you.” Two white decorative lines appear above and below the text.
+  </li>
+</ul>
 
-White background with light pink square box. Gray text reads: "That while I love my adoptive parents, I sometimes wonder what my life would have been like with my birth family." There are two white lines for decoration above and below the text.
-
-
-Slide four:
-
-White background with light gray square box. Gray text reads: "Family tree and ancestry-related assignments in school can be awkward for us." There are two white lines for decoration above and below the text.
-
-
-Slide five:
-
-White background with light pink square box. Gray text reads: "It's rude to refer to my birth parents as my 'real parents.'" There are two white lines for decoration above and below the text.
-
-
-Slide six:
-
-White background with light gray square box. Gray text reads: "It's also hard and not only something to be thankful for." There are two white lines for decoration above and below the text.
-
-
-Slide seven:
-
-White background with light pink square box. Gray text reads: "It's not easy going to an all-white school with kids constantly making comments about you." There are two white lines for decoration above and below the text.
+</div>
