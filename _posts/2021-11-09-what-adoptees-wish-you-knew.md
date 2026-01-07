@@ -7,7 +7,7 @@ cover: /assets/posts/what-adoptees-wish-you-knew/1.webp
 show_cover: false
 ---
 {% assign images = "
-/assets/posts/what-adoptees-wish-you-knew/1.webp
+/assets/posts/what-adoptees-wish-you-knew/1.webp,
 /assets/posts/what-adoptees-wish-you-knew/2.webp,
 /assets/posts/what-adoptees-wish-you-knew/3.webp,
 /assets/posts/what-adoptees-wish-you-knew/4.webp,
