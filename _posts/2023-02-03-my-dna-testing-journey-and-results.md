@@ -6,13 +6,14 @@ author: Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/my-dna-testing-journey-and-results/1.PNG
 ---
-{% include carousel.html images="
-/assets/posts/my-dna-testing-journey-and-results/1.PNG
-/assets/posts/my-dna-testing-journey-and-results/2.PNG
-/assets/posts/my-dna-testing-journey-and-results/3.PNG
-/assets/posts/my-dna-testing-journey-and-results/4.PNG
+{% capture imgs %}
+/assets/posts/my-dna-testing-journey-and-results/1.PNG,
+/assets/posts/my-dna-testing-journey-and-results/2.PNG,
+/assets/posts/my-dna-testing-journey-and-results/3.PNG,
+/assets/posts/my-dna-testing-journey-and-results/4.PNG,
 /assets/posts/my-dna-testing-journey-and-results/5.PNG
-" | split: "," %}
+{% endcapture %}
+{% include carousel.html images=imgs | strip_newlines | split: "," %}
 
 After years of anticipation, I took a DNA test! I did this test to better understand myself and my heritage; searching for family members came along with it. Because China's one-child policy posed risks if my birth parents identified themselves at the time of my birth, I have no knowledge of who my biological relatives are.
 
