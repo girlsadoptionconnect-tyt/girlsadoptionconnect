@@ -44,11 +44,11 @@ At the orphanage, I was introduced to the orphanage director (pictured left). Sh
 
 We were brought to a small room, and the director pulled out my records, which they had saved all these years. Inside were my medical examinations, footprints, and some information that was used to prepare my adoption papers.
 
-		<img
-		  src="{{ '/assets/revisiting-landmarks-from-my-adoption/eight.png' | relative_url }}"
-		  alt="Changsha"
-		  class="post-float-image"
-		/>
+<img
+	src="{{ '/assets/revisiting-landmarks-from-my-adoption/eight.png' | relative_url }}"
+	alt="Changsha"
+	class="post-float-image"
+/>
 
 While fanning through the records they kept, I saw a photo of myself I did not know existed. My parents had only received photos of me when I was about six months old. This photo was taken when I was only a day old. 
 
