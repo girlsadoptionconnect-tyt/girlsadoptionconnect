@@ -1,0 +1,12 @@
+<div class="carousel">
+  <div class="car-track">
+    {% for image in include.images %}
+      <div class="car-slide">
+        <img src="{{ image | relative_url }}" alt="">
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="car-btn prev" onclick="this.nextElementSibling.scrollBy({ left: -400, behavior: 'smooth' })">‹</button>
+  <button class="car-btn next" onclick="this.previousElementSibling.scrollBy({ left: 400, behavior: 'smooth' })">›</button>
+</div>
