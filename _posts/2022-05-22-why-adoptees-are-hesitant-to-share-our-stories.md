@@ -18,6 +18,7 @@ Responses from the adoptee community
 {% include carousel.html images=images %}
 
 Slide descriptions:
+
 Slide one: 
 
 Why adoptees are hesitant to share our stories. Responses from the adoptee community.
