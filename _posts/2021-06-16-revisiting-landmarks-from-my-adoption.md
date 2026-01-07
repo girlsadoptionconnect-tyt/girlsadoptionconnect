@@ -19,7 +19,7 @@ In 2018, my family and I travelled back to China to see where we began our journ
 
 We visited the White Swan hotel, located on Shamian Island. Many families adopting children stayed at this hotel while waiting for their children's visas to return to the U.S. Families often travelled in groups, with everyone adopting babies. The hotel had a red couch that became an iconic photo spot for group baby photos. My photo on the "Red Couch" has me perched on the left edge, with my mom hiding behind the armrest to hold me up. 
 
-![Guagzhou]({{ '/assets/revisiting-landmarks-from-my-adoption/two.png' | relative_url }})
+![Guagzhou]({{ '/assets/revisiting-landmarks-from-my-adoption/two' | relative_url }})
 
 <img
 	src="{{ '/assets/revisiting-landmarks-from-my-adoption/two' | relative_url }}"
@@ -39,7 +39,7 @@ Since this was a trip for my parents to reminisce, my mom and I recreated a phot
 
 After we left Guangzhou, we flew to Changsha - the city of my birth. Changsha is the capital of Hunan and is where my parents and I first met.
 
-![Changsha]({{ '/assets/revisiting-landmarks-from-my-adoption/five.png' | relative_url }})
+![Changsha]({{ '/assets/revisiting-landmarks-from-my-adoption/five.png.png' | relative_url }})
 
 <img
 	src="{{ '/assets/revisiting-landmarks-from-my-adoption/five' | relative_url }}"
