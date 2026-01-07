@@ -29,7 +29,3 @@ Responses from the adoptee community:
   <li> Slide three: Pale pink floral background with a few darker pink flowers. Three boxes of translucent color. Bright green box: “Ask, but don't pressure them to share if they're not comfortable.” Yellow box: “Just asking is what's really important.” Blue box: “Being genuine and not prying is best. Also don't ask us in a super public way.”
 
   <li> Slide four: Pale pink floral background. Three boxes of translucent color. Blue box: “Be careful with word choice, and avoid racist terminology.” Red box: "I am very open about it when people ask and it really depends on who you are. It’s actually more about tone and the type of questions because some people say instead of “can you tell me about your adoption?” they say stuff like “Are you sad you don’t have a dad?” Or they use the word “abandoned” or call biological parents “real parents” like “do you know where your real parents are?”
-
-</ul>
-
-</div>
