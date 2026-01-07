@@ -4,7 +4,7 @@ title: "The painfulness of not knowing my family lineage"
 date: 2021-10-16
 author: Mai Li Schubert
 category: Unpacking Our Adoption
-cover: 
+cover: /assets/posts/the-painfulness-of-not-knowing-my-family-lineage/cover.png
 ---
 “Mom, why do I have freckles?”
 
