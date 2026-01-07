@@ -8,9 +8,12 @@ show_cover: false
 ---
 Responses from the adoptee community
 
-{% include carousel.html images="
-/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/1.png
-/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/2.png
-/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/3.png
+{% capture imgs %}
+/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/1.png,
+/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/2.png,
+/assets/posts/Q&A/tips-for-asking-about-my-adoption-story/3.png,
 /assets/posts/Q&A/tips-for-asking-about-my-adoption-story/4.png
-" | split: "," %}
+{% endcapture %}
+
+{% assign images = imgs | strip_newlines | split: "," %}
+{% include carousel.html images=images %}
