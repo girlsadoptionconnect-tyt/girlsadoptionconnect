@@ -17,8 +17,11 @@ Responses from the adoptee community:
 {% assign images = imgs | strip_newlines | split: "," %}
 {% include carousel.html images=images %}
 
-Slide descriptions:
+<div class="slide-notes">
 
+<h4>Slide descriptions</h4>
+
+<ul>
 Slide one:
 
 Pink watercolor background with gray flower outlines in bottom right corner. Translucent dusty pink box in the center. Large white text inside the box: “How can someone not adopted politely ask about your adoption story?” Small gray line, and in smaller text: “Responses from the adoptee community.”
@@ -37,7 +40,9 @@ Pale pink floral background with a few darker pink flowers. Three boxes of trans
 Slide four: 
 
 Pale pink floral background. Three boxes of translucent color. Blue box: “Be careful with word choice, and avoid racist terminology.” Red box: "I am very open about it when people ask and it really depends on who you are. It’s actually more about tone and the type of questions because some people say instead of “can you tell me about your adoption?” they say stuff like “Are you sad you don’t have a dad?” Or they use the word “abandoned” or call biological parents “real parents” like “do you know where your real parents are?”
+</ul>
 
+</div>
 
 
 
