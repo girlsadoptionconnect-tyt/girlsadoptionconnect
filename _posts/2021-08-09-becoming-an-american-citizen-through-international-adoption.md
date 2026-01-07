@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "XXXXXX"
+title: "Becoming an American citizen through international adoption"
 date: 2021-08-09
 author: Téa Tamburo
 category: Unpacking Our Adoption
