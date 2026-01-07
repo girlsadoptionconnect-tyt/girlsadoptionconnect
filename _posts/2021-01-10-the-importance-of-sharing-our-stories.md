@@ -6,8 +6,9 @@ author: Still Standing Strong Stories and Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/the-importance-of-sharing-our-stories
 ---
-{% include soundcloud.html url="https://soundcloud.com/girls-adoption-connect/the-importance-of-sharing-our-stories-a-collaboration-with-still-standing-strong-stories" %}
+https://soundcloud.com/girls-adoption-connect/the-importance-of-sharing-our-stories-a-collaboration-with-still-standing-strong-stories
 
+## Full Transcript
 Téa: This interview was recorded in collaboration with Still Standing Strong Stories on December 29th, with the intention of being in audio-only format. For the full transcript, please visit our website. Coming to you from Girls adoption Connect, I’m Téa Tamburo. 
 
 SSSS: Um, hi. How are you?
