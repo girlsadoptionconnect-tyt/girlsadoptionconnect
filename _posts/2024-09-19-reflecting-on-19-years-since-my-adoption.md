@@ -17,4 +17,5 @@ My outlook on my adoption is conflicted with feelings of gratitude for the life 
 This isn’t the post I originally planned to share to commemorate the anniversary of my group’s adoption. However, as more news outlets cover the economic and political perspectives on the end of Chinese international adoption, I think it’s important to ensure that already-adopted Chinese adoptees aren’t lost in this discussion. So, in honor of my group’s “Forever Family Day” (as my family calls it), I urge you to learn more about the history of adoption and to uplift the stories of adoptees like us.
 
 With love, 
+
 Téa, Girls Adoption Connect founder
