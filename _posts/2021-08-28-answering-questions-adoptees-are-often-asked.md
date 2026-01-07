@@ -17,6 +17,8 @@ show_cover: false
 {% include carousel.html images=images %}
 
 <div class="slide-notes">
+  
+<h4>Slide descriptions</h4>
 
 <ul>
   <li>
