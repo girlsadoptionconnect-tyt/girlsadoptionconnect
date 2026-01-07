@@ -21,12 +21,6 @@ We visited the White Swan hotel, located on Shamian Island. Many families adopti
 
 ![Guagzhou]({{ '/assets/revisiting-landmarks-from-my-adoption/two' | relative_url }})
 
-<img
-	src="{{ '/assets/revisiting-landmarks-from-my-adoption/two' | relative_url }}"
-	alt="Changsha"
-	class="post-float-image"
-/>
-
 We also took some time to explore the island. Here, my mom and I are looking inside a hospital. This hospital was where babies were examined before they were allowed to go home.
 
 ![Guagzhou]({{ '/assets/revisiting-landmarks-from-my-adoption/three.png' | relative_url }})
@@ -39,13 +33,7 @@ Since this was a trip for my parents to reminisce, my mom and I recreated a phot
 
 After we left Guangzhou, we flew to Changsha - the city of my birth. Changsha is the capital of Hunan and is where my parents and I first met.
 
-![Changsha]({{ '/assets/revisiting-landmarks-from-my-adoption/five.png.png' | relative_url }})
-
-<img
-	src="{{ '/assets/revisiting-landmarks-from-my-adoption/five' | relative_url }}"
-	alt="Changsha"
-	class="post-float-image"
-/>
+![Changsha]({{ '/assets/revisiting-landmarks-from-my-adoption/five' | relative_url }})
 
 After a night of exploring Changsha, we spent the day visiting my orphanage: Yiyang Social Welfare Institute. My parents hired a driver and translator to take us to Yiyang - slightly out of Changsha. The orphanage moved since I lived there, so I did not get to tour the facility that I actually lived in.
 
