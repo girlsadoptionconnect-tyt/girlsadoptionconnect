@@ -17,24 +17,30 @@ Responses from the adoptee community
 
 {% include carousel.html images=images %}
 
-Slide descriptions:
+<div class="slide-notes">
 
-Slide one: 
+<h4>Slide descriptions</h4>
 
-Why adoptees are hesitant to share our stories. Responses from the adoptee community.
+<ul>
+  <li>
+    Slide one: Why adoptees are hesitant to share our stories. Responses from the adoptee community.
+  </li>
 
-Slide two: 
+  <li>
+    Slide two: I was scared that people would think I wanted sympathy when I just wanted to be understood.
+  </li>
 
-I was scared that people would think I wanted sympathy when I just wanted to be understood.
+  <li>
+    Slide three: I didn’t want my experience as a Chinese American to be invalidated by my friends with Chinese families.
+  </li>
 
-Slide three: 
+  <li>
+    Slide four: I have experienced negative reactions and been told I’m not “truly Chinese,” “not Asian enough,” and have had my experiences ignored.
+  </li>
 
-I didn't want my experience as a Chinese American to be invalidated by my friends with Chinese families.
+  <li>
+    Slide five: I didn’t want to be different from everyone else and stand out from the norm.
+  </li>
+</ul>
 
-Slide four: 
-
-I have experienced negative reactions and been told I'm not "truly Chinese," "not Asian enough" and have had my experiences ignored.
-
-Slide five: 
-
-I didn't want to be different from everyone else and stand out from the norm.
+</div>
