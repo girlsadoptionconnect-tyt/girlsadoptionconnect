@@ -918,3 +918,41 @@ body{
 .site-main{
   padding-top: 80px;
 }
+
+/* Slide descriptions under carousels */
+.slide-notes{
+  margin: 24px 0 36px;
+  padding: 18px 22px;
+
+  background: rgba(248, 240, 242, 0.55);
+  border-left: 3px solid rgba(236, 200, 208, 0.9);
+
+  font-size: 14px;          /* smaller than post body */
+  line-height: 1.55;
+  color: #6f6f6f;
+}
+
+.slide-notes h4{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #8a8a8a;
+}
+
+.slide-notes ul{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.slide-notes li{
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
