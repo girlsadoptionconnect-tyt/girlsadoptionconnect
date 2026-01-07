@@ -12,7 +12,7 @@ I was born November 28, 2004. The exact time is unknown, and I’m lucky to know
 
 Even though I have only assumptions as to why I was placed for adoption, I have no concrete answers. One of the main questions is “why,” which is often followed with wondering if they even remember me. 
 <img
-  src="{{ '/assets/posts/how-i-think-about-my-birthday-as-an-adoptee/photoone.png' | relative_url }}"
+  src="{{ '/assets/posts/how-i-think-about-my-birthday-as-an-adoptee/photoone' | relative_url }}"
   alt="How I think about my birthday as an adoptee"
   class="post-float-image"
 />
