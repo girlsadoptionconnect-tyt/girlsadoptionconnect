@@ -4,13 +4,14 @@ title: "My DNA testing journey & results"
 date: 2023-02-03
 author: Téa Tamburo
 category: Unpacking Our Adoption
-cover: 
+cover: /assets/posts/my-dna-testing-journey-and-results/1.PNG
 ---
 {% include carousel.html images="
-/assets/revisiting-landmarks-from-my-adoption/one.png,
-/assets/revisiting-landmarks-from-my-adoption/two.png,
-/assets/revisiting-landmarks-from-my-adoption/three.png,
-/assets/revisiting-landmarks-from-my-adoption/four.png
+/assets/posts/my-dna-testing-journey-and-results/1.PNG
+/assets/posts/my-dna-testing-journey-and-results/2.PNG
+/assets/posts/my-dna-testing-journey-and-results/3.PNG
+/assets/posts/my-dna-testing-journey-and-results/4.PNG
+/assets/posts/my-dna-testing-journey-and-results/5.PNG
 " | split: "," %}
 
 After years of anticipation, I took a DNA test! I did this test to better understand myself and my heritage; searching for family members came along with it. Because China's one-child policy posed risks if my birth parents identified themselves at the time of my birth, I have no knowledge of who my biological relatives are.
