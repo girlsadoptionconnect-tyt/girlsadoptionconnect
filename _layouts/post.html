@@ -35,15 +35,15 @@ layout: default
           <p class="post-excerpt">{{ page.excerpt_text }}</p>
         {% endif %}
 
-        {% if page.cover %}
-          <figure class="post-figure">
-            <img src="{{ page.cover | relative_url }}" alt="">
-            {% if page.cover_caption %}
-              <figcaption>{{ page.cover_caption }}</figcaption>
-            {% endif %}
-          </figure>
-        {% endif %}
-
+        {% if page.cover and page.show_cover != false %}
+  <figure class="post-figure">
+    <img src="{{ page.cover | relative_url }}" alt="">
+    {% if page.cover_caption %}
+      <figcaption>{{ page.cover_caption }}</figcaption>
+    {% endif %}
+  </figure>
+{% endif %}
+        
       </div>
     {% endif %}
 
