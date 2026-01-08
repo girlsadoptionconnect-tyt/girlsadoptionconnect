@@ -1,0 +1,13 @@
+<div class="post-sources">
+  <p>Sources:</p>
+  <ul>
+    {% for source in include.sources %}
+      <li>
+        {{ source.text }}
+        {% if source.url %}
+          <a href="{{ source.url }}" target="_blank">{{ source.url }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
