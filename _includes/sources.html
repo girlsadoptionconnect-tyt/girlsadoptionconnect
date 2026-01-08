@@ -1,7 +1,8 @@
+{% if page.sources %}
 <div class="post-sources">
   <p>Sources:</p>
   <ul>
-    {% for source in include.sources %}
+    {% for source in page.sources %}
       <li>
         {{ source.text }}
         {% if source.url %}
@@ -11,3 +12,4 @@
     {% endfor %}
   </ul>
 </div>
+{% endif %}
