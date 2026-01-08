@@ -4,6 +4,7 @@ title: "Mental health in adoptees"
 date: 2020-08-29
 category: Informative
 cover: /assets/posts/mental-health-in-adoptees/cover.jpeg
+show_cover: false
 
 sources:
   - text: "Childhood Adoption and Mental Health in Adulthood: The Role of Gene-Environment Correlations and Interactions in the UK Biobank"
