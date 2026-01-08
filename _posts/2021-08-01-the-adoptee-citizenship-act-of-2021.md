@@ -6,16 +6,15 @@ category: Informative
 cover: /assets/posts/the-adoptee-citizenship-act-of-2021/1.webp
 show_cover: false
 
-*Sources:*
+sources:
+  - text: "Collins, Susan. “Collins, Bipartisan Group Introduce Adoptee Citizenship Act of 2021.”"
+    url: "https://www.collins.senate.gov/newsroom/collins-bipartisan-group-introduce-adoptee-citizenship-act-2021"
 
-- Collins, Susan. “Collins, Bipartisan Group Introduce Adoptee Citizenship Act of 2021.”  
-  https://www.collins.senate.gov/newsroom/collins-bipartisan-group-introduce-adoptee-citizenship-act-2021
+  - text: "“FAQ: Adoptee Citizenship Act of 2021.” Adoptee Rights Law Center."
+    url: "https://adopteerightslaw.com/faq-adoptee-citizenship-act-2021/"
 
-- “FAQ: Adoptee Citizenship Act of 2021.” Adoptee Rights Law Center.  
-  https://adopteerightslaw.com/faq-adoptee-citizenship-act-2021/
-
-- “Benefits of U.S. Citizenship.” Boundless Immigration Resources.  
-  https://www.boundless.com/immigration-resources/benefits-of-us-citizenship/
+  - text: "“Benefits of U.S. Citizenship.” Boundless Immigration Resources."
+    url: "https://www.boundless.com/immigration-resources/benefits-of-us-citizenship/"
 ---
 {% assign images = "
 /assets/posts/the-adoptee-citizenship-act-of-2021/1.webp,
