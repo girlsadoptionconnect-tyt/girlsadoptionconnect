@@ -7,6 +7,9 @@ cover: /assets/posts/happy-national-adoption-awareness-month-2023/1.png
 show_cover: false
 ---
 Happy National Adoption Awareness Month!
+
+Every November is National Adoption Awareness Month and is a month dedicated to sharing and uplifting adoptees' voices and experiences. Visit the submission form or message @girls.adoption.connect on Instagram to share your story. 
+
 {% assign images = "
 /assets/posts/happy-national-adoption-awareness-month-2023/1.png,
 /assets/posts/happy-national-adoption-awareness-month-2023/2.png,
