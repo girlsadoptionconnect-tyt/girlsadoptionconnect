@@ -951,6 +951,37 @@ body{
 }
 
 
+.post-sources{
+  margin-top: 40px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #9a9a9a;
+}
+
+.post-sources p{
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.post-sources ul{
+  margin: 0;
+  padding-left: 18px;
+}
+
+.post-sources li{
+  margin-bottom: 6px;
+}
+
+.post-sources a{
+  color: #9a9a9a;
+  text-decoration: underline;
+}
+
+.post-sources a:hover{
+  color: #666;
+}
+
 
 
 
