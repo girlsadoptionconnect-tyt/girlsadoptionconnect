@@ -4,6 +4,7 @@ title: "Breaking the 'Bamboo Ceiling'"
 date: 2024-09-03
 category: Informative
 cover: /assets/posts/breaking-the-bamboo-ceiling/1.png
+show_cover: false
 ---
 {% assign images = "
 /assets/posts/breaking-the-bamboo-ceiling/1.png,
