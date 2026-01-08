@@ -2,6 +2,7 @@
 layout: post
 title: "Why are you proud of being an adopted woman?"
 date: 2024-05-08
+author: Téa Tamburo
 category: Q&A
 cover: /assets/posts/why-are-you-proud-of-being-an-adopted-woman/1.png
 show_cover: false
