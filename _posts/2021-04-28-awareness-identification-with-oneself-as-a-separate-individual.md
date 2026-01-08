@@ -4,7 +4,7 @@ title: "Awareness, identification with oneself as a separate individual"
 date: 2021-04-28
 author: Mai Schubert
 category: Unpacking Our Adoption
-cover: /assets/posts/Awareness, Identification with Oneself as a Separate Individual
+cover: /assets/posts/awareness-identification-with-oneself-as-a-separate-individual/cover.png
 ---
 As kids, we are taught to be scared of the monsters under the bed and in our closets, but the biggest monsters are the labels we assign ourselves.
 
