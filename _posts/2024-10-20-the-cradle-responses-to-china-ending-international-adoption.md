@@ -23,4 +23,4 @@ show_cover: false
 
 **Is there anything else you’d like the Chinese adoptee community to know?**
 
-“News such as China’s announcement can bring up complex thoughts and feelings for people who were adopted, especially those adopted from China. The Cradle’s post-adoption services are available to offer guidance and support. Visit https://cradle.org/lifelong-support/counseling-sessions/ or call 1-847-475-5800 to inquire about post-adoption support.”
+“News such as China’s announcement can bring up complex thoughts and feelings for people who were adopted, especially those adopted from China. The Cradle’s post-adoption services are available to offer guidance and support. Visit [The Cradle’s counseling sessions page](https://cradle.org/lifelong-support/counseling-sessions/) or call 1-847-475-5800 to inquire about post-adoption support.”
