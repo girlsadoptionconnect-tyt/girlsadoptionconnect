@@ -4,6 +4,7 @@ title: "Searching for biological relatives"
 date: 2023-04-13
 category: Q&A
 cover: /assets/posts/searching-for-biological-relatives/1.png
+show_cover: false
 ---
 {% assign images = "
 /assets/posts/searching-for-biological-relatives/1.png,
