@@ -4,7 +4,7 @@ title: "The importance of sharing our stories"
 date: 2021-01-10
 author: Still Standing Strong Stories and Téa Tamburo
 category: Unpacking Our Adoption
-cover: /assets/posts/the-importance-of-sharing-our-stories
+cover: /assets/posts/importance-of-sharing-our-stories/cover.png
 ---
 https://soundcloud.com/girls-adoption-connect/the-importance-of-sharing-our-stories-a-collaboration-with-still-standing-strong-stories
 
