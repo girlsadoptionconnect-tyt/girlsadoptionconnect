@@ -19,7 +19,7 @@ show_cover: false
 
 <div class="slide-notes">
 
-<h4>Slide descriptions</h4>
+<h4>Slide text</h4>
 
 <ul>
   <li>
