@@ -4,6 +4,7 @@ title: "International Day of the Girl: 2020"
 date: 2020-10-10
 category: G.A.C News
 cover: /assets/posts/international-day-of-the-girl-2020/cover.png
+show_cover: false
 
 sources:
   - text: "International Day of the Girl 2020"
