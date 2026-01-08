@@ -10,6 +10,7 @@ sources:
   - text: "International Child Search Alliance"
 ---
 A breakdown of DNA testing and how to get started.
+
 *This is to educate about DNA testing, not to promote or discourage it.*
 {% assign images = "
 /assets/posts/overview-of-adoptee-dna-testing/1.png,
