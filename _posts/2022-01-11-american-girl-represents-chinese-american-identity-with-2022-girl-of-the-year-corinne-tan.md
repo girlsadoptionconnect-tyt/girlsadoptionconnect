@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "American Girl represents Chinese American identity with 2022 "Girl of the Year" Corinne Tan"
+title: "American Girl represents Chinese American identity with 2022 'Girl of the Year' Corinne Tan"
 date: 2022-01-11
 author: Téa Tamburo
 category: Unpacking Our Adoption
@@ -12,6 +12,7 @@ sources:
   - text: "American Girl — Girl of the Year"
     url: "https://www.americangirl.com/pages/girl-of-the-year"
 ---
+
 American Girl recently released Corinne Tan, their first Chinese American “Girl of the Year.” Corinne is a skier who lives in Aspen, Colorado in a mixed family. Corinne’s accessories feature a ski set, snow clothing, and like many prominent American Girl characters, Corinne comes with a book, in which she learns to confront and stand up against xenophobia.
 
 Corinne’s release follows a year filled with anti-Asian hate crimes and an uprising from the Asian American community. Corinne is not the first Asian American doll the company has released, including Ivy Ling, who was eventually discontinued from the historic line and Jess, a biracial Japanese American “Girl of the Year.” However, Corinne is the first Chinese American “Girl of the Year” and is a perfect representation of diversity and the Chinese American experience at a time when it’s desperately needed.
