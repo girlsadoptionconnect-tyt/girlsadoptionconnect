@@ -3,7 +3,7 @@ layout: post
 title: "Cherish Children Adoption International (CCAI)'s responses to China ending international adoption"
 date: 2024-09-12
 author: Joshua Zhong, Co-founder & President of CCAI 
-category: Informative
+category: Q&A
 cover: assets/posts/cherish-children-adoption-international-ccais-responses-to-china-ending-international-adoption/cover.png
 show_cover: false
 ---
