@@ -53,6 +53,7 @@ sources:
 
   <li>
     <strong>Slide three</strong><br>
+    <strong>Official Claims Notice</strong><br><br>
     <div class="slide-notes">
 
 <strong>In re:</strong> 23andMe Holding Co., et al.<br>
