@@ -18,13 +18,23 @@ The Adoptee Rights Campaign (started by adoptees without citizenship), adoptees 
 
 The above is not an endorsement for any candidate.
 
-## —
-Sources:
-
-“Issues and the 2024 election,” Pew Research Center, September 2024.
-
-"Thousands of children adopted by Americans are without citizenship. Congress is unwilling to act,” Associated Press, October 2024.
-
-“Obtaining U.S. Citizenship under the Child Citizenship Act,” US Department of State.
-
-“Voter Turnout in Presidential Elections,” The American Presidency Project.
+<div class="post-sources">
+  <p>Sources:</p>
+  <ul>
+    <li>
+      “Issues and the 2024 election,” <em>Pew Research Center</em>, September 2024.
+    </li>
+    <li>
+      “Thousands of children adopted by Americans are without citizenship. Congress is unwilling to act,”
+      <em>Associated Press</em>, October 2024.
+    </li>
+    <li>
+      “Obtaining U.S. Citizenship under the Child Citizenship Act,”
+      <em>U.S. Department of State</em>.
+    </li>
+    <li>
+      “Voter Turnout in Presidential Elections,”
+      <em>The American Presidency Project</em>.
+    </li>
+  </ul>
+</div>
