@@ -4,6 +4,7 @@ title: "How you can be an ally to the adoptee community"
 date: 2022-02-14
 category: Informative
 cover: /assets/posts/how-you-can-be-an-ally-to-the-adoptee-community/1.png
+show_cover: false
 ---
 *Tips from adoptees!*
 {% assign images = "
