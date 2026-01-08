@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Founding of 'Asian American'"
+title: "The founding of 'Asian American'"
 date: 2020-07-28
 category: Informative
 cover: /assets/posts/the-founding-of-asian-american/cover.png
