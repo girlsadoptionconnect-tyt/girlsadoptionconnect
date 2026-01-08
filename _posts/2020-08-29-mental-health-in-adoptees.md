@@ -6,12 +6,14 @@ category: Informative
 cover: /assets/posts/mental-health-in-adoptees/cover.jpeg
 
 sources:
-  - text: "Childhood Adoption and Mental Health in Adulthood: The Role of Gene-Environment Correlations and Interactions in the UK Biobank”
-    - url: https://www.sciencedirect.com/science/article/pii/S0006322319318141 
-  - text: “Genetics Contributes to Mental Health Risks in Adoptees”
-    - url: https://www.sciencedaily.com/releases/2020/01/200129104737.htm 
-  - text: “The Mental Health of US Adolescents Adopted in Infancy” 
-    - url: https://jamanetwork.com/journals/jamapediatrics/fullarticle/379446 
+  - text: "Childhood Adoption and Mental Health in Adulthood: The Role of Gene-Environment Correlations and Interactions in the UK Biobank"
+    url: "https://www.sciencedirect.com/science/article/pii/S0006322319318141"
+
+  - text: "Genetics Contributes to Mental Health Risks in Adoptees"
+    url: "https://www.sciencedaily.com/releases/2020/01/200129104737.htm"
+
+  - text: "The Mental Health of US Adolescents Adopted in Infancy"
+    url: "https://jamanetwork.com/journals/jamapediatrics/fullarticle/379446"
 ---
 There’s a well-known theory that adoptees have a slightly higher likelihood of developing mental illnesses. While they experience trauma at the time of birth or separation (whether remembered or not), both environment and genetics play a role in mental illness likelihood. 
 
