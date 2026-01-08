@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "China's Move to Allow Married Couples Three Children"
+title: "China to allow couples three children"
 date: 2021-06-02
 category: Informative
 cover: /assets/posts/china-to-allow-couples-three-children/1.png
@@ -12,10 +12,10 @@ sources:
 ---
 **End of China's Two-Child Policy**
 {% assign images = "
-/assets/posts/china-to-allow-couples-three-children/1.png
+/assets/posts/china-to-allow-couples-three-children/1.png,
 /assets/posts/china-to-allow-couples-three-children/2.png,
 /assets/posts/china-to-allow-couples-three-children/3.png,
-/assets/posts/china-to-allow-couples-three-children/4.png,
+/assets/posts/china-to-allow-couples-three-children/4.png
 
 " | strip_newlines | split: "," %}
 
@@ -48,12 +48,7 @@ sources:
     Title: “Other Changes.”<br>
     Smaller text below: “The party pledged to improve benefits such as maternity leave and increase funding to expand services for the country’s retirees.”
   </li>
-
-  <li>
-    <strong>Slide 5</strong><br>
-    Title: “Thoughts?”<br>
-    Smaller text below: “We’d love to hear your thoughts on this major change. Feel free to message us about it.”
-  </li>
+  
 </ul>
 
 </div>
