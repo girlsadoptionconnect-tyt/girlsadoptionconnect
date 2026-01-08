@@ -4,6 +4,7 @@ title: "Ukrainian adoption during Russia's invasion"
 date: 2022-03-14
 category: Informative
 cover: /assets/posts/ukrainian-adoption-during-russias-invasion/1.png
+show_cover: false
 
 sources:
   - text: 'Sharon, Susan. "The War in Ukraine Has Derailed One American Family’s Adoption Plan." National Public Radio, March 9, 2022.'
