@@ -5,11 +5,12 @@ date: 2022-03-14
 category: Informative
 cover: /assets/posts/ukrainian-adoption-during-russias-invasion/1.png
 
-**sources:**
-  - text: "Sharon, Susan, "The War in Ukraine has Derailed one American Family's Adoption Plan," National Public Radio, March 9, 2022."
-    url: "https://www.npr.org/2022/03/09/1085306040/the-war-in-ukraine-has-derailed-one-american-familys-adoption-plan"
-  - text: "Travel.State.Gov, U.S. Department of State, Bureau of Consular Affairs."
-    url: "https://travel.state.gov/content/travel/en/Intercountry-Adoption/Intercountry-Adoption-Country-Information/Ukraine.html"
+sources:
+  - text: 'Sharon, Susan. "The War in Ukraine Has Derailed One American Family’s Adoption Plan." National Public Radio, March 9, 2022.'
+    url: 'https://www.npr.org/2022/03/09/1085306040/the-war-in-ukraine-has-derailed-one-american-familys-adoption-plan'
+
+  - text: 'Travel.State.Gov, U.S. Department of State, Bureau of Consular Affairs.'
+    url: 'https://travel.state.gov/content/travel/en/Intercountry-Adoption/Intercountry-Adoption-Country-Information/Ukraine.html'
 ---
 {% assign images = "
 /assets/posts/ukrainian-adoption-during-russias-invasion/1.png,
