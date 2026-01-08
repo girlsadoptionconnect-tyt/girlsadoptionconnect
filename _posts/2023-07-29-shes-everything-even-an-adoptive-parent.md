@@ -15,6 +15,18 @@ This Barbie was the product of a partnership between the hotel and Mattel (the c
 
 ![Barbie]({{ '/assets/posts/coming-home-barbie/one.PNG' | relative_url }})
 
-Sources:
-A souvenir slammed as 'white savior Barbie' has some Chinese adoptees reconnecting, NBC News, https://www.nbcnews.com/news/asian-america/souvenir-slammed-white-savior-barbie-chinese-adoptees-reconnecting-rcna96692.
-Barbie logo: Free use under Wikimedia Commons.
+<div class="post-sources">
+  <p>Sources:</p>
+  <ul>
+    <li>
+      “A souvenir slammed as ‘white savior Barbie’ has some Chinese adoptees reconnecting,”
+      <em>NBC News</em>.
+      <a href="https://www.nbcnews.com/news/asian-america/souvenir-slammed-white-savior-barbie-chinese-adoptees-reconnecting-rcna96692" target="_blank">
+        https://www.nbcnews.com/news/asian-america/souvenir-slammed-white-savior-barbie-chinese-adoptees-reconnecting-rcna96692
+      </a>
+    </li>
+    <li>
+      Barbie logo: Free use under Wikimedia Commons.
+    </li>
+  </ul>
+</div>
