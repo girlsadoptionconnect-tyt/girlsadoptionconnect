@@ -11,7 +11,6 @@ sources:
     url: "https://www.cnn.com/2021/12/30/us/american-girl-corinne-tan-cec/index.html"
   - text: "American Girl — Girl of the Year"
     url: "https://www.americangirl.com/pages/girl-of-the-year"
-
 ---
 American Girl recently released Corinne Tan, their first Chinese American “Girl of the Year.” Corinne is a skier who lives in Aspen, Colorado in a mixed family. Corinne’s accessories feature a ski set, snow clothing, and like many prominent American Girl characters, Corinne comes with a book, in which she learns to confront and stand up against xenophobia.
 
