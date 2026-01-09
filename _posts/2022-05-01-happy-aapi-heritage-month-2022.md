@@ -7,7 +7,7 @@ cover: /assets/posts/happy-aapi-heritage-month-2022/1.webp
 show_cover: false
 
 sources:
-  - text: "Asian American and Pacific Islander Heritage Month," History, April 5, 2022."
+  - text: 'Asian American and Pacific Islander Heritage Month, History, April 5, 2022.'
     url: "https://www.history.com/topics/holidays/asian-american-pacific-islander-heritage-month"
 ---
 {% assign images = "
