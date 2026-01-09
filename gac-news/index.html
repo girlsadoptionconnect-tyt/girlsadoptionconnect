@@ -5,7 +5,7 @@ category: G.A.C. News
 permalink: /gac-news/
 ---
 
-<div class="post-grid">
+<div class="post-list">
   {% assign posts = site.posts | where: "category", "G.A.C. News" | sort: "date" | reverse %}
   {% for post in posts %}
     <a class="post-card" href="{{ post.url | relative_url }}">
