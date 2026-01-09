@@ -12,7 +12,7 @@ show_cover: false
   Instagram has reactivated the account, and it is up and running again.</em>
 </p>
 
-{% assign images = "/assets/posts/instagram-suspension-contingency/2.png,/assets/posts/instagram-suspension-contingency/3.png" | split: "," %}
+{% assign images = "/assets/posts/instagram-suspension-contingency/2.png, /assets/posts/instagram-suspension-contingency/3.png" | split: "," %}
 {% include carousel.html images=images %}
 
 <p>
