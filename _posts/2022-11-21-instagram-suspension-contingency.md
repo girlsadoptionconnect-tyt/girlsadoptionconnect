@@ -5,6 +5,7 @@ date: 2022-11-21
 author: Téa Tamburo
 category: G.A.C. News
 cover: /assets/posts/instagram-suspension-contingency/1.jpg
+show_cover: false
 ---
 ***Update Nov. 23 at 3:54 p.m. CST: 
 
