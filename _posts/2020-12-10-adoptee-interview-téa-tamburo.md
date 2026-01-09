@@ -2,7 +2,8 @@
 layout: post
 title: "Adoptee Interview: Téa Tamburo"
 date: 2020-12-10
-category: Adoptee Spotlights
+author: Téa and Grace
+category: Unpacking Our Adoption
 cover: /assets/posts/2020-12-10-adoptee-interview-téa-tamburo/cover.png
 show_cover: false
 ---
