@@ -2,10 +2,10 @@
 layout: post
 title: "Téa Tamburo, 银一君"
 date: 2020-04-19
+adoptee_location: Yiyang, Changsha to Chicago, IL
 category: Adoptee Spotlights
 cover: /assets/posts/teatamburo2020spotlight/1.png
 ---
-## Yiyang, Changsha --> Chicago, IL 
 
 <img
 	src="{{ '/assets/posts/teatamburo2020spotlight/2.jpg' | relative_url }}"
