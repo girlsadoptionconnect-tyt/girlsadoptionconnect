@@ -6,7 +6,7 @@ author: Still Standing Strong Stories and Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/importance-of-sharing-our-stories/cover.png
 ---
-[The Importance of Sharing Our Stries](https://soundcloud.com/girls-adoption-connect/the-importance-of-sharing-our-stories-a-collaboration-with-still-standing-strong-stories)
+[Listen to the episode here: The Importance of Sharing Our Stories](https://soundcloud.com/girls-adoption-connect/the-importance-of-sharing-our-stories-a-collaboration-with-still-standing-strong-stories)
 
 <div class="slide-notes">
   <h4>Full Transcript</h4>
