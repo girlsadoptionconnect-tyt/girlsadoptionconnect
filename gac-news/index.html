@@ -2,31 +2,29 @@
 layout: category
 title: Community Updates
 category: G.A.C. News
-permalink: /gac-news/
+permalink: /community-updates/
 ---
 
 <div class="post-feed">
   {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
   {% for post in posts %}
     <a class="news-card" href="{{ post.url | relative_url }}">
-
-      {% if post.cover %}
-        <div class="news-card-media">
+      <div class="news-card-media">
+        {% if post.cover %}
           <img src="{{ post.cover | relative_url }}" alt="">
-        </div>
-      {% endif %}
-
-      <div class="news-card-body">
-        <div class="news-card-date">{{ post.date | date: "%b %-d, %Y" }}</div>
-        <div class="news-card-title">{{ post.title }}</div>
-
-        {% if post.excerpt_text %}
-          <div class="news-card-excerpt">{{ post.excerpt_text }}</div>
-        {% else %}
-          <div class="news-card-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</div>
         {% endif %}
       </div>
 
+      <div class="news-card-body">
+        <div class="news-card-date">
+          {{ post.date | date: "%B %d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
+        </div>
+        <div class="news-card-title">{{ post.title }}</div>
+
+        {% if post.excerpt %}
+          <div class="news-card-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
+        {% endif %}
+      </div>
     </a>
   {% endfor %}
 </div>
