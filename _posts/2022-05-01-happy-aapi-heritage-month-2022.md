@@ -10,6 +10,10 @@ sources:
     url: "https://www.history.com/topics/holidays/asian-american-pacific-islander-heritage-month"
 ---
 
+AAPI Heritage Month is a time to celebrate AAPI histories, cultures, and contributions.
+
+<!--more-->
+
 {% assign images = "
 /assets/posts/happy-aapi-heritage-month-2022/1.webp,
 /assets/posts/happy-aapi-heritage-month-2022/2.webp,
