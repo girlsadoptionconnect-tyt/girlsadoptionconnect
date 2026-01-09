@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Community Updates
-category: G.A.C. News
+category: "G.A.C. News"
 permalink: /community-updates/
 ---
 
@@ -22,7 +22,9 @@ permalink: /community-updates/
         <div class="news-card-title">{{ post.title }}</div>
 
         {% if post.excerpt %}
-          <div class="news-card-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</div>
+          <div class="news-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 160 }}
+          </div>
         {% endif %}
       </div>
     </a>
