@@ -1145,7 +1145,19 @@ body{
 }
 
 
+/* =========================
+   CATEGORY GRID hover + polish
+   ========================= */
 
+.post-grid .post-card{
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.post-grid .post-card:hover{
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+  border-color: rgba(210, 180, 188, 0.9);
+}
 
 
 
