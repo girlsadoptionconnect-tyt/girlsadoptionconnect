@@ -11,6 +11,8 @@ Click the "Join Chats" highlight on [@girls.adoption.connect's Instagram stories
 
 Currently, Instagram is rolling out the ability to join chats via link, so if you're unable to join yourself, email girlsadoptionconnect@gmail.com to be added. Additionally, if you don't see a chat for your region of adoption, email so one can be created.
 
-[Join chat links: HERE](https://docs.google.com/document/d/1Si_OI7LRvLoRTfRObk_nr4OtpxB9WXnMpxAWI3KNGUE/edit?usp=sharing)
+**Links:**
+
+[Join chats: HERE](https://docs.google.com/document/d/1Si_OI7LRvLoRTfRObk_nr4OtpxB9WXnMpxAWI3KNGUE/edit?usp=sharing)
 
 [Community policies: HERE](https://www.girlsadoptionconnect.org/policies)
