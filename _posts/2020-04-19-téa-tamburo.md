@@ -8,13 +8,13 @@ cover: /assets/posts/teatamburo2020spotlight/1.png
 ---
 ## Yiyang, Changsha --> Chicago, IL 
 
-I’m Téa, and I was adopted from Hunan, Changsha China in 2005, when I was a baby. I am an only-child and the only Asian person in my family. I went back to the city of Changsha a few summers ago to tour my orphanage and to learn more about my past. 
-
 <img
 	src="{{ '/assets/posts/teatamburo2020spotlight/2.jpg' | relative_url }}"
 	alt="BABY"
 	class="post-float-image"
 />
+
+I’m Téa, and I was adopted from Hunan, Changsha China in 2005, when I was a baby. I am an only-child and the only Asian person in my family. I went back to the city of Changsha a few summers ago to tour my orphanage and to learn more about my past. 
 
 During that visit, I met my primary caregiver and also the orphanage director who gave me my Chinese name. I also practiced speaking Mandarin, which I have been learning at school. 
 
