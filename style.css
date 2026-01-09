@@ -1139,7 +1139,7 @@ body{
 
 .news-card{
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 440 1fr;
   gap: 28px;
 
   text-decoration: none;
@@ -1151,16 +1151,16 @@ body{
 
 .news-card-media{
   background: #f7f1f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news-card-media img{
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
-
-  /* makes the left side feel like your screenshot */
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1; /* square feel like IG posts */
 }
 
 /* right side */
