@@ -4,7 +4,7 @@ title: "Adoptee Interview: Téa Tamburo"
 date: 2020-12-10
 author: Téa and Grace
 category: Unpacking Our Adoption
-cover: assets/posts/2020-12-10-adoptee-interview-téa-tamburo/1.png
+cover: /assets/posts/2020-12-10-adoptee-interview-téa-tamburo/1.png
 show_cover: false
 ---
 Téa Tamburo is interviewed by Grace White about embracing her identity, her thoughts around society's portrayal of adoption and more.
