@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adoptee Spotlight: Téa Tamburo, 银一君"
+title: "Téa Tamburo, 银一君"
 date: 2020-04-19
 author: Téa Tamburo
 category: Adoptee Spotlights
