@@ -1139,7 +1139,7 @@ body{
 
 .news-card{
   display: grid;
-  grid-template-columns: 440 1fr;
+  grid-template-columns: 800 1fr;
   gap: 28px;
 
   text-decoration: none;
