@@ -10,12 +10,12 @@ sources:
   - text: 'Asian American and Pacific Islander Heritage Month, History, April 5, 2022.'
     url: "https://www.history.com/topics/holidays/asian-american-pacific-islander-heritage-month"
 ---
-{% assign images = "
-/assets/posts/happy-aapi-heritage-month-2022/1.webp,
-/assets/posts/happy-aapi-heritage-month-2022/2.webp,
-/assets/posts/happy-aapi-heritage-month-2022/3.webp
 
-" | strip_newlines | split: "," %}
+Happy AAPI Heritage Month! Here are the slides from this post.
+
+<!--more-->
+
+{% assign images = "/assets/posts/happy-aapi-heritage-month-2022/1.webp,/assets/posts/happy-aapi-heritage-month-2022/2.webp,/assets/posts/happy-aapi-heritage-month-2022/3.webp" | split: "," %}
 
 {% include carousel.html images=images %}
 
@@ -41,5 +41,3 @@ sources:
     </li>
   </ul>
 </div>
-
-
