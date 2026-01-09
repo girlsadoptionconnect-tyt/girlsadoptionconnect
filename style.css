@@ -1128,4 +1128,82 @@ body{
   }
 }
 
+/* COMMUNITY UPDATES: horizontal post cards */
+.post-feed{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: grid;
+  gap: 26px;
+}
 
+.news-card{
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(210, 180, 188, 0.65);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.news-card-media{
+  background: #f7f1f3;
+}
+
+.news-card-media img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+
+  /* makes the left side feel like your screenshot */
+  aspect-ratio: 4 / 3;
+}
+
+/* right side */
+.news-card-body{
+  padding: 34px 34px 34px 0;
+  min-width: 0;
+}
+
+.news-card-date{
+  font-size: 16px;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+.news-card-title{
+  font-size: 44px;
+  line-height: 1.05;
+  color: #111;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.news-card-excerpt{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #6f6f6f;
+  max-width: 60ch;
+}
+
+/* hover */
+.news-card:hover{
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .news-card{
+    grid-template-columns: 1fr;
+  }
+  .news-card-body{
+    padding: 20px;
+  }
+  .news-card-title{
+    font-size: 30px;
+  }
+}
