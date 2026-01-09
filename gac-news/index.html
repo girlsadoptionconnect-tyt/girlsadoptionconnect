@@ -5,19 +5,31 @@ category: G.A.C. News
 permalink: /gac-news/
 ---
 
-<div class="post-grid">
+<div class="news-list">
   {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
   {% for post in posts %}
-    <a class="post-card" href="{{ post.url | relative_url }}">
+    <a class="news-row" href="{{ post.url | relative_url }}">
+
       {% if post.cover %}
-        <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="">
+        <div class="news-thumb">
+          <img src="{{ post.cover | relative_url }}" alt="">
+        </div>
       {% endif %}
-      <div class="post-meta">
-        <div class="post-card-title">{{ post.title }}</div>
-        <div class="post-card-date">
+
+      <div class="news-meta">
+        <div class="news-date">
           {{ post.date | date: "%B %d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
         </div>
+
+        <div class="news-title">{{ post.title }}</div>
+
+        {% if post.excerpt %}
+          <div class="news-excerpt">
+            {{ post.excerpt | strip_html | truncate: 170 }}
+          </div>
+        {% endif %}
       </div>
+
     </a>
   {% endfor %}
 </div>
