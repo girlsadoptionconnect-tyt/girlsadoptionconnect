@@ -5,25 +5,28 @@ category: G.A.C. News
 permalink: /gac-news/
 ---
 
-<div class="post-list">
+<div class="post-feed">
   {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
   {% for post in posts %}
-    <div class="post-row">
+    <a class="news-card" href="{{ post.url | relative_url }}">
+
       {% if post.cover %}
-        <img class="post-row-thumb" src="{{ post.cover | relative_url }}" alt="">
+        <div class="news-card-media">
+          <img src="{{ post.cover | relative_url }}" alt="">
+        </div>
       {% endif %}
 
-      <div class="post-row-body">
-        <a class="post-row-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <div class="news-card-body">
+        <div class="news-card-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <div class="news-card-title">{{ post.title }}</div>
 
-        <div class="post-row-meta">
-          <span>{{ post.date | date: "%B %d, %Y" }}</span>
-          {% if post.author %}
-            <span class="dot">•</span>
-            <span>{{ post.author }}</span>
-          {% endif %}
-        </div>
+        {% if post.excerpt_text %}
+          <div class="news-card-excerpt">{{ post.excerpt_text }}</div>
+        {% else %}
+          <div class="news-card-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</div>
+        {% endif %}
       </div>
-    </div>
+
+    </a>
   {% endfor %}
 </div>
