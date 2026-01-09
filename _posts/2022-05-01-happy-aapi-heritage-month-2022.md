@@ -11,7 +11,7 @@ sources:
     url: "https://www.history.com/topics/holidays/asian-american-pacific-islander-heritage-month"
 ---
 
-Happy AAPI Heritage Month! Here are the slides from this post.
+Happy AAPI Heritage Month!
 
 <!--more-->
 
