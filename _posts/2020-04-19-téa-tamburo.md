@@ -12,11 +12,11 @@ I’m Téa, and I was adopted from Hunan, Changsha China in 2005, when I was a 
 
 During that visit, I met my primary caregiver and also the orphanage director who gave me my Chinese name. I also practiced speaking Mandarin, which I have been learning at school. 
 
-		<img
-		  src="{{ '/assets/posts/teatamburo2020spotlight/2.jpg' | relative_url }}"
-		  alt="BABY"
-		  class="post-float-image"
-		/>
+<img
+	src="{{ '/assets/posts/teatamburo2020spotlight/2.jpg' | relative_url }}"
+	alt="BABY"
+	class="post-float-image"
+/>
 
 Since that visit, I have wanted to connect with other adoptees, so that is why I formed this group. At the end of 2019, I sent letters to adoptees that travelled to China with my parents, back in 2005. Besides forming connections with other adoptees, I enjoy journalism, tennis and fashion design. 
 
