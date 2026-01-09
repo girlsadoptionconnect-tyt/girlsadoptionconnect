@@ -1006,12 +1006,13 @@ body{
 }
 
 .news-thumb{
-  flex: 0 0 300px;          /* thumbnail width */
+  flex: 0 0 260px;   /* controls square size */
 }
 
 .news-thumb img{
-  width: 100%;
-  height: auto;
+  width: 260px;
+  height: 260px;     /* forces square */
+  object-fit: cover; /* crops nicely */
   display: block;
   border-radius: 14px;
 }
@@ -1046,10 +1047,17 @@ body{
     flex-direction: column;
     align-items: flex-start;
   }
+
   .news-thumb{
     width: 100%;
-    flex: none;
   }
+
+  .news-thumb img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
   .news-title{
     font-size: 24px;
   }
