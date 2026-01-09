@@ -1047,86 +1047,6 @@ body{
   color: #666;
 }
 
-/* =========================
-   G.A.C. News = horizontal list
-   ========================= */
-
-.news-list{
-  max-width: 980px;         /* match your grid width */
-  margin: 0 auto;
-  padding: 0 18px;
-}
-
-.news-row{
-  display: flex;
-  gap: 28px;
-  align-items: center;
-  padding: 26px 0;
-  border-bottom: 1px solid rgba(210, 180, 188, 0.35);
-  text-decoration: none;
-}
-
-.news-row:last-child{
-  border-bottom: none;
-}
-
-.news-thumb{
-  flex: 0 0 260px;   /* controls square size */
-}
-
-.news-thumb img{
-  width: 260px;
-  height: 260px;     /* forces square */
-  object-fit: cover; /* crops nicely */
-  display: block;
-  border-radius: 14px;
-}
-
-.news-meta{
-  flex: 1;
-}
-
-.news-date{
-  font-size: 13px;
-  color: #8a8a8a;
-  margin-bottom: 8px;
-}
-
-.news-title{
-  font-size: 30px;
-  line-height: 1.2;
-  margin: 0 0 10px 0;
-  color: #222;
-  font-weight: 600;
-}
-
-.news-excerpt{
-  font-size: 16px;
-  line-height: 1.6;
-  color: #7a7a7a;
-}
-
-/* mobile */
-@media (max-width: 750px){
-  .news-row{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .news-thumb{
-    width: 100%;
-  }
-
-  .news-thumb img{
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-  }
-
-  .news-title{
-    font-size: 24px;
-  }
-}
 
 /* COMMUNITY UPDATES: horizontal post cards */
 .post-feed{
@@ -1139,7 +1059,7 @@ body{
 
 .news-card{
   display: grid;
-  grid-template-columns: 800 1fr;
+  grid-template-columns: 260px 1fr;
   gap: 28px;
 
   text-decoration: none;
@@ -1150,17 +1070,16 @@ body{
 }
 
 .news-card-media{
+  width: 260px;
+  height: 260px;      /* square */
   background: #f7f1f3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .news-card-media img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1 / 1; /* square feel like IG posts */
+  display: block;
 }
 
 /* right side */
@@ -1200,10 +1119,26 @@ body{
   .news-card{
     grid-template-columns: 1fr;
   }
+
+  .news-card-media{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* keeps square on mobile */
+  }
+
   .news-card-body{
     padding: 20px;
   }
+
   .news-card-title{
     font-size: 30px;
   }
 }
+
+
+
+
+
+
+
+
