@@ -27,6 +27,11 @@ layout: default
       <div class="post-byline">By {{ page.author }}</div>
     {% endif %}
 
+    <!-- Location for Spotlights -->
+    {% if page.adoptee_location %}
+      <div class="post-byline">{{ page.adoptee_location }}</div>
+    {% endif %}
+
     <!-- Intro + image -->
     {% if page.cover or page.excerpt_text %}
       <div class="post-intro">
