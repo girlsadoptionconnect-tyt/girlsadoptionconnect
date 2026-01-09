@@ -6,6 +6,10 @@ category: G.A.C. News
 cover: /assets/posts/scholarship-opportunities-for-adoptees/1.png
 show_cover: false
 ---
+
+<!--more-->
+
+
 {% assign images = "
 /assets/posts/scholarship-opportunities-for-adoptees/2.png,
 /assets/posts/scholarship-opportunities-for-adoptees/3.png,
