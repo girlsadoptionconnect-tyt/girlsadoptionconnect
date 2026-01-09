@@ -895,6 +895,15 @@ body{
   box-shadow: 0 10px 22px rgba(0,0,0,0.05);
   padding: 0;
 
+.post-grid .post-card{
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.post-grid .post-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
   /* prevents giant cards */
   max-width: 360px;
   justify-self: center; 
