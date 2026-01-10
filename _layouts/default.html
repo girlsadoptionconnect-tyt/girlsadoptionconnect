@@ -5,31 +5,142 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- IMPORTANT: use relative_url so it works with baseurl -->
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 
 <body>
 
-  <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-  </head>
+  {% include header.html %}
 
-  <body>
-    {% include header.html %}
+  <main class="site-main">
+    {{ content }}
+  </main>
 
-    <main class="site-main">
-      {{ content }}
-    </main>
+  {% include footer.html %}
 
-    {% include footer.html %}
-  </body>
-</html>
+  <!-- SEARCH SCRIPT: paste this right before </body> -->
+  <script>
+  (() => {
+    const toggle   = document.getElementById("searchToggle");
+    const overlay  = document.getElementById("searchOverlay");
+    const closeBtn = document.getElementById("searchClose");
+    const input    = document.getElementById("searchInput");
+    const results  = document.getElementById("searchResults");
+
+    if (!toggle || !overlay || !closeBtn || !input || !results) return;
+
+    let indexData = null;
+
+    async function loadIndex() {
+      if (indexData) return indexData;
+      const url = "{{ '/search.json' | relative_url }}";
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error("Could not load search index: " + res.status);
+      indexData = await res.json();
+      return indexData;
+    }
+
+    function openSearch() {
+      overlay.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      setTimeout(() => input.focus(), 0);
+    }
+
+    function closeSearch() {
+      overlay.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      input.value = "";
+      results.innerHTML = "";
+    }
+
+    function escapeHtml(str) {
+      return String(str || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function render(items) {
+      if (!items.length) {
+        results.innerHTML = `<div class="search-empty">No results</div>`;
+        return;
+      }
+
+      results.innerHTML = items.slice(0, 20).map(p => {
+        const title  = escapeHtml(p.title);
+        const url    = escapeHtml(p.url);
+        const date   = escapeHtml(p.date);
+        const author = escapeHtml(p.author);
+        const loc    = escapeHtml(p.adoptee_location);
+
+        const line2 = [
+          loc ? `<span class="search-loc"><em>${loc}</em></span>` : "",
+          (date || author) ? `<span class="search-meta">${date}${author ? " • " + author : ""}</span>` : ""
+        ].filter(Boolean).join(" ");
+
+        return `
+          <a class="search-item" href="${url}">
+            <div class="search-title">${title}</div>
+            ${line2 ? `<div class="search-sub">${line2}</div>` : ""}
+          </a>
+        `;
+      }).join("");
+    }
+
+    function runSearch(q, data) {
+      const query = q.trim().toLowerCase();
+      if (!query) { results.innerHTML = ""; return; }
+
+      const filtered = data.filter(p => {
+        const haystack = [
+          p.title || "",
+          p.author || "",
+          p.adoptee_location || ""
+        ].join(" ").toLowerCase();
+
+        return haystack.includes(query);
+      });
+
+      render(filtered);
+    }
+
+    toggle.addEventListener("click", async () => {
+      if (overlay.hidden) {
+        openSearch();
+        try {
+          const data = await loadIndex();
+          render(data.slice(0, 10));
+        } catch (e) {
+          results.innerHTML = `<div class="search-empty">Search index couldn’t load.</div>`;
+          console.error(e);
+        }
+      } else {
+        closeSearch();
+      }
+    });
+
+    closeBtn.addEventListener("click", closeSearch);
+
+    overlay.addEventListener("click", (e) => {
+      if (e.target === overlay) closeSearch();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !overlay.hidden) closeSearch();
+    });
+
+    input.addEventListener("input", async (e) => {
+      try {
+        const data = await loadIndex();
+        runSearch(e.target.value, data);
+      } catch (err) {
+        console.error(err);
+      }
+    });
+  })();
+  </script>
 
 </body>
 </html>
