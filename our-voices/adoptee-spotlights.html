@@ -5,15 +5,20 @@ category: Adoptee Spotlights
 permalink: /our-voices/adoptee-spotlights/
 ---
 
-<div class="post-meta">
-  <div class="post-card-title">{{ post.title }}</div>
-
-  {% if post.adoptee_location %}
-    <div class="post-card-location">{{ post.adoptee_location }}</div>
-  {% endif %}
-
-  <div class="post-card-date">
-    {{ post.date | date: "%B %d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
-  </div>
+<div class="post-grid">
+  {% assign posts = site.posts | where: "category", page.category | sort: "date" | reverse %}
+  {% for post in posts %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      {% if post.cover %}
+        <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="">
+      {% endif %}
+      <div class="post-meta">
+        <div class="post-card-title">{{ post.title }}</div>
+        <div class="post-card-location">{{ post.adoptee_location }}</div>
+        <div class="post-card-date">
+          {{ post.date | date: "%B %d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}
+        </div>
+      </div>
+    </a>
+  {% endfor %}
 </div>
-
