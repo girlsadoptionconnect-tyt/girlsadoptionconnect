@@ -939,6 +939,10 @@ body{
   gap: 8px;
 }
 
+.post-location{
+  font-style: italic;
+}
+
 .post-card-dot{
   opacity: 0.6;
 }
