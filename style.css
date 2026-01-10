@@ -117,6 +117,31 @@ body{
   }
 }
 
+/* 🔍 SEARCH ICON IN HEADER */
+.hero-navwrap{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-nav{
+  margin: 0 auto; /* keeps nav centered */
+}
+
+.search-toggle{
+  margin-left: auto; /* pushes icon to far right */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 999px;
+}
+
+.search-toggle:hover{
+  background: rgba(255,255,255,0.35);
+}
+
 @media (max-width: 650px){
   .hero-home{ height: 620px; }
 
