@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Adoptee Spotlight: Keri Wenhua Busby"
+title: "Keri Wenhua Busby"
 date: 2021-08-17
 adoptee_location: Northern Ireland, United Kingdom
 category: Adoptee Spotlights
