@@ -142,6 +142,10 @@ body{
   background: rgba(255,255,255,0.35);
 }
 
+.search-overlay[hidden]{
+  display: none !important;
+}
+
 @media (max-width: 650px){
   .hero-home{ height: 620px; }
 
