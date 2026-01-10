@@ -2,47 +2,44 @@
   <section class="hero hero-home">
 
     <img class="hero-bg" src="{{ '/assets/pink-clouds.jpg' | relative_url }}" alt="Pink cloud background">
-
     <img class="hero-logo" src="{{ '/assets/logo-circle.png' | relative_url }}" alt="Girls Adoption Connect logo">
 
     <div class="hero-titleblock">
       <h1 class="hero-title">Girls Adoption Connect</h1>
       <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
 
-     <nav class="hero-nav">
-  <a class="nav-a" href="{{ '/' | relative_url }}">Home</a>
+      <!-- NAV ROW (nav centered, search icon right) -->
+      <div class="hero-navwrap">
+        <nav class="hero-nav">
+          <a class="nav-a" href="{{ '/' | relative_url }}">Home</a>
 
-  <!-- OUR VOICES (label only) -->
-  <div class="nav-item has-dropdown">
-    <button class="nav-link" type="button">Our Voices</button>
-    <div class="dropdown">
-      <a href="{{ '/our-voices/adoptee-spotlights/' | relative_url }}">Adoptee Spotligts</a>
-      <a href="{{ '/our-voices/unpacking-our-adoption/' | relative_url }}">Unpacking Our Adoption</a>
-      <a href="{{ '/our-voices/adoptee-experience-series/' | relative_url }}">The Adoptee Experience Series</a>
-    </div>
-  </div>
+          <div class="nav-item has-dropdown">
+            <button class="nav-link" type="button">Our Voices</button>
+            <div class="dropdown">
+              <a href="{{ '/our-voices/adoptee-spotlights/' | relative_url }}">Adoptee Spotlights</a>
+              <a href="{{ '/our-voices/unpacking-our-adoption/' | relative_url }}">Unpacking Our Adoption</a>
+              <a href="{{ '/our-voices/adoptee-experience-series/' | relative_url }}">The Adoptee Experience Series</a>
+            </div>
+          </div>
 
-  <!-- INFORMATIVE (page + dropdown to Q&A) -->
-  <div class="nav-item has-dropdown">
-    <a class="nav-a nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
-    <div class="dropdown">
-      <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
-    </div>
-  </div>
+          <div class="nav-item has-dropdown">
+            <a class="nav-a nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
+            <div class="dropdown">
+              <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
+            </div>
+          </div>
 
-  <a class="nav-a" href="{{ '/resources/' | relative_url }}">Resources</a>
-  <a class="nav-a" href="{{ '/community-updates/' | relative_url }}">Community Updates</a>
+          <a class="nav-a" href="{{ '/resources/' | relative_url }}">Resources</a>
+          <a class="nav-a" href="{{ '/community-updates/' | relative_url }}">Community Updates</a>
 
-  <!-- ABOUT (page + dropdown to Policies) -->
-  <div class="nav-item has-dropdown">
-    <a class="nav-a nav-link" href="{{ '/about/' | relative_url }}">About</a>
-    <div class="dropdown">
-      <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
-    </div>
-  </div>
-</nav>
+          <div class="nav-item has-dropdown">
+            <a class="nav-a nav-link" href="{{ '/about/' | relative_url }}">About</a>
+            <div class="dropdown">
+              <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
+            </div>
+          </div>
+        </nav>
 
-<!-- tiny magnifying glass (top right of nav row) -->
         <button class="search-toggle" id="searchToggle" aria-label="Search">🔍</button>
       </div>
     </div>
@@ -50,7 +47,7 @@
   </section>
 </header>
 
-<!-- Search overlay (only once, global) -->
+<!-- Search overlay (ONLY ONCE, global) -->
 <div class="search-overlay" id="searchOverlay" hidden>
   <div class="search-modal" role="dialog" aria-modal="true" aria-label="Site search">
     <div class="search-top">
@@ -70,7 +67,4 @@
 
     <div class="search-results" id="searchResults"></div>
   </div>
-</div>      
-
-  </section>
-</header>
+</div>
