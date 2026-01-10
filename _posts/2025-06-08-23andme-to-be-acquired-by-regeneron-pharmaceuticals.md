@@ -7,10 +7,11 @@ cover: /assets/posts/23andme-to-be-acquired-by-regeneron-pharmaceuticals/1.png
 show_cover: false
 
 sources:
-  - text: "“Regeneron to Acquire 23andMe in Court-Supervised Sale,” GlobeNewswire."
+  - text: "Regeneron to Acquire 23andMe in Court-Supervised Sale, GlobeNewswire."
   - text: "23andMe Restructuring & Claims Website."
 ---
 **What you need to know about the 23andMe sale**
+
 {% assign images = "
 /assets/posts/23andme-to-be-acquired-by-regeneron-pharmaceuticals/1.png,
 /assets/posts/23andme-to-be-acquired-by-regeneron-pharmaceuticals/2.png,
