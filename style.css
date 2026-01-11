@@ -1343,9 +1343,40 @@ body{
 
 /* --- HOME CAROUSEL (scroll-snap, draggable) --- */
 .home-carousel{
-  background: #FFFFFF;
+ /* outer frame (keeps your beige background + padding) */
+.home-carousel-shell{
+  background: #eee5dd;
   padding: 26px;
   border-radius: 8px;
+  overflow: hidden; /* prevents peek + respects rounded corners */
+}
+
+/* actual scroll container (NO padding!) */
+.home-carousel{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* hide scrollbar */
+.home-carousel::-webkit-scrollbar{ height: 0; }
+.home-carousel{ scrollbar-width: none; }
+
+.home-carousel-track{
+  display: flex;
+  will-change: transform;
+}
+
+/* each slide takes exactly the visible width */
+.carousel-card{
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
 
   overflow-x: auto;              /* key: allow manual scroll */
   overflow-y: hidden;
