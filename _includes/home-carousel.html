@@ -11,22 +11,15 @@
           {% endif %}
 
           <div class="carousel-meta">
-            <div class="carousel-date">
-              {{ post.date | date: "%b %d, %Y" }}
-            </div>
-
+            <div class="carousel-date">{{ post.date | date: "%b %d, %Y" }}</div>
             <h2 class="carousel-title">{{ post.title }}</h2>
 
             {% if post.adoptee_location %}
-              <div class="carousel-location">
-                <em>{{ post.adoptee_location }}</em>
-              </div>
+              <div class="carousel-location"><em>{{ post.adoptee_location }}</em></div>
             {% endif %}
 
             {% if post.excerpt %}
-              <p class="carousel-excerpt">
-                {{ post.excerpt | strip_html | truncate: 140 }}
-              </p>
+              <p class="carousel-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
             {% endif %}
           </div>
 
