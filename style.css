@@ -1464,49 +1464,4 @@ body{
 
 
 
-/* =========================
-   HOME: sections below hero
-   ========================= */
-.home-sections{
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 10px 24px 90px;
-}
 
-.home-section{
-  margin-top: 48px;
-}
-
-.home-section-heading{
-  margin: 0 0 16px 0;
-  font-size: 38px;
-  color: #b08f95; /* adjust to match your mauve */
-  font-weight: 500;
-  border-top: 1px solid rgba(210,180,188,0.55);
-  border-bottom: 1px solid rgba(210,180,188,0.35);
-  padding: 16px 0;
-}
-
-/* reuse your existing .post-grid / .post-card look */
-.home-section .post-grid{
-  margin-top: 18px;
-}
-
-/* optional excerpt styling */
-.post-card-excerpt{
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 1.45;
-  color: #7a7a7a;
-}
-
-.home-section-more{
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 14px;
-  color: #7a7a7a;
-  text-decoration: none;
-}
-.home-section-more:hover{
-  text-decoration: underline;
-}
