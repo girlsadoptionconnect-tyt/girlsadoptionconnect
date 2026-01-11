@@ -15,3 +15,27 @@ permalink: /search.json
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
+
+
+<script>
+(() => {
+  const carousel = document.getElementById("homeCarousel");
+  if (!carousel) return;
+
+  const track = carousel.querySelector(".home-carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-card");
+  if (!track || slides.length <= 1) return;
+
+  let i = 0;
+
+  function goTo(idx){
+    i = idx;
+    track.style.transform = `translateX(-${i * 100}%)`;
+  }
+
+  setInterval(() => {
+    i = (i + 1) % slides.length;
+    goTo(i);
+  }, 5000);
+})();
+</script>
