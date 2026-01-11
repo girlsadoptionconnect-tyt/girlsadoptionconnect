@@ -15,9 +15,13 @@
               <div class="carousel-date">{{ post.date | date: "%b %d, %Y" }}</div>
               <h2 class="carousel-title">{{ post.title }}</h2>
 
-              {% if post.adoptee_location %}
-                <div class="carousel-location"><em>{{ post.adoptee_location }}</em></div>
-              {% endif %}
+              {% if post.author or post.adoptee_location %}
+  <div class="carousel-subline">
+    {% if post.author %}<span class="carousel-author">{{ post.author }}</span>{% endif %}
+    {% if post.author and post.adoptee_location %}<span class="dot">•</span>{% endif %}
+    {% if post.adoptee_location %}<span class="carousel-location"><em>{{ post.adoptee_location }}</em></span>{% endif %}
+  </div>
+{% endif %}
 
               {% if post.excerpt %}
                 <p class="carousel-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
