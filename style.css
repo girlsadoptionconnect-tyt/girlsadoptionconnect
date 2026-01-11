@@ -1342,7 +1342,7 @@ body{
 /* ===== HOME CAROUSEL ===== */
 
 .home-carousel{
-  background: #eee5dd;
+  background: #FFFFFF;
   padding: 26px;
   border-radius: 8px;
 
@@ -1361,7 +1361,7 @@ body{
 .carousel-card{
   flex: 0 0 100%;
   box-sizing: border-box;
-  margin: 0;               /* IMPORTANT: kill the vertical stacking */
+  margin: 0;               
 }
 
 .carousel-card a{
