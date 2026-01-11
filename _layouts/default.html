@@ -169,115 +169,48 @@ document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.getElementById("homeCarousel");
   if (!carousel) return;
 
-  const track  = carousel.querySelector(".home-carousel-track");
   const slides = carousel.querySelectorAll(".carousel-card");
-  if (!track || slides.length < 2) return;
+  if (slides.length < 2) return;
 
   let i = 0;
+  let timer = null;
 
-  // ----- helpers -----
-  function clampIndex(idx){
-    if (idx < 0) return 0;
-    if (idx > slides.length - 1) return slides.length - 1;
-    return idx;
+  function slideWidth(){
+    return carousel.clientWidth;
   }
 
   function goTo(idx){
-    i = clampIndex(idx);
-    track.style.transition = "transform 0.6s ease";
-    track.style.transform = `translateX(-${i * 100}%)`;
+    i = (idx + slides.length) % slides.length;
+    carousel.scrollTo({ left: i * slideWidth(), behavior: "smooth" });
   }
 
-  // ----- auto rotate -----
-  let timer = null;
   function startAuto(){
     stopAuto();
-    timer = setInterval(() => {
-      goTo((i + 1) % slides.length);
-    }, 5000);
+    timer = setInterval(() => goTo(i + 1), 5000);
   }
+
   function stopAuto(){
     if (timer) clearInterval(timer);
     timer = null;
   }
 
-  // ----- drag/swipe -----
-  let isDown = false;
-  let startX = 0;
-  let currentX = 0;
-  let startTranslate = 0; // in px
-  let width = 0;
-
-  function getTranslateX(){
-    const m = new DOMMatrixReadOnly(getComputedStyle(track).transform);
-    return m.m41; // current translateX in px
-  }
-
-  function onDown(clientX){
-    isDown = true;
+  // Keep index in sync when the user scrolls manually
+  let scrollTimeout = null;
+  carousel.addEventListener("scroll", () => {
     stopAuto();
-    width = carousel.getBoundingClientRect().width;
-    track.style.transition = "none";
-
-    startX = clientX;
-    startTranslate = getTranslateX();
-    currentX = clientX;
-  }
-
-  function onMove(clientX){
-    if (!isDown) return;
-    currentX = clientX;
-    const dx = currentX - startX;
-    track.style.transform = `translateX(${startTranslate + dx}px)`;
-  }
-
-  function onUp(){
-    if (!isDown) return;
-    isDown = false;
-
-    const dx = currentX - startX;
-    const threshold = Math.min(120, width * 0.18); // swipe sensitivity
-
-    // If user swiped enough, move slides
-    if (dx > threshold) {
-      goTo(i - 1);
-    } else if (dx < -threshold) {
-      goTo(i + 1);
-    } else {
-      goTo(i); // snap back
-    }
-
-    startAuto();
-  }
-
-  // mouse
-  carousel.addEventListener("mousedown", (e) => {
-    // allow text selection links etc to not break
-    onDown(e.clientX);
-  });
-  window.addEventListener("mousemove", (e) => onMove(e.clientX));
-  window.addEventListener("mouseup", onUp);
-
-  // touch
-  carousel.addEventListener("touchstart", (e) => {
-    if (!e.touches || !e.touches.length) return;
-    onDown(e.touches[0].clientX);
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      i = Math.round(carousel.scrollLeft / slideWidth());
+      startAuto();
+    }, 150);
   }, { passive: true });
 
-  carousel.addEventListener("touchmove", (e) => {
-    if (!e.touches || !e.touches.length) return;
-    onMove(e.touches[0].clientX);
-  }, { passive: true });
+  // Pause while interacting
+  carousel.addEventListener("pointerdown", stopAuto);
+  carousel.addEventListener("pointerup", startAuto);
+  carousel.addEventListener("pointercancel", startAuto);
 
-  carousel.addEventListener("touchend", onUp);
-
-  // keep correct position on resize
   window.addEventListener("resize", () => goTo(i));
-
-  // Prevent image dragging ghost effect
-  carousel.querySelectorAll("img").forEach(img => {
-    img.setAttribute("draggable", "false");
-  });
 
   // init
   goTo(0);
