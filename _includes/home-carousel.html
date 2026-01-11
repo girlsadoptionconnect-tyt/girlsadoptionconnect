@@ -1,37 +1,38 @@
 <div class="home-carousel">
+  <div class="home-carousel-track">
 
-  {% assign posts = site.posts | sort: "date" | reverse | slice: 0, 6 %}
+    {% assign posts = site.posts | sort: "date" | reverse | slice: 0, 6 %}
+    {% for post in posts %}
+      <article class="carousel-card">
+        <a href="{{ post.url | relative_url }}">
 
-  {% for post in posts %}
-    <article class="carousel-card">
-      <a href="{{ post.url | relative_url }}">
+          {% if post.cover %}
+            <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
 
-        {% if post.cover %}
-          <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
-        {% endif %}
+          <div class="carousel-meta">
+            <div class="carousel-date">
+              {{ post.date | date: "%b %d, %Y" }}
+            </div>
 
-        <div class="carousel-meta">
-          <div class="carousel-date">
-            {{ post.date | date: "%b %d, %Y" }}
+            <h2 class="carousel-title">{{ post.title }}</h2>
+
+            {% if post.adoptee_location %}
+              <div class="carousel-location">
+                <em>{{ post.adoptee_location }}</em>
+              </div>
+            {% endif %}
+
+            {% if post.excerpt %}
+              <p class="carousel-excerpt">
+                {{ post.excerpt | strip_html | truncate: 140 }}
+              </p>
+            {% endif %}
           </div>
 
-          <h2 class="carousel-title">{{ post.title }}</h2>
+        </a>
+      </article>
+    {% endfor %}
 
-          {% if post.adoptee_location %}
-            <div class="carousel-location">
-              <em>{{ post.adoptee_location }}</em>
-            </div>
-          {% endif %}
-
-          {% if post.excerpt %}
-            <p class="carousel-excerpt">
-              {{ post.excerpt | strip_html | truncate: 140 }}
-            </p>
-          {% endif %}
-        </div>
-
-      </a>
-    </article>
-  {% endfor %}
-
+  </div>
 </div>
