@@ -1382,6 +1382,21 @@ body{
   color: #6a6a6a;
 }
 
+.home-carousel{
+  position: relative;
+  overflow: hidden;
+}
+
+.home-carousel-track{
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.carousel-card{
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
 /* RIGHT */
 .home-right{
   font-size: 15px;
