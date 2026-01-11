@@ -1351,6 +1351,24 @@ body{
   overflow: hidden; /* prevents peek + respects rounded corners */
 }
 
+.carousel-meta{
+  background: rgba(255, 235, 240, 0.65); /* ultra pale pink */
+  padding: 18px 20px;
+  border-radius: 6px;
+
+  /* optional: subtle separation */
+  box-shadow: inset 0 0 0 1px rgba(220, 180, 190, 0.25);
+}
+
+.carousel-card a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.carousel-card:hover .carousel-title{
+  text-decoration: underline;
+}
+
 /* actual scroll container (NO padding!) */
 .home-carousel{
   width: 100%;
