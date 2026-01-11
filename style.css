@@ -1341,73 +1341,45 @@ body{
 
 /* ===== HOME CAROUSEL ===== */
 
+/* --- HOME CAROUSEL (scroll-snap, draggable) --- */
 .home-carousel{
   background: #FFFFFF;
   padding: 26px;
   border-radius: 8px;
 
-  position: relative;
-  overflow: hidden;
+  overflow-x: auto;              /* key: allow manual scroll */
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; /* snap slide-by-slide */
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch; /* iOS smooth */
 }
 
-/* the moving strip */
+/* hide scrollbar but keep scroll */
+.home-carousel::-webkit-scrollbar{ height: 0; }
+.home-carousel{ scrollbar-width: none; } /* Firefox */
+
+/* track becomes the horizontal row */
 .home-carousel-track{
   display: flex;
-  transition: transform 0.6s ease;
-  will-change: transform;
-  cursor: grab;
-  touch-action: pan-y; /* allows page scroll vertically while swiping horizontally */
+  gap: 0;
 }
 
-.home-carousel:active .home-carousel-track{
-  cursor: grabbing;
-}
-
-/* each slide takes full width */
+/* each slide takes full carousel width */
 .carousel-card{
   flex: 0 0 100%;
+  scroll-snap-align: start;
   box-sizing: border-box;
-  margin: 0;               
+  margin: 0;
 }
 
-.carousel-card a{
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
+/* prevent images from "dragging" ghost */
 .carousel-card img{
   width: 100%;
-  height: auto;
-  border-radius: 4px;
   display: block;
-}
-
-.carousel-meta{
-  background: #f4f4f4;
-  padding: 18px;
-}
-
-.carousel-date{
-  font-size: 13px;
-  color: #8a8a8a;
-  margin-bottom: 8px;
-}
-
-.carousel-title{
-  font-size: 22px;
-  margin: 0 0 6px;
-}
-
-.carousel-location{
-  font-size: 14px;
-  color: #7a7a7a;
-}
-
-.carousel-excerpt{
-  font-size: 14px;
-  margin-top: 8px;
-  color: #6a6a6a;
+  border-radius: 0px;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 
