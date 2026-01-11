@@ -1397,6 +1397,10 @@ body{
   box-sizing: border-box;
 }
 
+.home-carousel:hover .home-carousel-track{
+  animation-play-state: paused;
+}
+
 /* RIGHT */
 .home-right{
   font-size: 15px;
