@@ -2,8 +2,8 @@
 layout: post
 title: "The irony of being an only daughter (twice)"
 date: 2025-12-31
-category: Unpacking Our Adoption
 author: Téa Tamburo
+category: Unpacking Our Adoption
 cover: /assets/posts/the-irony-of-being-an-only-daughter-twice/cover.jpeg
 ---
 People love to romanticize the idea of being an only child: all the attention, all the resources, all the independence. But what that version leaves out is the quiet. I'm here to add my experience to the narrative.
