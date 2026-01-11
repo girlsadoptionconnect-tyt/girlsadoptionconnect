@@ -1355,6 +1355,12 @@ body{
   display: flex;
   transition: transform 0.6s ease;
   will-change: transform;
+  cursor: grab;
+  touch-action: pan-y; /* allows page scroll vertically while swiping horizontally */
+}
+
+.home-carousel:active .home-carousel-track{
+  cursor: grabbing;
 }
 
 /* each slide takes full width */
