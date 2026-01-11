@@ -13,3 +13,4 @@ Growing up was hard. As a person of color, growing up in an all white city was n
 During the pandemic, everything changed. I started connecting with other Asian people online, and I started to learn more about my culture and embrace it. I also met more and more people who were also adopted, and this helped me feel like I belong. 
 
 Although it is very noticeable that I am adopted by looking at my last name, I want to be able to create my own identify. I want to be able to be known as more than the girl who has white parents, or the kid who is adopted. I hope by learning more about my culture and indulging myself in it, I can reclaim myself that I lost when I was younger.
+
