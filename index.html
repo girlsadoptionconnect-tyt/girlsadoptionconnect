@@ -3,4 +3,52 @@ layout: default
 title: Home
 ---
 
-<!-- Home page content will go here -->
+<div class="home-wrap">
+
+  <!-- LEFT COLUMN -->
+  <aside class="home-left">
+    <h3 class="home-section-title">Connect</h3>
+    <p class="home-subtext">meet adoptees from<br>across the world</p>
+
+    <nav class="home-links">
+      <a href="https://www.instagram.com/girls.adoption.connect/" target="_blank">Instagram</a>
+      <a href="https://docs.google.com/document/d/1Si_OI7LRvLoRTfRObk_nr4OtpxB9WXnMpxAWI3KNGUE/edit?usp=sharing" target="_blank">Community Chats</a>
+      <a href="https://forms.gle/HS5y6mw8kgTXc1f4A" target="_blank">Contribute</a>
+    </nav>
+
+    <h3 class="home-section-title">Follow</h3>
+
+    <div class="home-mini-grid">
+      {% assign recent = site.posts | sort: "date" | reverse | slice: 0, 6 %}
+      {% for post in recent %}
+        {% if post.cover %}
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
+
+  <!-- CENTER COLUMN -->
+  <main class="home-center">
+    {% include home-carousel.html %}
+  </main>
+
+  <!-- RIGHT COLUMN -->
+  <aside class="home-right">
+    <h3 class="home-section-title">Share Your Story</h3>
+
+    <p>
+      You’re invited to share your adoption story, reflect on how adoption has
+      shaped your life, or express your thoughts about your adoption journey.
+    </p>
+
+    <p>
+      Submissions are welcome through the
+      <a href="https://forms.gle/HS5y6mw8kgTXc1f4A" target="_blank">contribution form</a>.
+      Girls Adoption Connect values every voice and looks forward to hearing from you!
+    </p>
+  </aside>
+
+</div>
