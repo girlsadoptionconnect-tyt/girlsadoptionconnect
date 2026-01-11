@@ -1,7 +1,7 @@
-<div class="home-carousel">
+<div class="home-carousel" id="homeCarousel">
   <div class="home-carousel-track">
-
     {% assign posts = site.posts | sort: "date" | reverse | slice: 0, 6 %}
+
     {% for post in posts %}
       <article class="carousel-card">
         <a href="{{ post.url | relative_url }}">
@@ -33,6 +33,5 @@
         </a>
       </article>
     {% endfor %}
-
   </div>
 </div>
