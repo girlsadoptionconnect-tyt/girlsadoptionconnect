@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Em Mackzum"
-date: 022-11-08
+date: 2022-11-08
 adoptee_location: Jiangxi, China to Oregon, United States
 category: Adoptee Spotlights
 cover: /assets/posts/2022-11-08-em-mackzum/cover.webp
