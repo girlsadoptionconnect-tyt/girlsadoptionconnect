@@ -68,29 +68,23 @@ title: Home
     <h2 class="home-section-heading">Our Stories</h2>
 
     <div class="post-grid">
-      {% assign stories = site.posts | where: "category", "Adoptee Spotlights" | sort: "date" | reverse | slice: 0, 4 %}
-      {% for post in stories %}
-        <a class="post-card" href="{{ post.url | relative_url }}">
-          {% if post.cover %}
-            <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
+  {% assign stories = site.posts | where: "category", "Adoptee Spotlights" | sort: "date" | reverse | slice: 0, 4 %}
+  {% for post in stories %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      {% if post.cover %}
+        <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
 
-          <div class="post-meta">
-            <div class="post-card-title">{{ post.title }}</div>
+      <div class="post-meta">
+        <div class="post-card-title">{{ post.title }}</div>
 
-            {% if post.adoptee_location %}
-              <div class="post-card-location"><em>{{ post.adoptee_location }}</em></div>
-            {% endif %}
-
-            {% if post.excerpt %}
-              <div class="post-card-excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}
-              </div>
-            {% endif %}
-          </div>
-        </a>
-      {% endfor %}
-    </div>
+        {% if post.adoptee_location %}
+          <div class="post-card-location"><em>{{ post.adoptee_location }}</em></div>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
 
     <a class="home-section-more" href="{{ '/our-voices/adoptee-spotlights/' | relative_url }}">View all →</a>
   </div>
@@ -99,30 +93,24 @@ title: Home
   <div class="home-section">
     <h2 class="home-section-heading">Unpacking Our Adoption</h2>
 
-    <div class="post-grid">
-      {% assign unpacking = site.posts | where: "category", "Unpacking Our Adoption" | sort: "date" | reverse | slice: 0, 4 %}
-      {% for post in unpacking %}
-        <a class="post-card" href="{{ post.url | relative_url }}">
-          {% if post.cover %}
-            <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
+    <<div class="post-grid">
+  {% assign unpacking = site.posts | where: "category", "Unpacking Our Adoption" | sort: "date" | reverse | slice: 0, 4 %}
+  {% for post in unpacking %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      {% if post.cover %}
+        <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
 
-          <div class="post-meta">
-            <div class="post-card-title">{{ post.title }}</div>
+      <div class="post-meta">
+        <div class="post-card-title">{{ post.title }}</div>
 
-            {% if post.author %}
-              <div class="post-card-location"><em>{{ post.author }}</em></div>
-            {% endif %}
-
-            {% if post.excerpt %}
-              <div class="post-card-excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}
-              </div>
-            {% endif %}
-          </div>
-        </a>
-      {% endfor %}
-    </div>
+        {% if post.author %}
+          <div class="post-card-location"><em>{{ post.author }}</em></div>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
 
     <a class="home-section-more" href="{{ '/our-voices/unpacking-our-adoption/' | relative_url }}">View all →</a>
   </div>
@@ -132,29 +120,23 @@ title: Home
     <h2 class="home-section-heading">Adoption Awareness</h2>
 
     <div class="post-grid">
-      {% assign awareness = site.posts | where: "category", "Informative" | sort: "date" | reverse | slice: 0, 4 %}
-      {% for post in awareness %}
-        <a class="post-card" href="{{ post.url | relative_url }}">
-          {% if post.cover %}
-            <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
+  {% assign awareness = site.posts | where: "category", "Informative" | sort: "date" | reverse | slice: 0, 4 %}
+  {% for post in awareness %}
+    <a class="post-card" href="{{ post.url | relative_url }}">
+      {% if post.cover %}
+        <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
 
-          <div class="post-meta">
-            <div class="post-card-title">{{ post.title }}</div>
+      <div class="post-meta">
+        <div class="post-card-title">{{ post.title }}</div>
 
-            {% if post.author %}
-              <div class="post-card-location"><em>{{ post.author }}</em></div>
-            {% endif %}
-
-            {% if post.excerpt %}
-              <div class="post-card-excerpt">
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 90 }}
-              </div>
-            {% endif %}
-          </div>
-        </a>
-      {% endfor %}
-    </div>
+        {% if post.author %}
+          <div class="post-card-location"><em>{{ post.author }}</em></div>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
 
     <a class="home-section-more" href="{{ '/informative/' | relative_url }}">View all →</a>
   </div>
