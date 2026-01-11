@@ -18,16 +18,21 @@ title: Home
 
     <h3 class="home-section-title">Follow</h3>
 
-    <div class="home-mini-grid">
-      {% assign recent = site.posts | sort: "date" | reverse | slice: 0, 6 %}
-      {% for post in recent %}
-        {% if post.cover %}
-          <a href="{{ post.url | relative_url }}">
-            <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
+    <a
+  href="https://www.instagram.com/girls.adoption.connect/"
+  target="_blank"
+  class="instagram-block"
+  aria-label="Girls Adoption Connect Instagram"
+>
+  <div class="home-mini-grid">
+    {% assign recent = site.posts | sort: "date" | reverse | slice: 0, 6 %}
+    {% for post in recent %}
+      {% if post.cover %}
+        <img src="{{ post.cover | relative_url }}" alt="{{ post.title }}">
+      {% endif %}
+    {% endfor %}
+  </div>
+</a>
   </aside>
 
   <!-- CENTER COLUMN -->
