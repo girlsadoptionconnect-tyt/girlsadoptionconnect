@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Maggie Yu Walker"
+date: 2023-06-21
+adoptee_location: Yiyang, Hunan, China to Charleston, South Carolina
+category: Adoptee Spotlights
+cover: /assets/posts/2023-06-21-maggie-yu-walker/cover.avif
+---
+Hi! My name is Maggie Yu Walker, and I was adopted from Yiyang in Hunan province, China. Right now, I'm studying political science (although I think politics are gross at this point), and I'm finishing up my senior year of college before heading to law school in the fall. According to my records, I was abandoned at the city gate eight days after I was born, and I think whoever left me only left a note about what day I was born. I was adopted when I was 12-months-old, and I grew up near Charleston, South Carolina. 
+
+I grew up with what I now realize as micro-aggressions, not only from other kids, but from my family as well. And although my parents meant well, I think their color-blind philosophy resulted in me not really having the tools to name what racism was as I grew up. I also grew up feeling stuck in-between two cultures: not Chinese enough for the Chinese community and too Asian for the white community, which the rest of my family fit into seamlessly. 
+
+For a long time, I wanted to embrace the culture I was born into, but I felt unworthy, not having grown up in that culture and not knowing the language. At some point during my freshman year of college, I admitted my imposter syndrome to some close friends and my mom, and they were surprised. They told me that it's not weird for me to want to explore my Chinese heritage because that's what I was born into. It made sense. That affirmation gave me courage to start exploring, starting out with baby steps like learning how to make some Chinese dishes. But what really helped me break through my imposter syndrome was — unfortunately and ironically — racism. I studied abroad my junior year of college and experienced a lot of racism during that period. I was used to micro-aggressions, but I had never been called slurs before. At some point, I decided to own the fact that I am Chinese, and I refused to let anyone make me feel ashamed of that fact. A bit contrarian, perhaps, but even though I'd never want to relive that semester, I came out of it stronger. 
+
+It has been a journey, and there's way more that I could share, but I am thankful for the journey. To my fellow adoptees, I hope you give yourself the space to grieve what you have lost and grieve that brokenness in the world. And on your journey, I hope you find healing and comfort and courage. I'm thankful for this platform; it's really important for adoptees especially to remember we're not alone. 
+
+One huge part of my journey is my faith. I don't think that I would have the freedom to explore these difficult topics without faith and the knowledge that my identity is first in Christ. Having that foundation has really freed me to dive into exploring my identity as an adoptee, as a Chinese person, as a woman and even as an American. I won't pretend it's been easy, and there are days where the journey is still hard. It still hurts in those death-by-a-thousand cuts ways, like when you visit your friend's families and see that her eyes look like her dad's and she has the same laughter as her mom. It hurts, and that's OK to acknowledge. But in the middle of all that, I hope that you know so much that you are loved and beautiful and wanted. That was long, but thank you for reading if you got this far! 
