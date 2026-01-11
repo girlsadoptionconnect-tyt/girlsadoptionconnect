@@ -1339,6 +1339,20 @@ body{
   border-radius: 6px;
 }
 
+.instagram-block{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.instagram-block:hover{
+  opacity: 0.95;
+}
+
+.instagram-block img{
+  pointer-events: none; /* makes whole grid clickable */
+}
+
 /* ===== HOME CAROUSEL ===== */
 
 /* --- HOME CAROUSEL (scroll-snap, draggable) --- */
