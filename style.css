@@ -1581,3 +1581,19 @@ body{
   font-size: 14px;
   color: #7a7a7a;
 }
+
+
+
+
+/* FORCE title + tagline to line up on the left */
+.hero-titleblock{
+  display: block !important;          /* overrides any flex centering */
+  text-align: left !important;        /* overrides any centering */
+}
+
+.hero-title,
+.hero-tagline{
+  text-align: left !important;
+  margin-left: 0 !important;          /* kills the old 4px indent */
+  padding-left: 0 !important;
+}
