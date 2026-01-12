@@ -1667,3 +1667,35 @@ body{
 .search-toggle{
   margin: 0;
 }
+
+
+
+
+/* ===== SEARCH ICON: top-right of hero ===== */
+
+/* Make hero the positioning context */
+.hero-home{
+  position: relative;
+}
+
+/* Pull search icon out of nav flow */
+.hero-home .search-toggle{
+  position: absolute !important;
+  top: 28px;          /* vertical distance from top */
+  right: 32px;       /* distance from right edge */
+
+  margin: 0 !important;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 999px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+/* Optional: hover polish */
+.hero-home .search-toggle:hover{
+  background: rgba(255,255,255,0.85);
+}
