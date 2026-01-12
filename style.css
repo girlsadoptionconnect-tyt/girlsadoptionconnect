@@ -161,6 +161,19 @@ body{
   z-index: 2;
 }
 
+.hero-titleblock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* tighten tagline → nav spacing */
+.hero-tagline{
+  margin-bottom: 8px; /* was larger */
+}
+
+
+
 /* Responsive: stack / shrink for smaller screens */
 @media (max-width: 950px){
   .hero-home{ height: 520px; }
