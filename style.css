@@ -1674,3 +1674,50 @@ body{
   margin: 0 !important;                  /* kills margin-left:auto */
   position: relative !important;
 }
+
+
+
+
+
+/* ===== HERO: unified left alignment ===== */
+
+.hero-titleblock{
+  position: absolute;
+  left: 300px;        /* same anchor for everything */
+  top: 95px;
+  max-width: 980px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 🔑 LEFT */
+  text-align: left;
+}
+
+/* Title */
+.hero-title{
+  margin: 0;
+}
+
+/* Tagline aligns perfectly under title */
+.hero-tagline{
+  margin: 6px 0 14px 0;
+}
+
+/* Nav + search row */
+.hero-navwrap{
+  display: inline-flex;    /* NOT full width */
+  align-items: center;
+  gap: 14px;
+}
+
+/* Pink pill starts exactly under title */
+.hero-nav{
+  margin: 0;
+  width: fit-content;
+}
+
+/* Search icon sits immediately after About */
+.search-toggle{
+  margin: 0;
+  padding: 6px 8px;
+}
