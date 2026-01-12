@@ -1680,14 +1680,14 @@ body{
 
 /* Pull search icon out of nav flow */
 .hero-home .search-toggle{
-  top: 20px;          /* ⬆ move higher */
-  right: 28px;       /* ⬅ move closer to edge */
+  position: fixed !important;   
+  top: 18px;
+  right: 22px;
+  
+  z-index: 10000;
 
-  z-index: 20;
-
-  width: 36px;
-  height: 36px;
-  padding: 0;
+  width: 38px;
+  height: 38px;
 
   display: flex;
   align-items: center;
