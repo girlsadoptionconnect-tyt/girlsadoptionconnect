@@ -1584,7 +1584,6 @@ body{
 
 
 
-
 /* FORCE title + tagline to line up on the left */
 .hero-titleblock{
   display: block !important;          /* overrides any flex centering */
@@ -1594,6 +1593,6 @@ body{
 .hero-title,
 .hero-tagline{
   text-align: left !important;
-  margin-left: 0 !important;          /* kills the old 4px indent */
-  padding-left: 0 !important;
+  margin-left: 100 !important;          /* kills the old 4px indent */
+  padding-left: 100 !important;
 }
