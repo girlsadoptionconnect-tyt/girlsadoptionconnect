@@ -25,7 +25,7 @@ permalink: /community-chats/
 
       <p>
         Girls Adoption Connect aims to keep these chats welcoming, respectful, and safe.
-        Anyone can be removed at any time for inappropriate behavior at Girls Adoption Connect's discretion.
+        Anyone can be removed at any time at Girls Adoption Connect's discretion.
       </p>
 
       <p>
