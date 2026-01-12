@@ -91,6 +91,23 @@ body{
   color:#222;
 }
 
+/* Center multi-line nav labels */
+.hero-nav a,
+.hero-nav .nav-link{
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Ensure nav items can wrap cleanly */
+.hero-nav a,
+.hero-nav .nav-link{
+  white-space: normal;
+}
+
+.hero-nav{
+  align-items: center;
+}
+
 /* Responsive: stack / shrink for smaller screens */
 @media (max-width: 950px){
   .hero-home{ height: 520px; }
