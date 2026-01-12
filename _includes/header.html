@@ -4,52 +4,10 @@
     <img class="hero-bg" src="{{ '/assets/pink-clouds.jpg' | relative_url }}" alt="Pink cloud background">
     <img class="hero-logo" src="{{ '/assets/logo-circle.png' | relative_url }}" alt="Girls Adoption Connect logo">
 
+    <div class="hero-titleblock">
+      <h1 class="hero-title">Girls Adoption Connect</h1>
+      <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
 
-<div class="hero-titleblock">
-
-  <h1 class="hero-title">Girls Adoption Connect</h1>
-  <p class="hero-tagline">sharing experiences, connecting &amp; educating</p>
-
-  <div class="hero-navwrap">
-    <nav class="hero-nav">
-      <a class="nav-a" href="{{ '/' | relative_url }}">Home</a>
-
-      <div class="nav-item has-dropdown">
-        <button class="nav-link" type="button">Our Voices</button>
-        <div class="dropdown">
-          <a href="{{ '/our-voices/adoptee-spotlights/' | relative_url }}">Adoptee Spotlights</a>
-          <a href="{{ '/our-voices/unpacking-our-adoption/' | relative_url }}">Unpacking Our Adoption</a>
-          <a href="{{ '/our-voices/adoptee-experience-series/' | relative_url }}">The Adoptee Experience Series</a>
-        </div>
-      </div>
-
-      <div class="nav-item has-dropdown">
-        <a class="nav-a nav-link" href="{{ '/informative/' | relative_url }}">Informative</a>
-        <div class="dropdown">
-          <a href="{{ '/informative/qa/' | relative_url }}">Q&amp;A</a>
-        </div>
-      </div>
-
-      <a class="nav-a" href="{{ '/resources/' | relative_url }}">Resources</a>
-      <a class="nav-a" href="{{ '/community-chats/' | relative_url }}">Community Chats</a>
-      <a class="nav-a" href="{{ '/community-updates/' | relative_url }}">Community Updates</a>
-
-      <div class="nav-item has-dropdown">
-        <a class="nav-a nav-link" href="{{ '/about/' | relative_url }}">About</a>
-        <div class="dropdown">
-          <a href="{{ '/about/policies/' | relative_url }}">Policies</a>
-        </div>
-      </div>
-    </nav>
-
-    <button class="search-toggle" id="searchToggle" aria-label="Search">🔍</button>
-  </div>
-
-</div>
-
-<!-- Search overlay stays BELOW header (as you already have it) -->
-
-      <!-- NAV ROW (nav centered, search icon right) -->
       <div class="hero-navwrap">
         <nav class="hero-nav">
           <a class="nav-a" href="{{ '/' | relative_url }}">Home</a>
@@ -70,8 +28,8 @@
             </div>
           </div>
 
-          <a class="nav-a" href="{{ '/community-chats/' | relative_url }}">Community Chats</a>
           <a class="nav-a" href="{{ '/resources/' | relative_url }}">Resources</a>
+          <a class="nav-a" href="{{ '/community-chats/' | relative_url }}">Community Chats</a>
           <a class="nav-a" href="{{ '/community-updates/' | relative_url }}">Community Updates</a>
 
           <div class="nav-item has-dropdown">
@@ -103,7 +61,6 @@
       <button class="search-close" id="searchClose" aria-label="Close search">×</button>
     </div>
 
-  
     <div class="search-results" id="searchResults"></div>
   </div>
 </div>
