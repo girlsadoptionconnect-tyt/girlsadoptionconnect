@@ -1705,3 +1705,29 @@ body{
 .hero-home .search-toggle:hover{
   background: rgba(255,255,255,0.85);
 }
+
+
+
+
+/* ===== DROPDOWN HOVER BUFFER (prevents flicker) ===== */
+
+/* make the dropdown feel "connected" to the top item */
+.nav-item.has-dropdown .dropdown{
+  top: calc(100% + 6px) !important;  /* small gap */
+}
+
+/* invisible bridge between nav item and dropdown */
+.nav-item.has-dropdown .dropdown::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -20px;        /* bridge height */
+  height: 20px;
+  background: transparent;
+}
+
+
+
+
+
