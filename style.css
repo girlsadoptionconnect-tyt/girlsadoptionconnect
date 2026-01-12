@@ -1596,3 +1596,42 @@ body{
   margin-left: 30px !important;          /* kills the old 4px indent */
   padding-left: 30px !important;
 }
+
+
+
+
+
+
+
+/* --- HERO: lock nav + search directly under tagline --- */
+.hero-titleblock{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;   /* NOT center */
+  text-align: left !important;
+}
+
+/* tighten spacing between tagline and nav */
+.hero-tagline{
+  margin: 6px 0 12px 0 !important;
+}
+
+/* nav + search on the same row */
+.hero-navwrap{
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 0 !important;
+}
+
+/* keep the pill sized to its content */
+.hero-nav{
+  margin: 0 !important;
+  width: fit-content;
+}
+
+/* search icon sits right after About */
+.search-toggle{
+  margin: 0 !important;
+  transform: translateY(1px); /* tiny optical alignment */
+}
