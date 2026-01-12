@@ -108,6 +108,26 @@ body{
   align-items: center;
 }
 
+.home-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-link:hover,
+.home-link:focus,
+.home-link:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-link .hero-title,
+.home-link .hero-tagline{
+  color: inherit;
+}
+
 /* ✅ Allow dropdowns to extend outside the hero/nav area */
 .hero,
 .hero-home,
