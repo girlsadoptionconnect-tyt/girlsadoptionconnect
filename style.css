@@ -1556,121 +1556,10 @@ body{
 
 
 
-/* FORCE title + tagline to line up on the left */
-.hero-titleblock{
-  display: block !important;          /* overrides any flex centering */
-  text-align: left !important;        /* overrides any centering */
-}
-
-.hero-title,
-.hero-tagline{
-  text-align: left !important;
-  margin-left: 50px !important;          /* kills the old 4px indent */
-  padding-left: 70px !important;
-}
 
 
 
 
-
-
-
-/* --- HERO: lock nav + search directly under tagline --- */
-.hero-titleblock{
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  text-align: left !important;
-}
-
-/* tighten spacing between tagline and nav */
-.hero-tagline{
-  margin: 6px 0 12px 0 !important;
-}
-
-/* nav + search on the same row, left-aligned */
-.hero-navwrap{
-  display: flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  justify-content: flex-start !important;
-  width: auto !important;
-}
-
-/* keep the pill sized to its content and NOT centered */
-.hero-nav{
-  margin: 0 !important;
-  width: fit-content !important;
-}
-
-/* search icon sits right after About */
-.search-toggle{
-  margin: 0 !important;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 8px 10px;
-  border-radius: 999px;
-  transform: translateY(1px);
-}
-
-.search-toggle:hover{
-  background: rgba(255,255,255,0.35);
-}
-
-
-
-
-
-
-
-
-/* ===== HEADER NAV: force it under the tagline (no centering / no full-width row) ===== */
-
-/* Make sure the titleblock is a left-aligned column */
-.hero-home .hero-titleblock{
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  text-align: left !important;
-}
-
-/* Make the tagline start at same left edge as title */
-.hero-home .hero-titleblock .hero-tagline{
-  margin: 6px 0 10px 0 !important;
-  padding: 0 !important;
-}
-
-/* The row that contains the pill + search icon */
-.hero-home .hero-titleblock .hero-navwrap{
-  display: inline-flex !important;       /* not full width */
-  align-items: center !important;
-  justify-content: flex-start !important;
-  width: auto !important;                /* kill width:100% */
-  margin: 0 !important;                  /* kill centering */
-  padding: 0 !important;
-  gap: 12px !important;
-  position: relative !important;         /* kill any absolute/fixed */
-  left: auto !important;
-  right: auto !important;
-  top: auto !important;
-  bottom: auto !important;
-}
-
-/* The pill itself: NEVER centered by margin:auto */
-.hero-home .hero-titleblock .hero-navwrap .hero-nav{
-  display: inline-flex !important;
-  margin: 0 !important;                  /* kills margin:0 auto */
-  width: fit-content !important;
-  position: relative !important;         /* kill any positioning */
-}
-
-/* Search icon should sit immediately after About */
-.hero-home .hero-titleblock .hero-navwrap .search-toggle{
-  margin: 0 !important;                  /* kills margin-left:auto */
-  position: relative !important;
-}
 
 
 
@@ -1720,52 +1609,61 @@ body{
 }
 
 
+/* =========================
+   HERO — FINAL (single source of truth)
+   ========================= */
 
+.hero-home{
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
 
-/* ===== FINAL HERO ALIGNMENT OVERRIDE (paste at very bottom) ===== */
+/* keep bg behind everything */
+.hero-bg{ z-index: 0; }
+.hero-logo{ z-index: 2; }
+.hero-titleblock{ z-index: 3; }
 
-/* anchor the entire title/tagline/nav block next to the logo */
+/* title + tagline + nav all align to the same left edge */
 .hero-titleblock{
-  position: absolute !important;
-  left: 380px !important;          /* adjust 360–420 if needed */
-  top: 90px !important;
-  width: calc(100% - 420px) !important;
-  max-width: none !important;
+  position: absolute;
+  left: 380px;     /* adjust if you want it closer/farther from logo */
+  top: 95px;
+  max-width: 980px;
 
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;   /* 🔑 left */
-  justify-content: flex-start !important;
-  text-align: left !important;
-
-  transform: none !important;           /* kills centering transforms */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* 🔑 left align */
+  text-align: left;
 }
 
-/* make sure title + tagline are not centered by anything */
-.hero-title,
+/* title */
+.hero-title{
+  margin: 0;
+}
+
+/* tagline: NO extra padding/margin-left */
 .hero-tagline{
-  text-align: left !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin: 6px 0 14px 0;
+  padding: 0;
 }
 
-/* put nav + search directly under tagline, left-aligned */
+/* nav row sits right under tagline */
 .hero-navwrap{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  width: auto !important;
-  gap: 14px !important;
-  margin: 12px 0 0 0 !important;
+  display: inline-flex;     /* shrink-to-fit */
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
 }
 
-/* prevent the pill from centering itself */
+/* nav pill should NOT be centered */
 .hero-nav{
-  margin: 0 !important;
-  width: fit-content !important;
+  margin: 0;
+  width: fit-content;
 }
 
-/* keep search icon immediately after About */
+/* search icon sits right after About */
 .search-toggle{
-  margin: 0 !important;
+  margin: 0;
 }
