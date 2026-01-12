@@ -52,7 +52,10 @@ body{
   z-index: 3;
   max-width: 980px;
 
-  text-align: left; /* keeps title/tagline left aligned */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* left align everything inside */
+  text-align: left;
 }
 
 /* headline */
@@ -107,7 +110,7 @@ body{
 }
 
 .hero-nav{
-  align-items: center;
+  align-items: left;
 }
 
 
