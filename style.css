@@ -1621,3 +1621,43 @@ body{
 .search-toggle:hover{
   background: rgba(255,255,255,0.35);
 }
+
+
+
+
+
+
+
+
+/* ✅ Force nav + search to sit directly under the tagline, left-aligned */
+.hero-titleblock{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+/* tag line spacing */
+.hero-tagline{
+  margin: 6px 0 12px 0 !important;
+}
+
+/* nav pill + search icon on one row, LEFT under the tagline */
+.hero-navwrap{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  width: auto !important;          /* prevents centering tricks */
+}
+
+/* stop any old "center the pill" rules */
+.hero-nav{
+  margin: 0 !important;            /* kills margin: 0 auto */
+  width: fit-content !important;
+}
+
+/* stop any old "push icon to far right" rules */
+.search-toggle{
+  margin: 0 !important;            /* kills margin-left:auto */
+}
