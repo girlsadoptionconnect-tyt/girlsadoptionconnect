@@ -1594,7 +1594,7 @@ body{
 .hero-tagline{
   text-align: left !important;
   margin-left: 50px !important;          /* kills the old 4px indent */
-  padding-left: 50px !important;
+  padding-left: 70px !important;
 }
 
 
