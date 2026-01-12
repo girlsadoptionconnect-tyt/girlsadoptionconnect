@@ -1593,6 +1593,6 @@ body{
 .hero-title,
 .hero-tagline{
   text-align: left !important;
-  margin-left: 600 !important;          /* kills the old 4px indent */
-  padding-left: 600 !important;
+  margin-left: 30px !important;          /* kills the old 4px indent */
+  padding-left: 30px !important;
 }
