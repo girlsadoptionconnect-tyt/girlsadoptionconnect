@@ -1629,35 +1629,48 @@ body{
 
 
 
-/* ✅ Force nav + search to sit directly under the tagline, left-aligned */
-.hero-titleblock{
+/* ===== HEADER NAV: force it under the tagline (no centering / no full-width row) ===== */
+
+/* Make sure the titleblock is a left-aligned column */
+.hero-home .hero-titleblock{
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
   text-align: left !important;
 }
 
-/* tag line spacing */
-.hero-tagline{
-  margin: 6px 0 12px 0 !important;
+/* Make the tagline start at same left edge as title */
+.hero-home .hero-titleblock .hero-tagline{
+  margin: 6px 0 10px 0 !important;
+  padding: 0 !important;
 }
 
-/* nav pill + search icon on one row, LEFT under the tagline */
-.hero-navwrap{
-  display: flex !important;
+/* The row that contains the pill + search icon */
+.hero-home .hero-titleblock .hero-navwrap{
+  display: inline-flex !important;       /* not full width */
   align-items: center !important;
   justify-content: flex-start !important;
+  width: auto !important;                /* kill width:100% */
+  margin: 0 !important;                  /* kill centering */
+  padding: 0 !important;
   gap: 12px !important;
-  width: auto !important;          /* prevents centering tricks */
+  position: relative !important;         /* kill any absolute/fixed */
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
 }
 
-/* stop any old "center the pill" rules */
-.hero-nav{
-  margin: 0 !important;            /* kills margin: 0 auto */
+/* The pill itself: NEVER centered by margin:auto */
+.hero-home .hero-titleblock .hero-navwrap .hero-nav{
+  display: inline-flex !important;
+  margin: 0 !important;                  /* kills margin:0 auto */
   width: fit-content !important;
+  position: relative !important;         /* kill any positioning */
 }
 
-/* stop any old "push icon to far right" rules */
-.search-toggle{
-  margin: 0 !important;            /* kills margin-left:auto */
+/* Search icon should sit immediately after About */
+.hero-home .hero-titleblock .hero-navwrap .search-toggle{
+  margin: 0 !important;                  /* kills margin-left:auto */
+  position: relative !important;
 }
