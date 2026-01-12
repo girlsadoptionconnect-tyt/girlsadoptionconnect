@@ -108,6 +108,39 @@ body{
   align-items: center;
 }
 
+/* ✅ Allow dropdowns to extend outside the hero/nav area */
+.hero,
+.hero-home,
+.hero-titleblock,
+.hero-nav,
+.hero-navwrap,
+.nav-item{
+  overflow: visible !important;
+}
+
+/* ✅ Make sure dropdown stacks above everything */
+.nav-item.has-dropdown{
+  position: relative;
+}
+
+.nav-item.has-dropdown .dropdown{
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+/* If your hero has a background overlay layer, keep dropdown above it */
+.hero-bg{
+  z-index: 0;
+}
+.hero-titleblock,
+.hero-navwrap{
+  position: relative;
+  z-index: 2;
+}
+
 /* Responsive: stack / shrink for smaller screens */
 @media (max-width: 950px){
   .hero-home{ height: 520px; }
