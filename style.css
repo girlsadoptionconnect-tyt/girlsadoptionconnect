@@ -2165,7 +2165,7 @@ img, svg, video{
   .car-slide{
     display: flex !important;
     flex-direction: column !important;
-    height: auto !important;      /* 🔧 adjust if needed */
+    height: 300 !important;      /* 🔧 adjust if needed */
     overflow: hidden !important;
     box-sizing: border-box !important;
   }
