@@ -2531,5 +2531,38 @@ img, svg, video{
 
 
 
+/* =========================================================
+   MOBILE ONLY: STOP posts from getting clipped/cut off
+   (paste at VERY bottom)
+   ========================================================= */
+@media (max-width: 650px){
 
+  /* allow the main page area to grow */
+  .site-main,
+  .post-wrap,
+  .post-card,
+  .post,
+  .post-content,
+  .post-body{
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* if any parent section was trapping height */
+  main,
+  article,
+  section{
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  /* images inside posts shouldn’t force weird cropping */
+  .post-cover,
+  .post-content img{
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
 
