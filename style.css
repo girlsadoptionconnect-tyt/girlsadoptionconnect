@@ -1731,3 +1731,214 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* =======================================================
+   MOBILE: home order + hide IG grid + smaller type + wider margins
+   ======================================================= */
+
+@media (max-width: 900px){
+
+  /* ---------- HOME: order + hide instagram grid ---------- */
+  .home-wrap{
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+
+    /* wider side margins on mobile */
+    padding: 22px 22px 70px !important;
+  }
+
+  /* order: carousel first, then connect, then share */
+  .home-center{ order: 1 !important; }
+  .home-left{ order: 2 !important; }
+  .home-right{ order: 3 !important; }
+
+  /* hide the "Follow" section + instagram mini grid entirely */
+  .home-left .home-section-title + .home-mini-grid,
+  .home-mini-grid{
+    display: none !important;
+  }
+
+  /* also hide the "Follow" heading itself (the second title in left column) */
+  .home-left h3.home-section-title:nth-of-type(2){
+    display: none !important;
+  }
+
+  /* optional: tighten Connect area so it feels intentional */
+  .home-left .home-links a{
+    font-size: 18px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .home-subtext{
+    margin-bottom: 16px !important;
+    font-size: 13px !important;
+  }
+
+  /* ---------- HOME CAROUSEL: keep it clean on mobile ---------- */
+  .home-carousel-shell{
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+
+  .carousel-title{ font-size: 20px !important; }
+  .carousel-excerpt{ font-size: 13px !important; }
+  .carousel-date{ font-size: 12px !important; }
+
+  /* ---------- POSTS: smaller text + wider margins ---------- */
+  /* for your Wix-style post pages */
+  .post-wrap{
+    padding: 78px 24px !important;   /* wider side margins */
+  }
+
+  .post-card{
+    padding: 26px 22px !important;
+  }
+
+  .post-title{
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+
+  .post-byline,
+  .post-kicker{
+    font-size: 13px !important;
+  }
+
+  .post-content{
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+  }
+
+  /* for category/list pages too (if needed) */
+  .category-wrap{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .category-card{
+    padding: 24px 22px !important;
+  }
+
+  .category-title{
+    font-size: 34px !important;
+  }
+
+  .category-subtitle{
+    font-size: 16px !important;
+  }
+
+  /* ---------- HEADER: make logo + text smaller so it fits ---------- */
+  .hero-logo{
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 18px !important;
+  }
+
+  .hero-title{
+    font-size: 38px !important;
+  }
+
+  .hero-tagline{
+    font-size: 16px !important;
+  }
+
+  .hero-nav a,
+  .hero-nav button{
+    font-size: 17px !important;
+  }
+}
+
+/* extra small phones */
+@media (max-width: 520px){
+
+  /* even wider breathing room */
+  .home-wrap{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .hero-logo{
+    width: 175px !important;
+    height: 175px !important;
+  }
+
+  .hero-title{
+    font-size: 32px !important;
+  }
+
+  .hero-tagline{
+    font-size: 15px !important;
+  }
+
+  .post-title{
+    font-size: 26px !important;
+  }
+
+  .post-content{
+    font-size: 15px !important;
+  }
+}
+
+
+/* =========================================
+   MOBILE: narrower margins (override)
+   ========================================= */
+
+@media (max-width: 900px){
+
+  /* HOME PAGE */
+  .home-wrap{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* BLOG POSTS */
+  .post-wrap{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .post-card{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* CATEGORY / GRID PAGES */
+  .category-wrap,
+  .category-page{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .category-card{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 520px){
+
+  .home-wrap,
+  .post-wrap,
+  .category-wrap,
+  .category-page{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .post-card,
+  .category-card{
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+}
