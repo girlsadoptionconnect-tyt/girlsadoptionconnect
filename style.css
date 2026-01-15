@@ -2483,4 +2483,53 @@ img, svg, video{
     text-align: center !important;
   }
 }
+
+
   
+
+
+
+
+/* =========================================================
+   MOBILE ONLY: smaller text in search overlay
+   ========================================================= */
+@media (max-width: 650px){
+
+  /* Search input text */
+  .search-input{
+    font-size: 15px !important;
+    padding: 12px 14px !important;
+  }
+
+  /* Result titles */
+  .search-title{
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Result subtitles / locations */
+  .search-sub{
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Hint text */
+  .search-hint{
+    font-size: 12px !important;
+  }
+
+  /* Each result card padding */
+  .search-item{
+    padding: 12px 14px !important;
+  }
+
+  /* Close (×) button */
+  .search-close{
+    font-size: 24px !important;
+  }
+}
+
+
+
+
+
