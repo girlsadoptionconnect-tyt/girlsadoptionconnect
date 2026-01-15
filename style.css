@@ -2297,7 +2297,7 @@ img, svg, video{
 
   /* Kill global top buffer on mobile */
   .site-main{
-    padding-top: 0 !important;
+    padding-top: 18 !important;
   }
 
   /* Pull first section closer to hero */
