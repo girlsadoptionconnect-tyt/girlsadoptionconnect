@@ -2110,7 +2110,56 @@ body{
 
 
 
+/* =========================
+   MOBILE HOME PAGE FIXES
+   ========================= */
+@media (max-width: 650px){
 
+  /* 1) Move carousel closer to header */
+  .home-wrap{
+    padding-top: 12px !important;   /* was 32px */
+    gap: 18px !important;
+  }
+
+  /* If your header/hero is still tall on mobile, you can reduce it too */
+  .hero-home{
+    height: 360px !important;       /* adjust (320–420) */
+  }
+
+  /* 2) Left-align Connect + Share Your Story to match carousel edges */
+  .home-left,
+  .home-right,
+  .home-center{
+    text-align: left !important;
+    width: 100%;
+  }
+
+  /* Make the sections line up with the carousel (same left/right padding) */
+  .home-left,
+  .home-right{
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  /* If carousel has its own padding, match it visually */
+  .home-center{
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  /* Optional: reduce extra spacing inside the left/right sections */
+  .home-subtext{ margin-bottom: 14px !important; }
+  .home-links a{ margin-bottom: 8px !important; }
+
+  /* 3) Reduce white space before footer */
+  .home-wrap{
+    padding-bottom: 28px !important;  /* was 80px */
+  }
+
+  .site-footer{
+    margin-top: 30px !important;      /* was 90px */
+  }
+}
 
 
 
