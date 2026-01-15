@@ -2124,10 +2124,6 @@ body{
 }
 
 
-
-
-
-
 /* Prevent mobile horizontal overflow (fixes left-shift look) */
 html, body{
   width: 100%;
@@ -2145,5 +2141,36 @@ img, svg, video{
 }
 
 
+
+
+
+
+
+
+/* Make each slide/card stack image + meta and let meta fill remaining height */
+.carousel-card a{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure the slide itself has a consistent height */
+.carousel-card{
+  height: 100%;
+}
+
+/* Let the pink meta grow to fill any leftover space */
+.carousel-meta{
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0; /* optional: if you want it to meet the border perfectly */
+}
+
+.carousel-card a{
+  border: 1px solid rgba(210, 180, 188, 0.65);
+  border-radius: 10px;
+  overflow: hidden; /* makes image + pink area match border corners */
+}
 
 
