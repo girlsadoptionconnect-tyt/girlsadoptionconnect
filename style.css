@@ -2239,9 +2239,9 @@ img, svg, video{
 
   /* ✅ Lock the pink text area to the SAME height */
   .carousel-meta{
-    height: 210px !important;     /* 🔧 adjust: 190–240 */
-    min-height: 210px !important;
-    max-height: 210px !important;
+    height: 240px !important;     /* 🔧 adjust: 190–240 */
+    min-height: 240px !important;
+    max-height: 240px !important;
     overflow: hidden !important;
 
     display: flex !important;
@@ -2283,4 +2283,48 @@ img, svg, video{
 
 
 
+
+
+
+
+
+
+
+  /* ============================
+   MOBILE: tighten space after header
+   ============================ */
+@media (max-width: 650px){
+
+  /* Kill global top buffer on mobile */
+  .site-main{
+    padding-top: 0 !important;
+  }
+
+  /* Pull first section closer to hero */
+  .home-wrap,
+  .post-wrap,
+  .category-wrap,
+  .category-page{
+    margin-top: 0 !important;
+    padding-top: 18px !important;  /* was much larger */
+  }
+}
+
+/* ============================
+   MOBILE: tighten space before footer
+   ============================ */
+@media (max-width: 650px){
+
+  /* Reduce bottom padding on last sections */
+  .home-wrap,
+  .post-wrap,
+  .category-wrap{
+    padding-bottom: 28px !important;
+  }
+
+  /* Remove extra margin before footer */
+  .site-footer{
+    margin-top: 20px !important;
+  }
+}
     
