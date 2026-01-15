@@ -2239,9 +2239,9 @@ img, svg, video{
 
   /* ✅ Lock the pink text area to the SAME height */
   .carousel-meta{
-    height: 200px !important;     /* 🔧 adjust: 190–240 */
-    min-height: 200px !important;
-    max-height: 200px !important;
+    height: 210px !important;     /* 🔧 adjust: 190–240 */
+    min-height: 210px !important;
+    max-height: 210px !important;
     overflow: hidden !important;
 
     display: flex !important;
