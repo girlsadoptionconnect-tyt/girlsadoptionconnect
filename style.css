@@ -2036,6 +2036,23 @@ body{
     font-size: 16px !important;
   }
 
+
+
+
+  .hero-nav{
+  max-width: 100% !important;
+  width: 100% !important;            /* allow it to fit screen */
+  box-sizing: border-box !important;
+}
+
+.hero-navwrap{
+  max-width: 100% !important;
+}
+
+
+
+  
+
   /* keep search visible but not huge */
   .search-toggle{
     font-size: 14px !important;
@@ -2107,6 +2124,25 @@ body{
 }
 
 
+
+
+
+
+/* Prevent mobile horizontal overflow (fixes left-shift look) */
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* Common offenders */
+img, svg, video{
+  max-width: 100%;
+  height: auto;
+}
 
 
 
