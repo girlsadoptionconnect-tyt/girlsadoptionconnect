@@ -2297,7 +2297,7 @@ img, svg, video{
 
   /* Kill global top buffer on mobile */
   .site-main{
-    padding-top: 18 !important;
+    padding-top: 18px !important;
   }
 
   /* Pull first section closer to hero */
@@ -2414,34 +2414,37 @@ img, svg, video{
 
 
 /* =========================================================
-   MOBILE ONLY: dropdown should size to its text (no forced width)
+   MOBILE: dropdown width fits its content (no giant boxes)
    ========================================================= */
 @media (max-width: 650px){
 
-  /* kill the desktop min-width + centering transform */
-  .hero-nav .nav-item.has-dropdown .dropdown{
-    min-width: 0 !important;          /* ✅ overrides min-width:260px */
-    width: fit-content !important;     /* ✅ fit to text */
-    max-width: 90vw !important;        /* safety: never exceed screen */
+  /* Beat older rules by using higher specificity */
+  .hero-home .hero-nav .nav-item.has-dropdown > .dropdown{
+    /* remove desktop sizing */
+    min-width: unset !important;          /* overrides min-width:260px */
+    width: fit-content !important;        /* shrink to content */
+    max-width: calc(100vw - 24px) !important;
+
+    /* stop centering trick that pushes off-screen */
     left: 0 !important;
     right: auto !important;
     transform: none !important;
-    white-space: nowrap !important;    /* keep items on one line */
+
+    /* keep items from wrapping (so box stays tight) */
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
   }
 
-  /* keep each dropdown item single-line + sized naturally */
-  .hero-nav .nav-item.has-dropdown .dropdown a{
+  .hero-home .hero-nav .nav-item.has-dropdown > .dropdown a{
     white-space: nowrap !important;
   }
 
-  /* OPTIONAL: if the last dropdown (About) gets too close to right edge */
-  .hero-nav .nav-item.has-dropdown:last-child .dropdown{
+  /* If a dropdown is near the right edge (like About), pin it to the right */
+  .hero-home .hero-nav .nav-item.has-dropdown:last-child > .dropdown{
     left: auto !important;
     right: 0 !important;
   }
 }
-
-
 
 
 
