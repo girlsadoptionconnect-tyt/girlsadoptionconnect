@@ -1944,6 +1944,20 @@ body{
 }
 
 
+.title-link{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.title-link:hover,
+.title-link:focus{
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+
 
 
 /* =========================
