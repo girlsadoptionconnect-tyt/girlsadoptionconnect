@@ -2165,3 +2165,56 @@ body{
 
 
 
+
+
+
+/* ===== MOBILE CONTENT ALIGNMENT ===== */
+@media (max-width: 650px){
+
+  /* unify side padding for ALL home sections */
+  .home-wrap,
+  .connect-section,
+  .share-story,
+  .post-wrap,
+  .post-card{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* section headers line up with carousel */
+  .connect-section h2,
+  .share-story h2{
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 650px){
+  body{
+    padding: 0 !important;
+  }
+
+  .site-main{
+    padding-top: 32px !important;
+  }
+}
+
+@media (max-width: 650px){
+
+  .connect-section{
+    margin-bottom: 28px !important;
+  }
+
+  .share-story{
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 650px){
+  .home-carousel,
+  .home-carousel-shell{
+    margin-top: 12px !important;
+  }
+}
+
