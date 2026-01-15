@@ -2144,87 +2144,55 @@ img, svg, video{
 
 
 
+/* ===== FORCE carousel text area to be same size (paste at VERY BOTTOM) ===== */
 
-
-
-/* Make each slide/card stack image + meta and let meta fill remaining height */
-.carousel-card a{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.home-carousel-shell .carousel-card{
+  display: flex !important;
+  flex-direction: column !important;
 }
 
-/* Ensure the slide itself has a consistent height */
-.carousel-card{
-  height: 100%;
+.home-carousel-shell .carousel-card a{
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
 }
 
-/* Let the pink meta grow to fill any leftover space */
-.carousel-meta{
-  flex: 1;
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 0; /* optional: if you want it to meet the border perfectly */
+/* Make the image a fixed height so the whole slide stays consistent */
+.home-carousel-shell .carousel-card img{
+  width: 100% !important;
+  height: 320px !important;      /* adjust if you want */
+  object-fit: cover !important;
+  display: block !important;
 }
 
-.carousel-card a{
-  border: 1px solid rgba(210, 180, 188, 0.65);
-  border-radius: 10px;
-  overflow: hidden; /* makes image + pink area match border corners */
+/* THIS is the pink box: force same height every time */
+.home-carousel-shell .carousel-meta{
+  height: 190px !important;      /* adjust: 160–240 */
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+}
+
+/* Prevent long titles from expanding the box */
+.home-carousel-shell .carousel-title{
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;   /* title max lines */
+  overflow: hidden !important;
+}
+
+/* Prevent long excerpts from expanding the box */
+.home-carousel-shell .carousel-excerpt{
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;   /* excerpt max lines */
+  overflow: hidden !important;
 }
 
 
 
 
-
-
-/* 1) Make the whole card a consistent height */
-.carousel-card a{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* 2) Force the cover image to be a fixed height (so cards match) */
-.carousel-card img{
-  width: 100%;
-  height: 320px;          /* adjust: 260–360 */
-  object-fit: cover;
-  display: block;
-}
-
-/* 3) Make the pink box a consistent height */
-.carousel-meta{
-  background: rgba(255, 235, 240, 0.65);
-  padding: 18px 20px;
-  box-sizing: border-box;
-
-  height: 190px;          /* adjust: 160–220 */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* 4) Clamp the title so long titles don’t grow the box */
-.carousel-title{
-  margin: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;  /* max lines */
-  overflow: hidden;
-}
-
-/* 5) Clamp excerpt too (optional, but recommended) */
-.carousel-excerpt{
-  margin: 0;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;  /* max lines */
-  overflow: hidden;
-}
-
-/* Optional: keep date/location from pushing things weirdly */
-.carousel-date,
-.carousel-location{
-  flex: 0 0 auto;
-}
