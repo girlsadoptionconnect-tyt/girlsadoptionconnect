@@ -2664,3 +2664,39 @@ img, svg, video{
     max-height: none !important;
   }
 }
+
+
+
+
+
+
+
+/* ============================
+   MOBILE ONLY: center dropdowns under menu items
+   ============================ */
+@media (max-width: 650px){
+
+  /* Ensure each dropdown is anchored correctly */
+  .nav-item.has-dropdown{
+    position: relative;
+  }
+
+  /* Center dropdown under its trigger */
+  .nav-item.has-dropdown .dropdown{
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    width: max-content !important;              /* fit text */
+    max-width: calc(100vw - 24px) !important;   /* stay on screen */
+
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    text-align: left;
+  }
+
+  /* Let long labels wrap instead of overflowing */
+  .nav-item.has-dropdown .dropdown a{
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
