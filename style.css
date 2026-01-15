@@ -2332,33 +2332,79 @@ img, svg, video{
 
 
 
-
-
-/* ============================
-   MOBILE: dropdowns never overflow screen
-   ============================ */
+/* =========================================================
+   GRID & LIST PAGES: add breathing room under header
+   ========================================================= */
 @media (max-width: 650px){
 
-  /* make each menu item its own positioning context */
-  .nav-item.has-dropdown{
-    position: relative !important;
+.category-wrap,
+.category-page,
+.post-list,
+.post-grid {
+  margin-top: 18px !important;   /* small white gap */
+}
+
+
+/* =========================================================
+   MOBILE ONLY: uniform post grid & list cards
+   ========================================================= */
+
+@media (max-width: 650px){
+
+  /* Make grid/list items stretch evenly */
+  .post-grid,
+  .post-list {
+    align-items: stretch !important;
   }
 
-  /* dropdown panel: cap width + center it */
-  .nav-item.has-dropdown .dropdown{
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-
-    width: min(92vw, 320px) !important;   /* stay inside phone width */
-    min-width: 0 !important;              /* override desktop min-width:260 */
-    max-width: 92vw !important;
-
-    box-sizing: border-box !important;
+  /* Force every card to same height */
+  .post-card,
+  .post-row {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 420px !important;     /* 🔧 adjust if needed */
+    overflow: hidden !important;
   }
 
-  /* prevent long link text from forcing width */
-  .nav-item.has-dropdown .dropdown a{
-    white-space: normal !important;
-    overflow-wrap: anywhere !important;
+  /* Lock image to perfect square */
+  .post-thumb,
+  .post-row-thumb,
+  .post-card img {
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Text container fills remaining space */
+  .post-meta,
+  .post-row-body {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
+  }
+
+  /* Clamp titles so height stays equal */
+  .post-card-title,
+  .post-row-title {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
+  }
+
+  /* Clamp subtitles/excerpts */
+  .post-card-sub,
+  .post-row-meta {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
   }
 }
+
+
+
+
