@@ -1,3 +1,4 @@
 title: Girls Adoption Connect
-baseurl: "/girlsadoptionconnect"
+url: "https://girlsadoptionconnect.org"
+baseurl: "" 
 permalink: /post/:slug/
