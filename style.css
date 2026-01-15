@@ -2148,58 +2148,35 @@ img, svg, video{
 
 
 /* =========================================================
-   MOBILE ONLY: Equal-height carousel cards (FIX)
+   MOBILE ONLY: force identical carousel text-box height
    ========================================================= */
-
 @media (max-width: 650px){
 
-  /* 1) Make track stretch slides */
-  .home-carousel-track,
-  .car-track{
+  /* Make all slides equal height */
+  .home-carousel-track{
     align-items: stretch !important;
   }
 
-  /* 2) Force each slide/card to same height */
-  .carousel-card,
-  .car-slide{
+  .carousel-card{
     display: flex !important;
     flex-direction: column !important;
-    height: 520px !important;      /* 🔧 adjust if needed */
-    overflow: hidden !important;
-    box-sizing: border-box !important;
+    height: auto !important;
   }
 
-  /* 3) Anchor clickable wrapper to full height */
-  .carousel-card > a,
-  .car-slide > a{
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    min-height: 0 !important;
-  }
-
-  /* 4) Lock image height so it can’t change card height */
-  .carousel-card img,
-  .car-slide img{
-    width: 100% !important;
-    height: 320px !important;      /* 🔧 image height */
-    object-fit: cover !important;
-    flex: 0 0 320px !important;
-    display: block !important;
-  }
-
-  /* 5) Text container fills remaining space */
+  /* ✅ Lock the pink text area to the SAME height */
   .carousel-meta{
-    flex: 1 1 auto !important;
-    min-height: 0 !important;
+    height: 200px !important;     /* 🔧 adjust: 190–240 */
+    min-height: 200px !important;
+    max-height: 200px !important;
     overflow: hidden !important;
 
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
+    box-sizing: border-box !important;
   }
 
-  /* 6) Clamp long titles/excerpts so height stays equal */
+  /* Clamp title + excerpt so they can't expand the box */
   .carousel-title{
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
@@ -2210,8 +2187,15 @@ img, svg, video{
   .carousel-excerpt{
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 3 !important;
+    -webkit-line-clamp: 4 !important;
     overflow: hidden !important;
+  }
+
+  /* Optional: keep date from wrapping weirdly */
+  .carousel-date{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 }
 
@@ -2219,3 +2203,10 @@ img, svg, video{
 
 
 
+
+
+
+
+
+
+    
