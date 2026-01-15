@@ -1942,3 +1942,163 @@ body{
     padding-right: 14px !important;
   }
 }
+
+
+
+
+/* =========================
+   MOBILE HOME + HEADER FIXES
+   Paste at VERY BOTTOM
+   ========================= */
+
+@media (max-width: 650px){
+
+  /* ---------- HEADER / HERO (smaller + cleaner on mobile) ---------- */
+  .hero-home{
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 18px 14px 22px !important;  /* narrower margins */
+    overflow: hidden; /* keep clouds tidy */
+  }
+
+  .hero-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-logo{
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 150px !important;
+    height: 150px !important;
+    margin: 6px auto 10px auto !important;
+    display: block;
+  }
+
+  .hero-titleblock{
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: center !important;   /* center on mobile */
+    text-align: center !important;
+  }
+
+  .hero-title{
+    font-size: 30px !important;
+    line-height: 1.08 !important;
+    margin: 0 !important;
+  }
+
+  .hero-tagline{
+    font-size: 14px !important;
+    margin: 6px 0 12px 0 !important;
+  }
+
+  /* nav wraps smaller */
+  .hero-navwrap{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .hero-nav{
+    gap: 18px !important;
+    padding: 10px 16px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .hero-nav a,
+  .hero-nav button{
+    font-size: 16px !important;
+  }
+
+  /* keep search visible but not huge */
+  .search-toggle{
+    font-size: 14px !important;
+    padding: 6px 8px !important;
+  }
+
+
+  /* ---------- HOME PAGE ORDER: carousel -> connect -> share ---------- */
+  .home-wrap{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 22px !important;
+    padding: 18px 14px 40px !important;  /* narrower margins */
+    max-width: 100% !important;
+  }
+
+  .home-center{ order: 1 !important; }
+  .home-left{ order: 2 !important; }
+  .home-right{ order: 3 !important; }
+
+  /* hide the Instagram mini grid + the "Follow" heading */
+  .home-left .home-section-title:nth-of-type(2){
+    display: none !important;
+  }
+  .home-mini-grid{
+    display: none !important;
+  }
+
+  /* make the Connect links a bit tighter */
+  .home-links a{
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+
+  /* ---------- HOME CAROUSEL: keep it clean on mobile ---------- */
+  .home-carousel-shell{
+    padding: 16px !important;
+    border-radius: 10px !important;
+  }
+
+  .carousel-title{ font-size: 18px !important; }
+  .carousel-excerpt{ font-size: 13px !important; }
+
+
+  /* ---------- BLOG POSTS: smaller text + narrower margins ---------- */
+  .post-wrap{
+    padding: 44px 14px !important; /* narrower side padding */
+  }
+
+  .post-card{
+    padding: 24px 18px !important;
+  }
+
+  .post-title{
+    font-size: 28px !important;
+  }
+
+  .post-content{
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* if you’re using the “wix-style card” intro layout, stack it */
+  .post-intro{
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
