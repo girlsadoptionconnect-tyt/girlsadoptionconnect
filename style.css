@@ -2186,7 +2186,7 @@ body{
   /* section headers line up with carousel */
   .connect-section h2,
   .share-story h2{
-    margin-left: 0 !important;
+    margin-left: 16 !important;
   }
 }
 
@@ -2196,14 +2196,14 @@ body{
   }
 
   .site-main{
-    padding-top: 32px !important;
+    padding-top: 20px !important;
   }
 }
 
 @media (max-width: 650px){
 
   .connect-section{
-    margin-bottom: 28px !important;
+    margin-bottom: 20px !important;
   }
 
   .share-story{
@@ -2214,53 +2214,6 @@ body{
 @media (max-width: 650px){
   .home-carousel,
   .home-carousel-shell{
-    margin-top: 12px !important;
-  }
-}
-
-
-
-
-
-
-
-
-/* =========================
-   MOBILE HOME LAYOUT FIX
-   ========================= */
-@media (max-width: 650px){
-
-  /* 1) Make the home page a 1-column stack */
-  .home-wrap{
-    grid-template-columns: 1fr !important;
-    gap: 22px !important;
-    padding: 14px 16px 26px !important;  /* narrower side margins + less bottom whitespace */
-  }
-
-  /* 2) Re-order sections:
-        Carousel first, then Connect, then Share Your Story */
-  .home-center{ order: 1 !important; }
-  .home-left{ order: 2 !important; }
-  .home-right{ order: 3 !important; }
-
-  /* 3) Hide the Instagram mini-grid on mobile */
-  .home-mini-grid{ display: none !important; }
-
-  /* 4) Align Connect + Share text to same left edge as carousel */
-  .home-left,
-  .home-right{
-    padding: 0 !important;
-    margin: 0 !important;
-    text-align: left !important;
-  }
-
-  /* 5) Bring the carousel closer to header */
-  .home-center{
-    margin-top: -10px !important;
-  }
-
-  /* 6) Reduce extra whitespace before footer on the home page */
-  .site-footer{
-    margin-top: 26px !important;
+    margin-top: 8px !important;
   }
 }
