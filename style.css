@@ -2669,34 +2669,36 @@ img, svg, video{
 
 
 
-
-
-/* ============================
-   MOBILE ONLY: center dropdowns under menu items
-   ============================ */
+/* =========================================
+   MOBILE FINAL OVERRIDE: center dropdowns
+   ========================================= */
 @media (max-width: 650px){
 
-  /* Ensure each dropdown is anchored correctly */
-  .nav-item.has-dropdown{
-    position: relative;
+  /* anchor point */
+  .hero-nav .nav-item.has-dropdown{
+    position: relative !important;
   }
 
-  /* Center dropdown under its trigger */
-  .nav-item.has-dropdown .dropdown{
+  /* force the dropdown to center under the nav item */
+  .hero-nav .nav-item.has-dropdown > .dropdown{
+    position: absolute !important;
+    top: calc(100% + 10px) !important;
+
     left: 50% !important;
+    right: auto !important;
     transform: translateX(-50%) !important;
 
     width: max-content !important;              /* fit text */
-    max-width: calc(100vw - 24px) !important;   /* stay on screen */
+    max-width: calc(100vw - 24px) !important;   /* never off screen */
+    min-width: 0 !important;
 
-    box-sizing: border-box !important;
     white-space: normal !important;
-    text-align: left;
+    box-sizing: border-box !important;
   }
 
-  /* Let long labels wrap instead of overflowing */
-  .nav-item.has-dropdown .dropdown a{
+  /* wrapping for long link text */
+  .hero-nav .nav-item.has-dropdown > .dropdown a{
     white-space: normal !important;
-    overflow-wrap: break-word !important;
+    overflow-wrap: anywhere !important;
   }
 }
