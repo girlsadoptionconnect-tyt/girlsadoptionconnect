@@ -2503,19 +2503,19 @@ img, svg, video{
 
   /* Result titles */
   .search-title{
-    font-size: 15px !important;
+    font-size: 13px !important;
     line-height: 1.25 !important;
   }
 
   /* Result subtitles / locations */
   .search-sub{
-    font-size: 13px !important;
+    font-size: 11px !important;
     line-height: 1.35 !important;
   }
 
   /* Hint text */
   .search-hint{
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
 
   /* Each result card padding */
