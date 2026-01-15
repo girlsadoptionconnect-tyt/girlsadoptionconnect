@@ -2147,7 +2147,6 @@ img, svg, video{
 
 
 
-
 /* =========================================================
    MOBILE ONLY: Equal-height carousel cards (FIX)
    ========================================================= */
@@ -2219,65 +2218,4 @@ img, svg, video{
 
 
 
-
-/* =========================================================
-   MOBILE ONLY: Equal-size post grid cards (square images)
-   ========================================================= */
-@media (max-width: 650px){
-
-  /* Make the grid stretch cards evenly */
-  .post-grid{
-    align-items: stretch !important;
-  }
-
-  /* Force all cards to behave the same */
-  .post-grid .post-card{
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-    max-width: none !important;
-  }
-
-  /* ---------- SQUARE IMAGE ---------- */
-  .post-grid .post-thumb{
-    width: 100% !important;
-    aspect-ratio: 1 / 1 !important;   /* 🔑 perfect square */
-    height: auto !important;
-    object-fit: cover !important;
-    flex: 0 0 auto !important;
-  }
-
-  /* ---------- TEXT AREA ---------- */
-  .post-grid .post-meta{
-    flex: 1 1 auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    padding: 14px 14px 16px !important;
-    overflow: hidden !important;
-  }
-
-  /* Clamp title so long names don't stretch cards */
-  .post-card-title{
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
-    overflow: hidden !important;
-    line-height: 1.2 !important;
-    margin-bottom: 6px !important;
-  }
-
-  /* Clamp subtitle / location */
-  .post-card-sub{
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
-    overflow: hidden !important;
-    font-size: 13px !important;
-  }
-}
-
-
-
-  
 
