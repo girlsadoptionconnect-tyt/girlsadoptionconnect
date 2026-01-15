@@ -2174,3 +2174,57 @@ img, svg, video{
 }
 
 
+
+
+
+
+/* 1) Make the whole card a consistent height */
+.carousel-card a{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 2) Force the cover image to be a fixed height (so cards match) */
+.carousel-card img{
+  width: 100%;
+  height: 320px;          /* adjust: 260–360 */
+  object-fit: cover;
+  display: block;
+}
+
+/* 3) Make the pink box a consistent height */
+.carousel-meta{
+  background: rgba(255, 235, 240, 0.65);
+  padding: 18px 20px;
+  box-sizing: border-box;
+
+  height: 190px;          /* adjust: 160–220 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 4) Clamp the title so long titles don’t grow the box */
+.carousel-title{
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;  /* max lines */
+  overflow: hidden;
+}
+
+/* 5) Clamp excerpt too (optional, but recommended) */
+.carousel-excerpt{
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;  /* max lines */
+  overflow: hidden;
+}
+
+/* Optional: keep date/location from pushing things weirdly */
+.carousel-date,
+.carousel-location{
+  flex: 0 0 auto;
+}
