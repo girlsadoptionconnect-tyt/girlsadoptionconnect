@@ -2447,37 +2447,40 @@ img, svg, video{
 }
 
 /* =========================================================
-   MOBILE ONLY: center dropdowns and keep them on-screen
+   MOBILE ONLY: force dropdown to center and stay on-screen
+   (put at VERY BOTTOM)
    ========================================================= */
 @media (max-width: 650px){
 
-  .nav-item.has-dropdown{
+  /* target ONLY the header dropdowns */
+  header .hero-nav .nav-item.has-dropdown{
     position: relative !important;
   }
 
-  .nav-item.has-dropdown .dropdown{
+  header .hero-nav .nav-item.has-dropdown > .dropdown{
+    /* override the desktop dropdown sizing */
+    min-width: 0 !important;
+    width: max-content !important;          /* shrink to text */
+    max-width: calc(100vw - 24px) !important;
+
+    /* force centering */
     left: 50% !important;
+    right: auto !important;
     transform: translateX(-50%) !important;
 
-    width: auto !important;
-    max-width: calc(100vw - 32px) !important;
-
-    padding: 12px 14px !important;
-    box-sizing: border-box !important;
-
+    /* keep content from forcing extra width */
     white-space: normal !important;
-    text-align: center !important;   /* 👈 looks intentional on mobile */
+    box-sizing: border-box !important;
+    text-align: center !important;
+
+    /* optional: make it feel less huge */
+    padding: 10px 12px !important;
   }
 
-  .nav-item.has-dropdown .dropdown a{
+  header .hero-nav .nav-item.has-dropdown > .dropdown a{
     white-space: normal !important;
-    overflow-wrap: break-word !important;
+    overflow-wrap: anywhere !important;
     text-align: center !important;
   }
 }
-
-
-
-
-
   
