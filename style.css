@@ -2219,3 +2219,32 @@ img, svg, video{
 
 
 
+
+@media (max-width: 650px){
+
+  /* unify left/right edges for carousel + sections */
+  .home-center,
+  .home-left,
+  .home-right{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* give all inner content the SAME inset */
+  .home-carousel-shell,
+  .home-left > *,
+  .home-right > *{
+    margin-left: 14px !important;
+    margin-right: 14px !important;
+  }
+}
+
+
+
+
+
+
+
+
+  
+
