@@ -2144,55 +2144,55 @@ img, svg, video{
 
 
 
-/* ===== FORCE carousel text area to be same size (paste at VERY BOTTOM) ===== */
+/* ===== CAROUSEL: force equal-height cards (PASTE AT VERY BOTTOM) ===== */
 
+/* Make each slide a vertical stack that can be height-controlled */
 .home-carousel-shell .carousel-card{
   display: flex !important;
   flex-direction: column !important;
+  height: 620px !important;         /* TOTAL card height — adjust */
+  overflow: hidden !important;
 }
 
-.home-carousel-shell .carousel-card a{
+/* Make the link fill the card */
+.home-carousel-shell .carousel-card > a{
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
 }
 
-/* Make the image a fixed height so the whole slide stays consistent */
+/* Lock the image area */
 .home-carousel-shell .carousel-card img{
   width: 100% !important;
-  height: 320px !important;      /* adjust if you want */
+  height: 360px !important;         /* IMAGE height — adjust */
   object-fit: cover !important;
+  flex: 0 0 auto !important;
   display: block !important;
 }
 
-/* THIS is the pink box: force same height every time */
+/* Lock the pink text area */
 .home-carousel-shell .carousel-meta{
-  height: 190px !important;      /* adjust: 160–240 */
-  box-sizing: border-box !important;
+  flex: 1 1 auto !important;         /* takes the remaining space */
+  height: auto !important;
   overflow: hidden !important;
+  box-sizing: border-box !important;
 
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
   gap: 10px !important;
 }
 
-/* Prevent long titles from expanding the box */
-.home-carousel-shell .carousel-title{
+/* Clamp title/excerpt so they can't expand the card */
+.home-carousel-shell .carousel-meta .carousel-title{
   display: -webkit-box !important;
   -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 2 !important;   /* title max lines */
+  -webkit-line-clamp: 2 !important;
   overflow: hidden !important;
 }
 
-/* Prevent long excerpts from expanding the box */
-.home-carousel-shell .carousel-excerpt{
+.home-carousel-shell .carousel-meta .carousel-excerpt{
   display: -webkit-box !important;
   -webkit-box-orient: vertical !important;
-  -webkit-line-clamp: 3 !important;   /* excerpt max lines */
+  -webkit-line-clamp: 3 !important;
   overflow: hidden !important;
 }
-
-
-
-
