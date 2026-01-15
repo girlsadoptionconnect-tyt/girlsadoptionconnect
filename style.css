@@ -2566,3 +2566,101 @@ img, svg, video{
   }
 }
 
+
+
+
+
+
+
+
+
+
+/* =========================
+   Category grid (covers + meta)
+   ========================= */
+
+.post-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.post-grid .post-card{
+  display: block;
+  text-decoration: none;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(210, 180, 188, 0.65);
+  border-radius: 14px;
+  overflow: hidden;            /* fine for grid cards */
+  padding: 0;
+  max-width: 360px;
+  justify-self: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.post-grid .post-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-color: rgba(210, 180, 188, 0.9);
+}
+
+/* Square post thumbnails on category pages */
+.post-thumb{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.post-grid .post-meta{
+  margin: 0;
+  padding: 14px 16px 16px;
+  font-style: normal;
+}
+
+.post-card-title{
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.post-card-sub{
+  margin-top: 8px;
+  font-size: 13px;
+  color: #8a8a8a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 980px){
+  .post-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 650px){
+  .post-grid{ grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   MOBILE: Never clip real post pages
+   ========================================================= */
+@media (max-width: 650px){
+
+  /* your actual post page wrapper */
+  .post-wrap .post-card{
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .post-content{
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+}
