@@ -2408,18 +2408,41 @@ img, svg, video{
 
 
 
+
+
+
 /* =========================================================
-   MOBILE: prevent post page from being cropped
+   MOBILE ONLY: keep dropdowns inside the screen
    ========================================================= */
 @media (max-width: 650px){
-  /* full post page wrapper/card should NEVER be height-limited */
-  .post-wrap,
-  .post-wrap .post-card{
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
+
+  /* anchor each dropdown to its nav item */
+  .nav-item.has-dropdown{
+    position: relative !important;
+  }
+
+  /* dropdown box sizing + keep within viewport */
+  .nav-item.has-dropdown .dropdown{
+    left: 0 !important;                 /* align to left edge of the button/link */
+    transform: none !important;         /* STOP centering with translateX */
+    width: max-content !important;      /* fit to text */
+    max-width: calc(100vw - 28px) !important; /* never wider than screen */
+    box-sizing: border-box !important;
+    padding: 10px 12px !important;
+
+    /* if still too wide, let text wrap instead of overflowing */
+    white-space: normal !important;
+  }
+
+  /* make dropdown links wrap nicely */
+  .nav-item.has-dropdown .dropdown a{
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
   }
 }
+
+
+
 
 
 
