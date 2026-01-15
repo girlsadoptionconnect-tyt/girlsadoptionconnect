@@ -2165,7 +2165,7 @@ img, svg, video{
   .car-slide{
     display: flex !important;
     flex-direction: column !important;
-    height: 300px !important;      /* 🔧 adjust if needed */
+    height: auto !important;      /* 🔧 adjust if needed */
     overflow: hidden !important;
     box-sizing: border-box !important;
   }
@@ -2191,7 +2191,7 @@ img, svg, video{
 
   /* 5) Text container fills remaining space */
   .carousel-meta{
-    flex: 1 1 auto !important;
+    flex: 0 0 auto !important;
     min-height: 0 !important;
     overflow: hidden !important;
 
@@ -2217,27 +2217,6 @@ img, svg, video{
 }
 
 
-
-
-
-@media (max-width: 650px){
-
-  /* unify left/right edges for carousel + sections */
-  .home-center,
-  .home-left,
-  .home-right{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* give all inner content the SAME inset */
-  .home-carousel-shell,
-  .home-left > *,
-  .home-right > *{
-    margin-left: 14px !important;
-    margin-right: 14px !important;
-  }
-}
 
 
 
