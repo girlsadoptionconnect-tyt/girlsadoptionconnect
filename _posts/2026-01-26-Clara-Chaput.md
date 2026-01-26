@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Clara Chaput"
-date: 2026-01-26 09:00:00 -0600
+date: 2026-01-26
 adoptee_location: Yangjiang, Guangzhou, China to Minneapolis, Minnesota
 category: Adoptee Spotlights
 cover: /assets/posts/2026-01-26-Clara Chaput/cover.png
