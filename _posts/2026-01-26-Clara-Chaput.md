@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Clara Chaput"
+date: 2026-01-26
+adoptee_location: Yangjiang, Guangzhou, China to Minneapolis, Minnesota
+category: Adoptee Spotlights
+cover: /assets/posts/2026-01-26-Clara Chaput/cover.png
+---
+Hi, my name is Clara, and I was adopted in December 2005 from Yangjiang in China's Guangzhou province when I was 10 months old. I was raised in Minneapolis, Minnesota!
+
+I have always felt immensely connected to my Chinese heritage, ever since I was small. Part of it has to do with how I was raised: my childhood was different from many of my adopted peers in that my primary school years were spent being instructed entirely in Chinese at a Mandarin immersion elementary school. My Chinese Americanness is such a large part of my identity that I spend much time thinking about Chinese adoption and its sociocultural/political impacts on adoptive and nonadoptive communities alike.
+
+As a senior at Grinnell College, I am double-majoring in Chinese language and literature and anthropology. I am currently planning my anthropology senior thesis — a reflexive ethnography — that will explore what kinship means to Chinese adoptees. A goal of mine is for my research project to be able to serve as a space for shared storytelling and representation within the broader conversation on Chinese American adoption. Please reach out to me if you are curious about my research, would like to see representation in auto-ethnographic literature on Chinese American adoption, and would like to learn more or contribute to it! 
