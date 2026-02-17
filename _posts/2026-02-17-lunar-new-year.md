@@ -4,7 +4,7 @@ title: Happy Lunar New Year: Year of the Horse
 date: 2026-02-17
 author: Téa Tamburo
 category: G.A.C News
-cover: /assets/posts/2026-02-17-lunar-new-year/cover.png
+cover: assets/posts/2026-02-17-lunar-new-year/cover.png
 ---
 
 新年快乐!
