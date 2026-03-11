@@ -2,3 +2,7 @@ title: Girls Adoption Connect
 url: "https://girlsadoptionconnect.org"
 baseurl: "" 
 permalink: /post/:slug/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
