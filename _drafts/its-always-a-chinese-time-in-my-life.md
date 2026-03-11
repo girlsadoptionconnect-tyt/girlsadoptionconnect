@@ -5,12 +5,13 @@ date: YEAR-MONTH-DAY
 author: Téa Tamburo
 category: Unpacking Our Adoption
 cover: /
+
+sources:
+	— text: "Lo-Booth, M., & Costigan, A. (2026, February 7). Why Gen Zs on social media are having “a very Chinese time in my life.” ABC News."
+		url: "https://www.abc.net.au/news/2026-02-08/you-met-me-at-a-chinese-time-of-my-life/106303830"
+	— text: "Yang, Z., & Matsakis, L. (2026, January 16). Why everyone is suddenly in a “very Chinese time” in their lives. WIRED."
+		url: "https://www.wired.com/story/made-in-china-chinese-time-of-my-life/"
 ---
-	*sources:*
-		  - text: "Lo-Booth, M., & Costigan, A. (2026, February 7). Why Gen Zs on social media are having “a very Chinese time in my life.” ABC News."
-		    url: "https://www.abc.net.au/news/2026-02-08/you-met-me-at-a-chinese-time-of-my-life/106303830"
-		  - text: "Yang, Z., & Matsakis, L. (2026, January 16). Why everyone is suddenly in a “very Chinese time” in their lives. WIRED."
-		    url: "https://www.wired.com/story/made-in-china-chinese-time-of-my-life/"
 
 I spent years in Chinese language classes, not wanting to be there. I remember the weekend mornings I resented when I was about 5 years old, the summer with a private tutor, the tones I didn’t get right, but mostly the feeling of being assigned an identity I hadn't chosen. My parents sent me because they wanted me to hold onto something. And I spent a long time trying to put it down.
 
