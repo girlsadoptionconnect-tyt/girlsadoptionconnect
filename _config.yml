@@ -5,5 +5,6 @@ permalink: /post/:slug/
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 google_site_verification: <meta name="google-site-verification" content="1BMPLF1YxN6n3qqk2Lip2vzMOpk7519HvYoa7f9ygMA" />
