@@ -4,7 +4,7 @@ title: "It’s always a 'Chinese time in my life'"
 date: YEAR-MONTH-DAY
 author: Téa Tamburo
 category: Unpacking Our Adoption
-cover: /assets/posts/chinese-time/1.png
+cover: 
 
 sources:
   - text: "Lo-Booth, M., & Costigan, A. (2026, February 7). Why Gen Zs on social media are having 'a very Chinese time in my life.' ABC News."
