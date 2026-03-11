@@ -5,5 +5,3 @@ permalink: /post/:slug/
 
 plugins:
   - jekyll-seo-tag
-
-google_site_verification: googleace5a2ee7b5b4310
