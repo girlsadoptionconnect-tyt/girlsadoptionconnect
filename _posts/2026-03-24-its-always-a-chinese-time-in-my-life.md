@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "It’s always a 'Chinese time in my life'"
-date: YEAR-MONTH-DAY
+date: 2026-03-24
 author: Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/2026-03-22-it's-always-a-chinese-time-in-my-life/cover.png
