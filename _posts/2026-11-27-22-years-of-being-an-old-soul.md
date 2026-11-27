@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "22 years of being an old soul"
-date: 2026-11-27 09:00:00 -0500
+date: 2026-11-27
 author: Téa Tamburo
 category: Unpacking Our Adoption
 cover: /assets/posts/2026-11-27-22-years-as-an-old-soul/cover
